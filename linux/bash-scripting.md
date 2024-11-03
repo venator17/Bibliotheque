@@ -9,9 +9,9 @@
 ### Script Execution - Examples
 
 ```bash
-carnifex17@kali[/kali]$ bash script.sh <optional arguments>
-carnifex17@kali[/kali]$ sh script.sh <optional arguments>
-carnifex17@kali[/kali]$ ./script.sh <optional arguments>
+venator17@kali[/kali]$ bash script.sh <optional arguments>
+venator17@kali[/kali]$ sh script.sh <optional arguments>
+venator17@kali[/kali]$ ./script.sh <optional arguments>
 ```
 
 ***
