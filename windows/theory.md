@@ -1,3 +1,7 @@
+---
+icon: book-open
+---
+
 # Theory
 
 ## Windows Registry
@@ -36,7 +40,7 @@
 
 ## SAM
 
-<mark style="color:red;">**The Security Accounts Manager**</mark>** is a database file in the Microsoft Windows operating system that contains usernames and passwords.** The SAM is available in different versions of Windows, including XP, Vista, 7, 8.1, 10 and 11. Each user account can be assigned a local area network (LAN) and a password would be hashed and stored in the SAM. The passwords hashes are stored in <mark style="color:green;">**HKEY\_LOCAL\_MACHINE\SAM**</mark><mark style="color:blue;">**,**</mark> but the access to it is restricted. **HKLM/SAM** and **SYSTEM** privileges are required for accessing it.
+<mark style="color:red;">**The Security Accounts Manager**</mark>**&#x20;is a database file in the Microsoft Windows operating system that contains usernames and passwords.** The SAM is available in different versions of Windows, including XP, Vista, 7, 8.1, 10 and 11. Each user account can be assigned a local area network (LAN) and a password would be hashed and stored in the SAM. The passwords hashes are stored in <mark style="color:green;">**HKEY\_LOCAL\_MACHINE\SAM**</mark><mark style="color:blue;">**,**</mark> but the access to it is restricted. **HKLM/SAM** and **SYSTEM** privileges are required for accessing it.
 
 ## LSASS
 
@@ -84,5 +88,5 @@ impacket-psexec administrator:'amoguskek'@13.13.13.13
 
 ## Important Files Location
 
-* <mark style="color:green;">`C:\Windows\System32\drivers\etc`</mark> _- **Local DNS file, same role as Linux**** **<mark style="color:green;">**/etc/hosts**</mark>_
+* <mark style="color:green;">`C:\Windows\System32\drivers\etc`</mark> _- **Local DNS file, same role as Linux****&#x20;**<mark style="color:green;">**/etc/hosts**</mark>_
 

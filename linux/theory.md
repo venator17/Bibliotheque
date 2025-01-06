@@ -1,5 +1,6 @@
 ---
 description: Linux have one big rule "everything is a file"
+icon: book-open
 ---
 
 # Theory
@@ -23,7 +24,7 @@ description: Linux have one big rule "everything is a file"
 * <mark style="color:yellow;">**`/etc/cron.d`**</mark>
 * <mark style="color:yellow;">**`/var/spool/cron/crontabs/root`**</mark>
 
-[**\[Link to make cron date\]**](https://crontab.guru/#25\_18\_8\_11\_0)
+[**\[Link to make cron date\]**](https://crontab.guru/#25_18_8_11_0)
 
 ***
 
@@ -139,7 +140,7 @@ The third set of <mark style="color:green;">**`r-x`**</mark> represents access r
 
 ## Data Streams, Redirects
 
-**In Linux, there is such a thing as **_**data streams**_**, which are used to transmit input/output data in programs. Each of them has its own **_**descriptor**_**, a numeric identifier that helps to interact with them more easily**
+**In Linux, there is such a thing as&#x20;**_**data streams**_**, which are used to transmit input/output data in programs. Each of them has its own&#x20;**_**descriptor**_**, a numeric identifier that helps to interact with them more easily**
 
 * `STDIN` - Descriptor 0. Input stream
 * `STDOUT` - Descriptor 1. Output stream
@@ -148,7 +149,7 @@ The third set of <mark style="color:green;">**`r-x`**</mark> represents access r
 
 ***
 
-_**REDIRECT( > )**_** is redirect of the command output to the file `(ls > dirs.txt).` Redirect by default is through the `stdout` stream, but it can be changed. `cat unexistedfile.txt 2> error.txt`** _**Reverse redirect ( < )**_** is redirect of the output stream through `stdin` so that the input is not through the keyboard but through the file**
+_**REDIRECT( > )**_**&#x20;is redirect of the command output to the file `(ls > dirs.txt).` Redirect by default is through the `stdout` stream, but it can be changed. `cat unexistedfile.txt 2> error.txt`** _**Reverse redirect ( < )**_**&#x20;is redirect of the output stream through `stdin` so that the input is not through the keyboard but through the file**
 
 ***
 
@@ -176,7 +177,7 @@ File signatures, commonly referred to as "**magic bytes**", are specific byte se
 | Linux ELF executables       | 7F 45 4C 46             | .ELF  |
 | MP3 audio file              | 49 44 33                | ID3   |
 
-* You could look all magic bytes here [**\[LINK\]**](https://en.wikipedia.org/wiki/List\_of\_file\_signatures)
+* You could look all magic bytes here [**\[LINK\]**](https://en.wikipedia.org/wiki/List_of_file_signatures)
 
 ## Mount
 

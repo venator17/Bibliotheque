@@ -92,17 +92,20 @@
 * [Linux](active-directory/linux/README.md)
   * [Linux Post-Exploitation](active-directory/linux/linux-post-exploitation.md)
 
-## Networks
+## Networking
 
-* [Theory](networks/theory/README.md)
-  * [OSI Model](networks/theory/osi-model.md)
-  * [TCP / UDP](networks/theory/tcp-udp.md)
-  * [IP / Subnetting](networks/theory/ip-subnetting.md)
-  * [Pivoting / Tunneling](networks/theory/pivoting-tunneling.md)
-  * [ARP](networks/theory/arp.md)
-* [Commands and Utilites](networks/commands-and-utilites.md)
-* [Wireless Attacks](networks/wireless-attacks.md)
-* [Network Hacking](networks/network-hacking.md)
+* [Theory](networking/theory/README.md)
+  * [Types / Topologies](networking/theory/types-topologies.md)
+  * [OSI & TCP/IP Models](networking/theory/osi-and-tcp-ip-models.md)
+  * [TCP / UDP](networking/theory/tcp-udp.md)
+  * [MAC Addresses](networking/theory/mac-addresses.md)
+  * [IP / Subnetting](networking/theory/ip-subnetting.md)
+  * [Proxies](networking/theory/proxies.md)
+  * [ARP](networking/theory/arp.md)
+* [Pivoting](networking/pivoting/README.md)
+  * [Port-Forwarding](networking/pivoting/port-forwarding.md)
+* [Commands and Utilities](networking/commands-and-utilities.md)
+* [Techniques](networking/techniques.md)
 
 ## CLOUD
 

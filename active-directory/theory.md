@@ -1,3 +1,7 @@
+---
+icon: book-open
+---
+
 # Theory
 
 ## What is Active Directory
@@ -20,7 +24,7 @@ After Windows system became part of the domain, it's interaction with SAM is ove
 
 ## ADCS
 
-<mark style="color:red;">**Active Directory Certificate Services (AD CS)**</mark> is a **Windows Server **<mark style="color:purple;">**role**</mark> for issuing and managing <mark style="color:red;">**public key infrastructure (PKI)**</mark> certificates used in secure communication and authentication protocols. So basically it is **PKI** framework functionality implementation in **AD** and **Windows Server**.
+<mark style="color:red;">**Active Directory Certificate Services (AD CS)**</mark> is a **Windows Server&#x20;**<mark style="color:purple;">**role**</mark> for issuing and managing <mark style="color:red;">**public key infrastructure (PKI)**</mark> certificates used in secure communication and authentication protocols. So basically it is **PKI** framework functionality implementation in **AD** and **Windows Server**.
 
 ## CA
 
@@ -65,5 +69,5 @@ The whole **ping-pong** of tickets and requests is shows here:
 
 ## Important Files Location
 
-* <mark style="color:green;">**%systemroot%/ntds**</mark>** **_**- Location of NTDS.dir file**_
+* <mark style="color:green;">**%systemroot%/ntds**</mark>**&#x20;**_**- Location of NTDS.dir file**_
 

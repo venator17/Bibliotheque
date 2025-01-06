@@ -2,7 +2,7 @@
 
 ## <mark style="color:yellow;">Kubernetes</mark>
 
-<mark style="color:red;">**Kubernetes**</mark>** is an orchestration framework for software containers. Kubernetes provides the tools you need to run containerized applications in production and at scale. **<mark style="color:red;">**Google Kubernetes Engine (GKE)**</mark>** is a managed service for Kubernetes.**
+<mark style="color:red;">**Kubernetes**</mark>**&#x20;is an orchestration framework for software containers. Kubernetes provides the tools you need to run containerized applications in production and at scale.&#x20;**<mark style="color:red;">**Google Kubernetes Engine (GKE)**</mark>**&#x20;is a managed service for Kubernetes.**
 
 ## <mark style="color:yellow;">Cloud Computing</mark>
 
@@ -27,7 +27,7 @@ Principles of Cloud Computing:
 
 #### Google Computing Services List
 
-<mark style="color:yellow;">**Compute Engine**</mark>**, **<mark style="color:yellow;">**GKE**</mark>**, **<mark style="color:yellow;">**App Engine**</mark>**, **<mark style="color:yellow;">**Cloud Functions**</mark>**, and **<mark style="color:yellow;">**Cloud Run**</mark>
+<mark style="color:yellow;">**Compute Engine**</mark>**,&#x20;**<mark style="color:yellow;">**GKE**</mark>**,&#x20;**<mark style="color:yellow;">**App Engine**</mark>**,&#x20;**<mark style="color:yellow;">**Cloud Functions**</mark>**, and&#x20;**<mark style="color:yellow;">**Cloud Run**</mark>
 
 ## <mark style="color:yellow;">Batch Job</mark>
 

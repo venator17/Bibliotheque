@@ -1,6 +1,10 @@
-# Commands and Utilites
+---
+icon: screwdriver-wrench
+---
 
-## NETCAT
+# Commands and Utilities
+
+## <mark style="color:yellow;">NETCAT</mark>
 
 **Universal utility for network connection in Unix and similar operating systems**
 
@@ -17,7 +21,7 @@
 
 ***
 
-## IP
+## <mark style="color:yellow;">IP</mark>
 
 **Linux command to manage ІР. Older brother of ifconfig**
 
@@ -31,7 +35,7 @@
 
 ***
 
-## NETSTAT
+## <mark style="color:yellow;">NETSTAT</mark>
 
 **The netstat command lets you discover which sockets are connected and which sockets are listening. Meaning, it tells you which ports are in use and which processes are using them. It can show you routing tables and statistics about your network interfaces and multicast connections.This command is liable to produce a long listing, so we pipe it into less.**
 
@@ -49,9 +53,9 @@
 
 ***
 
-## TRACEROUTE
+## <mark style="color:yellow;">TRACEROUTE</mark>
 
-**For understanding traceroute you should know what is TCP/IP suite of protocols, especially what is UDP or User Datagram Protocol. There are a lot of headers but we need TTL (Time to Live). It is a count how much routers, gateways could possibly pass this packet, each router decrements 1. When TTL reaches 0, router sends ICMP "Time Exceeded" message back to the origin of the packet. So traceroute first sends packet with ttl 1, then 2, then 3 etc. until destination is reached or maximum number of hops (30 by default) is tested.**
+For understanding traceroute you should know what is TCP/IP suite of protocols, especially what is UDP or User Datagram Protocol. There are a lot of headers but we need TTL (Time to Live). It is a count how much routers, gateways could possibly pass this packet, each router decrements 1. When TTL reaches 0, router sends ICMP "Time Exceeded" message back to the origin of the packet. So traceroute first sends packet with ttl 1, then 2, then 3 etc. until destination is reached or maximum number of hops (30 by default) is tested.
 
 | Syntax             | Explanation                                   |
 | ------------------ | --------------------------------------------- |
