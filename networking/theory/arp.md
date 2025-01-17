@@ -4,7 +4,7 @@
 
 <mark style="color:red;">**ARP or Address Resolution Protocol**</mark> which is <mark style="color:purple;">**one of the most important protocols**</mark> of the Data link layer in the OSI model. <mark style="color:yellow;">**It is responsible to find the hardware address of a host from a known IP address**</mark>. So as I get we use ARP when we need to send some info on 2 level of OSI, which requires MAC address. Every machine has it's own ARP cache, where is table like IP-MAC data. So when we need to send some data on Data Link level, we broadcast request to entire network like:
 
-_<mark style="color:blue;">**"Hey, who is 10.10.10.10, I want to find his MAC". And if we found it address, it will tell us back with "Hi, you looking for 10.10.10.10? It's me, here's my MAC"**</mark>_<mark style="color:blue;">**.**</mark>
+_<mark style="color:orange;">**"Hey, who is 10.10.10.10, I want to find his MAC". And if we found it address, it will tell us back with "Hi, you looking for 10.10.10.10? It's me, here's my MAC"**</mark>_<mark style="color:orange;">**.**</mark>
 
 ## ARP Spoofing & ARP DOS
 

@@ -2,7 +2,7 @@
 
 ## Welcome wanderer
 
-* [About Me](README.md)
+* [Intro](README.md)
 * [Useful Links](welcome-wanderer/useful-links.md)
 * [Certificates](welcome-wanderer/certificates.md)
 
@@ -71,7 +71,8 @@
 
 ## WINDOWS
 
-* [Theory](windows/theory.md)
+* [Theory](windows/theory/README.md)
+  * [Security](windows/theory/security.md)
 * [Commands and Utilities](windows/commands-and-utilities.md)
 * [PowerShell](windows/powershell.md)
 * [Privilege Escalation](windows/privilege-escalation.md)

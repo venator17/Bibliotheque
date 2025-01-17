@@ -1,6 +1,6 @@
 # OSI & TCP/IP Models
 
-## OSI Model
+## <mark style="color:yellow;">OSI Model</mark>
 
 <mark style="color:red;">**OSI (Open Systems Interconnection)**</mark> model is a conceptual <mark style="color:purple;">**framework**</mark> that standardizes the functions of a telecommunications or networking system into seven distinct layers:
 
@@ -12,7 +12,7 @@
 6. <mark style="color:yellow;">**`Presentation Layer`**</mark>: Responsible for data translation, encryption, and compression, making sure data is in a format that can be understood by both sender and receiver.
 7. <mark style="color:yellow;">**`Application Layer`**</mark>: This is the topmost layer that interacts with end-user applications and provides network services like email, web browsing, and file transfer.
 
-## TCP/IP
+## <mark style="color:yellow;">TCP/IP</mark>
 
 <mark style="color:red;">**TCP/IP (Transmission Control Protocol/Internet Protocol)**</mark> is a generic term for many network protocols, which is not only refer to these two protocols but is usually used as a generic term for an entire <mark style="color:purple;">**protocol family**</mark>. These protocols are responsible for the <mark style="color:yellow;">**switching and transport of data packets**</mark> on the Internet.&#x20;
 
@@ -21,15 +21,15 @@
 3. <mark style="color:yellow;">**`Transport`**</mark> : Manages sessions (TCP) and datagrams (UDP) for reliable communication.
 4. <mark style="color:yellow;">**`Application`**</mark>: Enables applications to use network services and defines data exchange protocols.
 
-## Packet Encapsulation
+## <mark style="color:yellow;">Packet Encapsulation</mark>
 
 <mark style="color:red;">**Packet encapsulation**</mark> refers to the <mark style="color:purple;">**process of adding headers**</mark> to data as it moves through different layers of a network protocol stack. In both the OSI model and TCP/IP model, data is progressively encapsulated as it moves from the top to the bottom layers for transmission and then decapsulated at the receiving end.
 
-## Images
+### <mark style="color:blue;">Images</mark>
 
 _But besides all explanations I think in this topic pictures are better explainers:_&#x20;
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Made in Figma</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/OSI1.png" alt=""><figcaption><p>Encapsulation process</p></figcaption></figure>
 

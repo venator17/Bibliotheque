@@ -71,11 +71,11 @@ So algorithm is that you should replace all **one's** in IP with **zero's** in m
 
 ### Binary to Decimal
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Made in Figma</p></figcaption></figure>
 
 ### Decimal to Binary
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Made in Figma</p></figcaption></figure>
 
 ### Subnet hosts with Mask
 

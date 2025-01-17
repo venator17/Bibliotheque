@@ -4,11 +4,9 @@ icon: screwdriver-wrench
 
 # Commands and Utilities
 
-## AWK
+## <mark style="color:yellow;">AWK</mark>
 
 **Specified Programming Language, which we could use for easy scripts**
-
-***
 
 | Command               | Explanation                                               |
 | --------------------- | --------------------------------------------------------- |
@@ -23,9 +21,7 @@ icon: screwdriver-wrench
 | `/UUID/`              | Look for UUID pattern                                     |
 | `/^UUID/`             | Look for pattern which begins with UUID                   |
 
-***
-
-## TEE
+## <mark style="color:yellow;">TEE</mark>
 
 **Command for Redirecting Output in Linux**
 
@@ -39,11 +35,9 @@ icon: screwdriver-wrench
 | `command1 \| tee > (command2)` | Pipe output of command1 to command2 and display on the terminal |
 | `command \| tee /dev/tty`      | Display output on the terminal, but not redirect to a file      |
 
-## SUDO
+## <mark style="color:yellow;">SUDO</mark>
 
 **Linux utility that provides the ability to execute commands with different levels of access, including root**
-
-***
 
 | Command   | Explanation                    |
 | --------- | ------------------------------ |
@@ -52,13 +46,9 @@ icon: screwdriver-wrench
 | `sudo su` | Change to root user            |
 | `sudo`    | Do smth on behalf of root user |
 
-***
-
-## LESS
+## <mark style="color:yellow;">LESS</mark>
 
 **If the file is very large, this utility does not allow you to clog up the entire term of the terminal, that is, it shortens the output and allows you to scroll up and down**
-
-***
 
 | Command   | Explanation                                                                |
 | --------- | -------------------------------------------------------------------------- |
@@ -66,13 +56,9 @@ icon: screwdriver-wrench
 | `less -X` | Leave what was in the file without deleting it after disabling the command |
 | `less -N` | Number lines                                                               |
 
-***
-
-## TAIL
+## <mark style="color:yellow;">TAIL</mark>
 
 **Command used to output the contents of a file, usually at the end of that file**
-
-***
 
 | Command    | Explanation                                |
 | ---------- | ------------------------------------------ |
@@ -81,13 +67,9 @@ icon: screwdriver-wrench
 | `tail -c`  | Number of bytes to be removed from the end |
 | `tail -F`  | Look for changes in a file                 |
 
-***
-
-## WGET
+## <mark style="color:yellow;">WGET</mark>
 
 **Download files from sites**
-
-***
 
 | Command   | Explanation                        |
 | --------- | ---------------------------------- |
@@ -95,13 +77,9 @@ icon: screwdriver-wrench
 | `wget -O` | Download the file under a new name |
 | `wget -i` | Download a file from the list      |
 
-***
-
-## GREP
+## <mark style="color:yellow;">GREP</mark>
 
 **Linux command used to search for text strings in files or other commands output**
-
-***
 
 | Command                                | Explanation                                          |
 | -------------------------------------- | ---------------------------------------------------- |
@@ -111,26 +89,18 @@ icon: screwdriver-wrench
 | `grep -r "text" documents/ -e "*.txt"` | Search in the documents directory only in .txt files |
 | `grep -r "text"`                       | Search in local directories and subdirectories       |
 
-***
-
-## SCP
+## <mark style="color:yellow;">SCP</mark>
 
 **Linux command, which is used to securely copy files and directories from one computer to another over a network**
-
-***
 
 | Command                                                                                | Explanation          |
 | -------------------------------------------------------------------------------------- | -------------------- |
 | `scp username@remote_server:/full/path/to/remote_file /local/path/to/local_directory/` | From remote to local |
 | `scp /local/path/to/local_file username@remote_server:/remote/path/to/destination/`    | From local to remote |
 
-***
-
-## FIND
+## <mark style="color:yellow;">FIND</mark>
 
 **Linux command used to search for various information in the file system**
-
-***
 
 | Command                    | Explanation                                                                                    |
 | -------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -141,15 +111,11 @@ icon: screwdriver-wrench
 | `-name`                    | File name                                                                                      |
 | `-type f`                  | This option specifies that only files are searched.                                            |
 | `-type d`                  | Only directories are being searched.                                                           |
-| `find . -type f -mtime -3` | Гsed to search for files by their modification time The file was modified less than 3 days ago |
+| `find . -type f -mtime -3` | Used to search for files by their modification time The file was modified less than 3 days ago |
 
-***
-
-## PS
+## <mark style="color:yellow;">PS</mark>
 
 **A program for Linux that is designed to search for various system processes**
-
-***
 
 | Command       | Explanation                         |
 | ------------- | ----------------------------------- |
@@ -157,13 +123,9 @@ icon: screwdriver-wrench
 | `ps -p PID`   | Additional info about PID           |
 | `ps -u shrek` | Additional info from **shrek** user |
 
-***
-
-## CHOWN
+## <mark style="color:yellow;">CHOWN</mark>
 
 **A command in the Linux operating system that is used to change the owner or group of a file or directory**
-
-***
 
 | Command                           | Explanation                    |
 | --------------------------------- | ------------------------------ |
@@ -172,13 +134,9 @@ icon: screwdriver-wrench
 | `chown master:group1 file1.txt`   | Change both                    |
 | `chown --reference=greek1 greek2` | Use greek1 rights as reference |
 
-***
-
-## NSLOOKUP
+## <mark style="color:yellow;">NSLOOKUP</mark>
 
 **An operating system command used to perform DNS queries and obtain information about domain names, IP addresses, and other DNS records.**
-
-***
 
 | Command                                        | Explanation                    |
 | ---------------------------------------------- | ------------------------------ |
@@ -186,13 +144,9 @@ icon: screwdriver-wrench
 | `nslookup -type={type of dns recording}`       | Search for certain DNS record  |
 | `A`, `MX`, `NS`, `TXT`, `SOA`, `AAAA`, `CNAME` | Types of DNS records           |
 
-***
-
-## DIG
+## <mark style="color:yellow;">DIG</mark>
 
 **Younger sibling of nslookup**
-
-***
 
 | Command                    | Explanation    |
 | -------------------------- | -------------- |
@@ -201,13 +155,9 @@ icon: screwdriver-wrench
 | `dig site.com ANY`         | All records    |
 | `dig site.com +trace`      | Trace DNS path |
 
-***
-
-## UNAME
+## <mark style="color:yellow;">UNAME</mark>
 
 **A command in the Unix operating system and similar systems that displays information about the system and its kernel.**
-
-***
 
 | Command    | Explanation         |
 | ---------- | ------------------- |
@@ -215,13 +165,9 @@ icon: screwdriver-wrench
 | `uname -s` | Kernel name         |
 | `uname -r` | Kernel release date |
 
-***
-
-## UNIQ
+## <mark style="color:yellow;">UNIQ</mark>
 
 **Linux command which looks for repeatings strings and helps to manage them**
-
-***
 
 | Command   | Explanation                          |
 | --------- | ------------------------------------ |
@@ -229,13 +175,9 @@ icon: screwdriver-wrench
 | `uniq -d` | Only displays repeated feeds         |
 | `uniq -u` | Displays unique feeds                |
 
-***
-
-## SORT
+## <mark style="color:yellow;">SORT</mark>
 
 **You will never guess what it does**
-
-***
 
 | Command                                | Explanation                             |
 | -------------------------------------- | --------------------------------------- |
@@ -245,38 +187,26 @@ icon: screwdriver-wrench
 | `sort -nr`                             | Sorting by numbers in reverse order     |
 | `sort -k 2n file.txt`                  | Sort by second column by numbers        |
 
-***
-
-## WHOIS
+## <mark style="color:yellow;">WHOIS</mark>
 
 **Command Linux, which looks for info about domains**
-
-***
 
 | Command               | Explanation                           |
 | --------------------- | ------------------------------------- |
 | `whois site.com`      | Displaying information by domain name |
 | `whois 125.8.888.200` | Displaying information by IP address  |
 
-***
-
-## TAR
+## <mark style="color:yellow;">TAR</mark>
 
 **Linux command used to unzip tar format**
-
-***
 
 | Command             | Explanation        |
 | ------------------- | ------------------ |
 | `tar -xvf file.tar` | Detailed unzipping |
 
-***
-
-## SYSTEMCTL
+## <mark style="color:yellow;">SYSTEMCTL</mark>
 
 **Linux command to manage different services**
-
-***
 
 | Command                                         | Explanation          |
 | ----------------------------------------------- | -------------------- |
@@ -285,13 +215,9 @@ icon: screwdriver-wrench
 | `sudo systemctl stop service`                   | Stop service         |
 | `sudo systemctl --type=service --state=running` | List active service  |
 
-***
-
-## NETCAT
+## <mark style="color:yellow;">NETCAT</mark>
 
 **Universal utility for network connection in Unix and similar operating systems**
-
-***
 
 | Command                                               | Explanation                                                                                            |
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
@@ -302,18 +228,12 @@ icon: screwdriver-wrench
 | `nc -l -p local_port -c 'nc remote_host remote_port'` | Configures a basic proxy where it listens for a specific local port and forwards it to a remote server |
 | `nc -l -p 1234 -e /bin/bash`                          | Simple backdoor                                                                                        |
 
-***
-
-## IP
+## <mark style="color:yellow;">IP</mark>
 
 **Linux command to manage ІР. Older brother of ifconfig**
-
-***
 
 | Command      | Explanation         |
 | ------------ | ------------------- |
 | `ip addr`    | Shows all addresses |
 | `ip -4 addr` | Shows IPv4 address  |
 | `ip -6 addr` | Shows IPv6 address  |
-
-***

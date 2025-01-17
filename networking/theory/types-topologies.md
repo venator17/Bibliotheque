@@ -4,11 +4,11 @@
 
 ### <mark style="color:blue;">WAN</mark>
 
-<mark style="color:red;">**Wide Area Network**</mark> or commonly referred as <mark style="color:purple;">**The Internet**</mark>. WAN Adress usually is <mark style="color:yellow;">**`IP  Public address + CIDR`**</mark>. &#x20;
+<mark style="color:red;">**Wide Area Network**</mark> or commonly referred as <mark style="color:purple;">**The Internet**</mark>. WAN Address usually is <mark style="color:yellow;">**`IP Public Address + CIDR`**</mark>.
 
 ### <mark style="color:blue;">LAN / WLAN</mark>
 
-Local Area Network and Wireless Local Area Network will usually assign IP addresses for private use, like <mark style="color:green;">`198.0.0.1/24`</mark>, <mark style="color:green;">`10.10.10.45/20`</mark>, <mark style="color:green;">`176.13.0.0/17`</mark> etc. Difference between **LAN** and **WLAN** is that **WLAN** can trasmit data without cables, **LAN** is **cable-only**.
+Local Area Network and Wireless Local Area Network will usually assign IP addresses for private use, like <mark style="color:green;">`198.0.0.1/24`</mark>, <mark style="color:green;">`10.10.10.45/20`</mark>, <mark style="color:green;">`176.13.0.0/17`</mark> etc. Difference between **LAN** and **WLAN** is that **WLAN** can transmit data without cables, **LAN** is **cable-only**.
 
 ### <mark style="color:blue;">VPN</mark>
 

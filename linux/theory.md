@@ -1,13 +1,11 @@
 ---
-description: Linux have one big rule "everything is a file"
 icon: book-open
+description: Linux have one big rule "everything is a file"
 ---
 
 # Theory
 
-## Crontab
-
-***
+## <mark style="color:yellow;">Crontab</mark>
 
 **`Cron` jobs in Linux allow users to run commands at the specific date and time. To list all scheduled tasks for the user**
 
@@ -26,9 +24,7 @@ icon: book-open
 
 [**\[Link to make cron date\]**](https://crontab.guru/#25_18_8_11_0)
 
-***
-
-## Regex Basics
+## <mark style="color:yellow;">Regex Basics</mark>
 
 <mark style="color:red;">**Regular expressions**</mark>, often referred to as **regex** or **regexp**, are a powerful <mark style="color:purple;">**tool**</mark> for pattern matching and text manipulation. They provide a concise and flexible way to search for, match, and extract specific patterns in text data. Regex is supported in many programming languages and text editors. Here are some of the basics of regex with examples for each feature:
 
@@ -77,7 +73,7 @@ Here are some examples of regular expressions and what they match:
 
 ***
 
-## Logical Operators
+## <mark style="color:yellow;">Logical Operators</mark>
 
 **Symbols or keywords in Linux that are used to process and compare logical values.**
 
@@ -98,7 +94,7 @@ Here are some examples of regular expressions and what they match:
 | <mark style="color:yellow;">**I**</mark>                     | (PIPE)                                                                                                                                                                                                            |
 | <mark style="color:green;">**`Command1 I Command2`**</mark>  | Redirects the output of Command1 to the input of Command2. Used to transfer data between commands and filter the output                                                                                           |
 
-## Access Rights
+## <mark style="color:yellow;">Access Rights</mark>
 
 **Linux has its own scheme for displaying access rights using numbers to make it quick and easy to show which rights are where. Each three digits corresponds to three access rights (read, write, execute) for three different categories of users (owner, group, other). Each of these digits can have a value from 0 to 7, where each value represents a combination of three possible access rights:**
 
@@ -106,17 +102,17 @@ Here are some examples of regular expressions and what they match:
 
 ***
 
-### **File Rights**
+### <mark style="color:blue;">**File Rights**</mark>
 
 To set permissions using numbers, you simply add the number values for each category together: For example, \`<mark style="color:green;">**`chmod 755 file.txt'`**</mark> sets the following permissions:
 
-1. The owner has read, write, and execute permissions (4 + 2 + 1 = 7).
-2. Group has read and execute permissions (4 + 1 = 5).
-3. Other users have read and execute permissions (4 + 1 = 5).
+1. The owner has read, write, and execute permissions **(4 + 2 + 1 = 7).**
+2. Group has read and execute permissions **(4 + 1 = 5).**
+3. Other users have read and execute permissions **(4 + 1 = 5).**
 
 ***
 
-### **Directory Rights**.
+### <mark style="color:blue;">**Directory Rights**</mark>
 
 For example, in the directory, it displays <mark style="color:green;">**`drwxr-xr-x`**</mark>. The first character <mark style="color:green;">**`d`**</mark> is the type of object. In this case, <mark style="color:green;">**`d`**</mark> indicates that it is a directory. The rest of the <mark style="color:green;">**`rwxr-xr-x`**</mark> string consists of **nine** characters that represent access rights for different categories of users <mark style="color:yellow;">**(**</mark>_<mark style="color:yellow;">**owner, group, and others**</mark>_<mark style="color:yellow;">**)**</mark>. This part of the string can be considered as three sets of three characters each.
 
@@ -138,7 +134,7 @@ The third set of <mark style="color:green;">**`r-x`**</mark> represents access r
 2. <mark style="color:green;">**`-`**</mark> _**Other users**_ do not have the right to write the file or create new files in the directory.
 3. <mark style="color:green;">**`x`**</mark> _**Other users**_ have the right to execute the file (for directories).
 
-## Data Streams, Redirects
+## <mark style="color:yellow;">Data Streams, Redirects</mark>
 
 **In Linux, there is such a thing as&#x20;**_**data streams**_**, which are used to transmit input/output data in programs. Each of them has its own&#x20;**_**descriptor**_**, a numeric identifier that helps to interact with them more easily**
 
@@ -161,7 +157,7 @@ _**REDIRECT( > )**_**&#x20;is redirect of the command output to the file `(ls > 
 
 ***
 
-## File signatures
+## <mark style="color:yellow;">File signatures</mark>
 
 File signatures, commonly referred to as "**magic bytes**", are specific byte sequences at the beginning of a file that identify or verify its content type and format. These bytes often have corresponding **ASCII** characters, allowing for easier human readability when inspected. The identification process helps software applications quickly determine whether a file is in a format they can handle, aiding operational functionality and security measures.
 
@@ -179,7 +175,7 @@ File signatures, commonly referred to as "**magic bytes**", are specific byte se
 
 * You could look all magic bytes here [**\[LINK\]**](https://en.wikipedia.org/wiki/List_of_file_signatures)
 
-## Mount
+## <mark style="color:yellow;">Mount</mark>
 
 <mark style="color:red;">**Mount**</mark> command is used to <mark style="color:purple;">**attach**</mark> (or "mount") file systems to a directory structure, making storage devices like hard drives, USB drives, or network file systems accessible under a specific directory (mount point). The mounting process allows users and the system to read/write data from/to the storage device.
 
