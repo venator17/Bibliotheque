@@ -1,7 +1,7 @@
 ---
-icon: user-hoodie
-cover: .gitbook/assets/imgonline-com-ua-ReplaceColor-EPQ77kMNKRzO.png
-coverY: 26
+icon: user-bounty-hunter
+cover: .gitbook/assets/image_2025-01-22_20-49-49.png
+coverY: -49.194871794871794
 layout:
   cover:
     visible: true
@@ -20,11 +20,11 @@ layout:
 
 # Intro
 
-<figure><img src=".gitbook/assets/Peni_Parker_Emblem_Spray.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/imgonline-com-ua-ReplaceColor-g18w6LOYY6w-modified.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## ABOUT ME
 
-I am <mark style="color:orange;">`{venator17}`</mark>, pizza fan, cybersecurity student, ethical hacker, and just a chill guy who's motivated to become great hacker and loves to consume knowledge.&#x20;
+I am <mark style="color:green;">`{venator17}`</mark>, pizza fan, cybersecurity student, ethical hacker, and just a savvy guy who's motivated to become great hacker and loves to consume knowledge.&#x20;
 
 Active on platforms like:
 
@@ -61,6 +61,6 @@ By reading this website you can notice (especially on the newer sections) that I
 
 ## CONTACT
 
-[<mark style="color:blue;">**LINKEDIN**</mark>](https://www.linkedin.com/in/den-y-a2a6ab309)
+[**LINKEDIN**](https://www.linkedin.com/in/den-y-a2a6ab309)
 
-[<mark style="color:blue;">**DISCORD**</mark>](https://discordapp.com/users/761570103158243368)
+[**DISCORD**](https://discordapp.com/users/761570103158243368)

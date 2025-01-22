@@ -1,3 +1,7 @@
+---
+icon: square-terminal
+---
+
 # PowerShell
 
 ## <mark style="color:yellow;">ABOUT</mark>

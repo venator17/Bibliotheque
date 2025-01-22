@@ -1,3 +1,7 @@
+---
+icon: square-terminal
+---
+
 # Bash Scripting
 
 ## What it is?
