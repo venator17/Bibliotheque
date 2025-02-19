@@ -24,6 +24,7 @@ Windows command that <mark style="color:purple;">**lists the contents**</mark> o
 | <mark style="color:green;">`dir *.txt`</mark> | Displays all txt files                                            |
 | <mark style="color:green;">`dir /t:c`</mark>  | Lists files sorted by creation time                               |
 | <mark style="color:green;">`dir /o:n`</mark>  | Lists files and folders sorted alphabetically                     |
+| <mark style="color:green;">`dir /q`</mark>    | Lists ownership of a directory                                    |
 
 ### <mark style="color:yellow;">TREE</mark>
 
@@ -102,7 +103,7 @@ Windows command that <mark style="color:purple;">**manages services**</mark>, al
 
 <mark style="color:red;">**Windows Sysinternals**</mark> is a powerful <mark style="color:purple;">**suite of utilities**</mark> created by **Mark Russinovich**, which is now owned by **Microsoft**. These tools are primarily designed for <mark style="color:yellow;">**system troubleshooting, monitoring, and diagnostics**</mark>, but they can also be extremely valuable for security researchers and ethical hackers.
 
-### PsExec
+### <mark style="color:blue;">PsExec</mark>
 
 <mark style="color:red;">**PsExec**</mark> is a command-line <mark style="color:purple;">**tool**</mark> from the <mark style="color:yellow;">**Windows Sysinternals**</mark> suite that allows you to execute processes on remote systems without needing to manually install client software. It works over **SMB (Server Message Block)**, enabling remote command execution on Windows machines, making it a powerful tool for both system administration and ethical hacking.
 
@@ -112,12 +113,18 @@ Windows command that <mark style="color:purple;">**manages services**</mark>, al
 impacket-psexec administrator:'amoguskek'@13.13.13.13
 ```
 
-## <mark style="color:yellow;">WMI</mark>
+### <mark style="color:blue;">PipeList</mark>
 
-A lot of tasks with WMI can all be performed using a combination of PowerShell and the WMI <mark style="color:red;">**Command-Line Interface (WMIC)**</mark>. We can view a listing of WMIC commands and aliases by typing <mark style="color:green;">`WMIC /?`</mark>
-
-#### List system information:&#x20;
+**Listing Named Pipes with Pipelist:**
 
 ```powershell
-C:\> wmic os list brief
+C:\> pipelist.exe /accepteula
+```
+
+### <mark style="color:blue;">ProcDump</mark>
+
+#### Dump process memory:
+
+```powershell
+C:\> procdump.exe -accepteula -ma lsass.exe lsass.dmp
 ```

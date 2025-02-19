@@ -8,6 +8,8 @@ icon: square-terminal
 
 <mark style="color:red;">**PowerShell**</mark> is a powerful task automation and configuration management <mark style="color:purple;">**framework**</mark> developed by Microsoft, built on the .NET framework. It includes a command-line shell and a <mark style="color:purple;">**scripting language**</mark> designed to automate tasks across Windows systems, such as managing processes, services, files, and configurations. **PowerShell** is more powerful and flexible than the traditional **Command Prompt (cmd)** and integrates deeply with system administration tools.
 
+<mark style="color:orange;">**ALSO WE COULD USE CMD COMMANDS WITH**</mark> <mark style="color:orange;"></mark><mark style="color:orange;">`CMD /C {COMMAND}`</mark>
+
 ## <mark style="color:yellow;">ALIASES</mark>
 
 Many cmdlets in PowerShell also have <mark style="color:red;">**aliases**</mark>. For example, the aliases for the cmdlet <mark style="color:green;">`Set-Location`</mark>, to change directories, is either <mark style="color:green;">`cd`</mark> or <mark style="color:green;">`sl`</mark>. We can view all available aliases by typing <mark style="color:green;">**`Get-Alias`**</mark>.
@@ -28,7 +30,7 @@ Alias           cd -> Set-Location
 We can also set up our own aliases with <mark style="color:green;">`New-Alias`</mark> and get the alias for any cmdlet with <mark style="color:green;">`Get-Alias -Name`</mark>.
 
 ```powershell
-PS C:\venator17> New-Alias -Name "Show-Files" Get-ChildItem
+PS C:\> New-Alias -Name "Show-Files" Get-ChildItem
 PS C:\> Get-Alias -Name "Show-Files"
 
 CommandType     Name                                               Version    Source
@@ -86,51 +88,63 @@ PS C:\> Set-ExecutionPolicy Bypass -Scope Process
 
 <mark style="color:red;">**Cmdlets**</mark> are <mark style="color:purple;">**specialized commands**</mark> in **PowerShell**. They follow a consistent verb-noun naming (<mark style="color:green;">**`Get-Process`**</mark>) to indicate their action and the object they operate on.
 
-### Getting Windows Version
+#### Get more info about file
 
 ```powershell
-PS C:\> Get-WmiObject -Class win32_OperatingSystem | select Version,BuildNumber
+PS C:\> Get-ChildItem -Path 'C:\Share\file.txt' | Select Fullname,LastWriteTime,Attributes,@{Name="Owner";Expression={ (Get-Acl $_.FullName).Owner }}
 ```
 
-### List all running Services
+#### List all running Services
 
 ```powershell
-PS C:\Users\venator17> Get-Service | ? {$_.Status -eq "Running"} | select -First 2 | fl
+PS C:\> Get-Service | ? {$_.Status -eq "Running"} | select -First 2 | fl
 ```
 
-### Examine Service permissions
+#### Examine Service permissions
 
 ```powershell
-PS C:\Users\venator17> Get-ACL -Path HKLM:\System\CurrentControlSet\Services\wuauserv | Format-List
+PS C:\> Get-ACL -Path HKLM:\System\CurrentControlSet\Services\wuauserv | Format-List
 ```
 
-### List all loaded Modules
+#### List all loaded Modules
 
 ```powershell
 PS C:\> Get-Module | select Name,ExportedCommands | fl
 ```
 
-### Check Defender
+#### Check Defender
 
 ```powershell
 PS C:\> Get-MpComputerStatus | findstr "True"
 ```
 
-## WMI
+#### **Listing Named Pipes**
 
-### List system information
+```powershell
+PS C:\> gci \\.\pipe\
+```
+
+## <mark style="color:yellow;">WMI</mark>
+
+#### Getting Windows Version
+
+```powershell
+PS C:\> Get-WmiObject -Class win32_OperatingSystem | select Version,BuildNumber
+```
+
+#### List system information
 
 ```powershell
 PS C:\> Get-WmiObject -Class Win32_OperatingSystem | select SystemDirectory,BuildNumber,SerialNumber,Version | ft
 ```
 
-### Get SID of users
+#### Get SID of users
 
 ```powershell
 PS C:\> get-localuser | Select name,sid
 ```
 
-### Get all service paths
+#### Get all service paths
 
 ```powershell
 PS C:\> wmic service get name, pathname

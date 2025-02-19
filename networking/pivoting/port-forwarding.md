@@ -14,7 +14,7 @@ Local port forwarding allows you to forward traffic from your local machine to a
 
 ### <mark style="color:blue;">**How it works**</mark>&#x20;
 
-You specify a local port (e.g., 8080) and bind it to a remote service through an intermediary (like an SSH server). Traffic sent to the local port is encrypted and forwarded to the destination.
+You specify a local port (e.g., 1234) and bind it to a remote service through an intermediary (like an SSH server). Traffic sent to the local port is encrypted and forwarded to the destination.
 
 ### <mark style="color:blue;">**Use case**</mark>
 
@@ -23,7 +23,7 @@ Accessing an intranet site or database from your local machine using SSH.
 ### <mark style="color:blue;">**Example**</mark>
 
 ```bash
-ssh -L 8080:13.13.13.13:80 user@13.13.13.13
+ssh -L <local-port>:<remote-ip>:<remote-port> user@<remote-ip>
 ```
 
 ## <mark style="color:yellow;">**REMOTE PORT FORWARDING**</mark>
@@ -41,10 +41,10 @@ Making a local service accessible to others through a remote server (e.g., for d
 ### <mark style="color:blue;">**Example**</mark>
 
 ```bash
-ssh -R 9090:localhost:3000 user@13.13.13.13
+ssh -R <remote-port>:localhost:<local-port> user@<remote-ip>
 ```
 
-Here, anyone accessing `13.13.13.13:9090` will be redirected to your local machine's `localhost:3000`.
+Here, anyone accessing `<remote-ip>:<remote-port>` will be redirected to your local machine's `localhost:<local-port>`.
 
 ## <mark style="color:yellow;">**DYNAMIC PORT FORWARDING**</mark>
 
@@ -61,7 +61,7 @@ Bypassing firewalls, anonymizing traffic, or routing web browsing through an SSH
 ### <mark style="color:blue;">**Example**</mark>
 
 ```bash
-ssh -D 1080 user@13.13.13.13
+ssh -D <local-port> user@<remote-ip>
 ```
 
-This creates a SOCKS proxy on `localhost:1080`. Applications configured to use this proxy will route traffic through the SSH server dynamically.
+This creates a SOCKS proxy on `localhost:<local-port>`. Applications configured to use this proxy will route traffic through the SSH server dynamically.

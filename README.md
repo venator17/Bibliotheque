@@ -1,5 +1,5 @@
 ---
-icon: user-bounty-hunter
+icon: user-hoodie
 cover: .gitbook/assets/image_2025-01-22_20-49-49.png
 coverY: -49.194871794871794
 layout:

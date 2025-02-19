@@ -22,18 +22,6 @@ In Windows, the root directory is <mark style="color:green;">**\<drive\_letter>:
 | <mark style="color:blue;">**System, System32, SysWOW64**</mark> | Holds essential DLLs for Windows and its API.                                                                    |
 | <mark style="color:blue;">**WinSxS**</mark>                     | Stores copies of all Windows components and updates.                                                             |
 
-## <mark style="color:yellow;">NTFS Permissions</mark>
-
-| Permission Type                                           | Description                                                                                             |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| <mark style="color:blue;">**Full Control**</mark>         | Allows reading, writing, changing, and deleting files/folders.                                          |
-| <mark style="color:blue;">**Modify**</mark>               | Allows reading, writing, and deleting files/folders.                                                    |
-| <mark style="color:blue;">**List Folder Contents**</mark> | Allows viewing and listing folders/subfolders and executing files. Folders inherit this permission.     |
-| <mark style="color:blue;">**Read and Execute**</mark>     | Allows viewing, listing files/subfolders, and executing files. Inherited by both files and folders.     |
-| <mark style="color:blue;">**Write**</mark>                | Allows adding files to folders and writing to a file.                                                   |
-| <mark style="color:blue;">**Read**</mark>                 | Allows viewing and listing folders/subfolders and reading file contents.                                |
-| <mark style="color:blue;">**Traverse Folder**</mark>      | Allows moving through folders to access files, even without permission to list or view folder contents. |
-
 ## <mark style="color:yellow;">SERVICES</mark>
 
 <mark style="color:red;">**Windows Services**</mark> are <mark style="color:purple;">**long-running executable applications**</mark> that run in the background and can be automatically started when the system boots, manually started or stopped, and configured to restart upon failure. They are commonly used for core system functions, server applications, and background tasks. Service statuses can appear as <mark style="color:yellow;">**Running**</mark>, <mark style="color:yellow;">**Stopped**</mark>, or <mark style="color:yellow;">**Paused**</mark>, and they can be set to start manually, automatically, or on a delay at system boot.
@@ -78,29 +66,41 @@ The <mark style="color:red;">**user-specific registry hive (HKCU)**</mark> is st
 
 | Registry Hive                                                     | What is                                                                                                           |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| <mark style="color:blue;">**HKEY\_CLASSES\_ROOT (HKCR)**</mark>   | Information about registered applications, file associations, and **OLE( Object Linking and Embedding)** objects. |
-| <mark style="color:blue;">**HKEY\_CURRENT\_USER (HKCU)**</mark>   | Settings specific to the current user, such as desktop settings and application settings.                         |
-| <mark style="color:blue;">**HKEY\_LOCAL\_MACHINE (HKLM)**</mark>  | System-wide settings, security policies, and hardware configurations that apply to all users.                     |
-| <mark style="color:blue;">**HKEY\_USERS (HKU)**</mark>            | All user profiles loaded on the computer, including the current user's profile.                                   |
-| <mark style="color:blue;">**HKEY\_CURRENT\_CONFIG (HKCC)**</mark> | Information about the current hardware profile of the computer, such as display and printer settings.             |
+| <mark style="color:blue;">**`HKEY_CLASSES_ROOT (HKCR)`**</mark>   | Information about registered applications, file associations, and **OLE (Object Linking and Embedding)** objects. |
+| <mark style="color:blue;">**`HKEY_CURRENT_USER (HKCU)`**</mark>   | Settings specific to the current user, such as desktop settings and application settings.                         |
+| <mark style="color:blue;">**`HKEY_LOCAL_MACHINE (HKLM)`**</mark>  | System-wide settings, security policies, and hardware configurations that apply to all users.                     |
+| <mark style="color:blue;">**`HKEY_USERS (HKU)`**</mark>           | All user profiles loaded on the computer, including the current user's profile.                                   |
+| <mark style="color:blue;">**`HKEY_CURRENT_CONFIG (HKCC)`**</mark> | Information about the current hardware profile of the computer, such as display and printer settings.             |
 
 ### <mark style="color:blue;">Important Registry Keys</mark>
 
 | Registry Key                                                                                                         | What is                                                                       |
 | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| <mark style="color:blue;">**HKEY\_LOCAL\_MACHINE\Security**</mark>                                                   | Security settings, such as account policies and security options.             |
-| <mark style="color:blue;">**HKEY\_LOCAL\_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run**</mark>              | List of programs that run automatically at startup.                           |
-| <mark style="color:blue;">**HKEY\_LOCAL\_MACHINE\System\CurrentControlSet\Services**</mark>                          | Information about system services, including startup type and dependencies.   |
-| <mark style="color:blue;">**HKEY\_CURRENT\_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings**</mark> | Internet Explorer settings, such as proxy settings and security zones.        |
-| <mark style="color:blue;">**HKEY\_LOCAL\_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows**</mark>       | Windows configuration information, such as system name and installation path. |
+| <mark style="color:blue;">**`HKEY_LOCAL_MACHINE\Security`**</mark>                                                   | Security settings, such as account policies and security options.             |
+| <mark style="color:blue;">**`HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run`**</mark>              | List of programs that run automatically at startup.                           |
+| <mark style="color:blue;">**`HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services`**</mark>                          | Information about system services, including startup type and dependencies.   |
+| <mark style="color:blue;">**`HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings`**</mark> | Internet Explorer settings, such as proxy settings and security zones.        |
+| <mark style="color:blue;">**`HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows`**</mark>       | Windows configuration information, such as system name and installation path. |
 
 ## <mark style="color:yellow;">ICACLS</mark>
 
-<mark style="color:red;">**ICACLS**</mark> is a <mark style="color:purple;">**command-line utility**</mark> in Windows used to **display**, **modify**, or **back up&#x20;**<mark style="color:red;">**access control lists (ACLs)**</mark> for files and directories. ACLs are used to define the permissions and access rights that users or groups have over specific files or folders.b
+<mark style="color:red;">**ICACLS**</mark> is a <mark style="color:purple;">**command-line utility**</mark> in Windows used to **display**, **modify**, or **back up&#x20;**<mark style="color:red;">**access control lists (ACLs)**</mark> for files and directories. ACLs are used to define the permissions and access rights that users or groups have over specific files or folders.
 
-#### **Explanation of Inheritance**
+## <mark style="color:yellow;">NTFS Permissions</mark>
 
-Inheritance in NTFS allows permissions to propagate from a parent folder to its subfolders and files. This ensures consistent permissions throughout a directory structure. Modifiers like <mark style="color:blue;">**`(CI)`**</mark>, <mark style="color:blue;">**`(OI)`**</mark>, and <mark style="color:blue;">**`(IO)`**</mark> define how permissions are inherited by child objects.
+| Permission Type                                           | Description                                                                                             |
+| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| <mark style="color:blue;">**Full Control**</mark>         | Allows reading, writing, changing, and deleting files/folders.                                          |
+| <mark style="color:blue;">**Modify**</mark>               | Allows reading, writing, and deleting files/folders.                                                    |
+| <mark style="color:blue;">**List Folder Contents**</mark> | Allows viewing and listing folders/subfolders and executing files. Folders inherit this permission.     |
+| <mark style="color:blue;">**Read and Execute**</mark>     | Allows viewing, listing files/subfolders, and executing files. Inherited by both files and folders.     |
+| <mark style="color:blue;">**Write**</mark>                | Allows adding files to folders and writing to a file.                                                   |
+| <mark style="color:blue;">**Read**</mark>                 | Allows viewing and listing folders/subfolders and reading file contents.                                |
+| <mark style="color:blue;">**Traverse Folder**</mark>      | Allows moving through folders to access files, even without permission to list or view folder contents. |
+
+## <mark style="color:yellow;">**NTFS Inheritance**</mark>
+
+<mark style="color:red;">**Inheritance**</mark> in NTFS allows <mark style="color:purple;">**permissions to propagate from a parent folder to its subfolders and files**</mark>. This ensures consistent permissions throughout a directory structure. Modifiers like <mark style="color:blue;">**`(CI)`**</mark>, <mark style="color:blue;">**`(OI)`**</mark>, and <mark style="color:blue;">**`(IO)`**</mark> define how permissions are inherited by child objects.
 
 #### **Inheritance Modifiers**
 
@@ -130,7 +130,7 @@ Inheritance in NTFS allows permissions to propagate from a parent folder to its 
 
 <mark style="color:red;">**Windows Management Instrumentation (WMI)**</mark> is a <mark style="color:purple;">**subsystem of PowerShell**</mark> that provides system administrators with powerful tools for <mark style="color:purple;">**system monitoring**</mark>. The purpose of WMI is to unify the management of devices and applications across corporate networks.. WMI allows <mark style="color:yellow;">**read and write access to almost all settings**</mark> on Windows systems. Mostly uses <mark style="color:yellow;">**TCP port 135**</mark>
 
-<mark style="color:orange;">**You can see WMI Command-Line Interface (WMIC) commands**</mark>**&#x20;for&#x20;**<mark style="color:blue;">**\[CMD]**</mark>**&#x20;and&#x20;**<mark style="color:blue;">**\[PowerShell]**</mark> here.
+<mark style="color:orange;">**You can see WMI Command-Line Interface (WMIC) commands**</mark>**&#x20;for** [**\[CMD\]**](https://venator17.gitbook.io/bibliotheque/windows/commands-and-utilities#wmi) **and** [**\[PowerShell\]**](https://venator17.gitbook.io/bibliotheque/windows/powershell#wmi) here.
 
 ### <mark style="color:blue;">**WMI Usage**</mark>
 
@@ -169,6 +169,14 @@ wmic service get name, pathname
 <mark style="color:red;">**Windows Sysinternals**</mark> is a powerful <mark style="color:purple;">**suite of utilities**</mark> created by **Mark Russinovich**, which is now owned by **Microsoft**. These tools are primarily designed for <mark style="color:yellow;">**system troubleshooting, monitoring, and diagnostics**</mark>, but they can also be extremely valuable for security researchers and ethical hackers. The tools are used to understand the internal workings of Windows, uncover security weaknesses, and perform forensic analysis. The tools can be either downloaded from the Microsoft website or by loading them directly from an internet-accessible file share by typing <mark style="color:green;">`\\live.sysinternals.com\tools`</mark> into a **Windows Explorer** window.
 
 Examples and command you could see here: **\[LINK]**
+
+## <mark style="color:yellow;">Named Pipes</mark>
+
+<mark style="color:red;">**Named Pipes**</mark> in Windows are a mechanism for **inter-process communication (IPC)** that <mark style="color:purple;">**allows data exchange between processes**</mark>, either locally or across a network, using a unique name (e.g., <mark style="color:green;">`\\.\PipeName\\ExampleNamedPipeServer`</mark>). They support bidirectional communication, can transfer data securely using Windows access control, and are commonly used for client-server communication or remote management tasks. <mark style="color:orange;">**Cobalt Strike uses Named Pipes for every command (excluding BOF).**</mark>
+
+* <mark style="color:red;">**Cobalt Strike**</mark> utilizes Named Pipes for executing commands. The process involves <mark style="color:purple;">**starting a named pipe, injecting a command into a new process, and directing the output to the pipe**</mark>, ensuring isolation from beacon crashes or antivirus detections.
+* There are two types of pipes: <mark style="color:yellow;">**Named Pipes**</mark>, which are persistent and have specific names, and <mark style="color:yellow;">**Anonymous Pipes**</mark>, which are temporary and unnamed.
+* The client-server model governs Named Pipes, where the server creates the pipe, and the client communicates with it. This can operate in <mark style="color:yellow;">**half-duplex**</mark> (one-way) or <mark style="color:yellow;">**duplex**</mark> (two-way) communication modes.
 
 ## Important Files Location
 

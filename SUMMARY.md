@@ -3,6 +3,7 @@
 ## Welcome wanderer
 
 * [Intro](README.md)
+* [The Hacker Manifesto](welcome-wanderer/the-hacker-manifesto.md)
 * [Useful Links](welcome-wanderer/useful-links.md)
 * [Certificates](welcome-wanderer/certificates.md)
 
@@ -44,12 +45,14 @@
 ## TOOLS
 
 * [Nmap](tools/nmap.md)
-* [Hydra](tools/hydra.md)
 * [Responder](tools/responder.md)
 * [Metasploit](tools/metasploit.md)
+* [Other](tools/other.md)
+* [Hydra](tools/hydra.md)
 * [Sliver](tools/sliver.md)
 * [BloodHound](tools/bloodhound.md)
-* [Other](tools/other.md)
+* [Mimikatz](tools/mimikatz.md)
+* [NetExec](tools/netexec.md)
 
 ## WEB
 
@@ -63,11 +66,11 @@
 * [Theory](linux/theory.md)
 * [Commands and Utilities](linux/commands-and-utilities.md)
 * [Bash Scripting](linux/bash-scripting.md)
-* [Privilege Escalation](linux/privilege-escalation.md)
 * [Post-Exploitation](linux/post-exploitation/README.md)
   * [Tools](linux/post-exploitation/tools.md)
   * [Cred Hunting](linux/post-exploitation/cred-hunting.md)
   * [Pivoting](linux/post-exploitation/pivoting.md)
+* [Privilege Escalation](linux/privilege-escalation.md)
 * [Useful Commands](linux/useful-commands.md)
 
 ## WINDOWS
@@ -76,13 +79,28 @@
   * [Security](windows/theory/security.md)
 * [Commands and Utilities](windows/commands-and-utilities.md)
 * [PowerShell](windows/powershell.md)
-* [Privilege Escalation](windows/privilege-escalation/README.md)
-  * [PE Techniques](windows/privilege-escalation/pe-techniques.md)
 * [Post-Exploitation](windows/post-exploitation/README.md)
   * [Tools](windows/post-exploitation/tools.md)
   * [Enumeration](windows/post-exploitation/enumeration.md)
-  * [Cred Hunting](windows/post-exploitation/cred-hunting.md)
   * [Pivoting](windows/post-exploitation/pivoting.md)
+  * [Cred Hunting](windows/post-exploitation/cred-hunting.md)
+* [Privilege Escalation](windows/privilege-escalation/README.md)
+  * [Privileges](windows/privilege-escalation/privileges.md)
+  * [Built-In Groups](windows/privilege-escalation/built-in-groups/README.md)
+    * [Backup Operators](windows/privilege-escalation/built-in-groups/backup-operators.md)
+    * [Server Operators](windows/privilege-escalation/built-in-groups/server-operators.md)
+    * [Print Operators](windows/privilege-escalation/built-in-groups/print-operators.md)
+    * [DnsAdmins](windows/privilege-escalation/built-in-groups/dnsadmins.md)
+    * [Event Log Readers](windows/privilege-escalation/built-in-groups/event-log-readers.md)
+  * [Privilege Abuse](windows/privilege-escalation/privilege-abuse/README.md)
+    * [Potatoes](windows/privilege-escalation/privilege-abuse/potatoes.md)
+    * [SeDebugPrivilege](windows/privilege-escalation/privilege-abuse/sedebugprivilege.md)
+    * [SeTakeOwnershipPrivilege](windows/privilege-escalation/privilege-abuse/setakeownershipprivilege.md)
+  * [MISC](windows/privilege-escalation/misc/README.md)
+    * [DLL Hijacking](windows/privilege-escalation/misc/dll-hijacking.md)
+    * [UAC Bypass](windows/privilege-escalation/misc/uac-bypass.md)
+    * [User-Interaction Attacks](windows/privilege-escalation/misc/user-interaction-attacks.md)
+    * [Weak Permissions](windows/privilege-escalation/misc/weak-permissions.md)
 
 ## ACTIVE DIRECTORY
 
@@ -116,3 +134,7 @@
 
 * [Google GKE/GCP](cloud/google-gke-gcp/README.md)
   * [Theory](cloud/google-gke-gcp/theory.md)
+
+## programming
+
+* [Page 1](programming/page-1.md)

@@ -10,10 +10,10 @@ As penetration testers, it's vital to understand **manual privilege escalation t
 
 Some of the ways that we can escalate privileges are:
 
-* **Abusing Windows group privileges**&#x20;
-* **Abusing Windows user privileges**&#x20;
-* **Bypassing User Account Control**&#x20;
-* **Abusing weak service/file permissions**&#x20;
-* **Leveraging unpatched kernel exploits**&#x20;
-* **Credential theft**&#x20;
-* **Traffic Capture**
+* <mark style="color:orange;">**Abusing Windows group privileges**</mark>&#x20;
+* <mark style="color:orange;">**Abusing Windows user privileges**</mark>&#x20;
+* <mark style="color:orange;">**Bypassing User Account Control**</mark>&#x20;
+* <mark style="color:orange;">**Abusing weak service/file permissions**</mark>&#x20;
+* <mark style="color:orange;">**Leveraging unpatched kernel exploits**</mark>&#x20;
+* <mark style="color:orange;">**Credential theft**</mark>&#x20;
+* <mark style="color:orange;">**Traffic Capture**</mark>

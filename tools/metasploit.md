@@ -166,25 +166,25 @@ meterpreter > portfwd add -R -l 1234 -p 4321 -L 13.13.13.13
 
 ## <mark style="color:yellow;">USEFUL MSFCONSOLE COMMANDS</mark>
 
-* <mark style="color:blue;">**Specific Search**</mark>
+* **Specific Search**
 
 ```bash
 msf6 > search type:exploit platform:windows cve:2021 rank:excellent microsoft
 ```
 
-* <mark style="color:blue;">**Get more info about module**</mark>
+* **Get more info about module**
 
 ```bash
 info
 ```
 
-* <mark style="color:blue;">**Permanent Target Specification**</mark>
+* **Permanent Target Specification**
 
 ```bash
 msf6 exploit(windows/smb/amogus) > setg RHOSTS 13.13.13.13
 ```
 
-* <mark style="color:blue;">**Show and Set Target for exploit**</mark>
+* **Show and Set Target for exploit**
 
 ```bash
 msf6 exploit(windows/browser/goose) > show targets
@@ -192,19 +192,19 @@ msf6 exploit(windows/browser/goose) > show targets
 msf6 exploit(windows/browser/goose) > set target 3
 ```
 
-* <mark style="color:blue;">**Searching for Specific Payload**</mark>
+* **Searching for Specific Payload**
 
 ```bash
 msf6 exploit(windows/smb/goose) > grep meterpreter grep reverse_tcp show payloads
 ```
 
-* <mark style="color:blue;">**Use Local Exploit Suggester**</mark>
+* **Use Local Exploit Suggester**
 
 ```bash
 msf6 > search local exploit suggester
 ```
 
-* <mark style="color:blue;">**Ping Sweep**</mark>
+* **Ping Sweep**
 
 ```bash
 run post/multi/gather/ping_sweep RHOSTS=13.13.13.0/23

@@ -18,9 +18,9 @@ description: Linux have one big rule "everything is a file"
 
 **Also you could check privileges for files like this, to locate cron jobs:**
 
-* <mark style="color:yellow;">**`/etc/crontab`**</mark>
-* <mark style="color:yellow;">**`/etc/cron.d`**</mark>
-* <mark style="color:yellow;">**`/var/spool/cron/crontabs/root`**</mark>
+* <mark style="color:green;">`/etc/crontab`</mark>
+* <mark style="color:green;">`/etc/cron.d`</mark>
+* <mark style="color:green;">`/var/spool/cron/crontabs/root`</mark>
 
 [**\[Link to make cron date\]**](https://crontab.guru/#25_18_8_11_0)
 
@@ -61,23 +61,17 @@ description: Linux have one big rule "everything is a file"
 * <mark style="color:blue;">**Modifiers:**</mark>
   * Flags like `i` (case-insensitive) can be added after the regex to change its behavior. For example, `/cat/i` matches "cat," "Cat," or "CAT."
 
-***
-
 Here are some examples of regular expressions and what they match:
 
-* `/^abc/` matches "abc" at the beginning of a line.
-* `/[0-9]+/` matches one or more digits.
-* `/colou?r/` matches "color" or "colour."
-* `/[A-Za-z]+/` matches one or more uppercase or lowercase letters.
-* `/[aeiou]{2,4}/` matches 2 to 4 consecutive vowels.
-
-***
+* <mark style="color:green;">`/^abc/`</mark> matches "abc" at the beginning of a line.
+* <mark style="color:green;">`/[0-9]+/`</mark> matches one or more digits.
+* <mark style="color:green;">`/colou?r/`</mark> matches "color" or "colour."
+* <mark style="color:green;">`/[A-Za-z]+/`</mark> matches one or more uppercase or lowercase letters.
+* <mark style="color:green;">`/[aeiou]{2,4}/`</mark> matches 2 to 4 consecutive vowels.
 
 ## <mark style="color:yellow;">Logical Operators</mark>
 
 **Symbols or keywords in Linux that are used to process and compare logical values.**
-
-***
 
 | **Syntax**                                                   | **Explanation**                                                                                                                                                                                                   |
 | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -100,8 +94,6 @@ Here are some examples of regular expressions and what they match:
 
 > <mark style="color:yellow;">**0 - (no rights). 1 - (execute). 2 - (write). 4 - (read).**</mark>
 
-***
-
 ### <mark style="color:blue;">**File Rights**</mark>
 
 To set permissions using numbers, you simply add the number values for each category together: For example, \`<mark style="color:green;">**`chmod 755 file.txt'`**</mark> sets the following permissions:
@@ -109,8 +101,6 @@ To set permissions using numbers, you simply add the number values for each cate
 1. The owner has read, write, and execute permissions **(4 + 2 + 1 = 7).**
 2. Group has read and execute permissions **(4 + 1 = 5).**
 3. Other users have read and execute permissions **(4 + 1 = 5).**
-
-***
 
 ### <mark style="color:blue;">**Directory Rights**</mark>
 
@@ -136,26 +126,20 @@ The third set of <mark style="color:green;">**`r-x`**</mark> represents access r
 
 ## <mark style="color:yellow;">Data Streams, Redirects</mark>
 
-**In Linux, there is such a thing as&#x20;**_**data streams**_**, which are used to transmit input/output data in programs. Each of them has its own&#x20;**_**descriptor**_**, a numeric identifier that helps to interact with them more easily**
+In Linux, there is such a thing as _data streams_, which are used to transmit input/output data in programs. Each of them has its own _descriptor_, a numeric identifier that helps to interact with them more easily
 
-* `STDIN` - Descriptor 0. Input stream
-* `STDOUT` - Descriptor 1. Output stream
-* `STDERR` - Descriptor 2. Error stream
+* <mark style="color:blue;">`STDIN`</mark> - Descriptor 0. Input stream
+* <mark style="color:blue;">`STDOUT`</mark> - Descriptor 1. Output stream
+* <mark style="color:blue;">`STDERR`</mark> - Descriptor 2. Error stream
 * The output in the output streams is separate and in parallel.
 
-***
-
-_**REDIRECT( > )**_**&#x20;is redirect of the command output to the file `(ls > dirs.txt).` Redirect by default is through the `stdout` stream, but it can be changed. `cat unexistedfile.txt 2> error.txt`** _**Reverse redirect ( < )**_**&#x20;is redirect of the output stream through `stdin` so that the input is not through the keyboard but through the file**
-
-***
+_REDIRECT( > )_ is redirect of the command output to the file <mark style="color:green;">`(ls > dirs.txt)`</mark>. Redirect by default is through the <mark style="color:green;">`stdout`</mark> stream, but it can be changed. <mark style="color:green;">`cat unexistedfile.txt 2> error.txt`</mark> _Reverse redirect ( < )_ is redirect of the output stream through `stdin` so that the input is not through the keyboard but through the file
 
 ### Examples
 
-`2>&1` _If we redirect the output from `stderr`, we output to the same place as the output from `stdout`. And with this we can output both simple output and errors in one file, one stream_.
+<mark style="color:green;">`2>&1`</mark> _If we redirect the output from <mark style="color:green;">`stderr`</mark>, we output to the same place as the output from `stdout`. And with this we can output both simple output and errors in one file, one stream_.
 
-`0>&1` _By using **0>&1**, you are actually telling the shell to read `stdin` from the same source as `stdout`. This can be useful in cases where you need to merge or copy input and output streams for interactive input, for example in reverse shells_.
-
-***
+<mark style="color:green;">`0>&1`</mark> _By using **0>&1**, you are actually telling the shell to read <mark style="color:green;">`stdin`</mark> from the same source as <mark style="color:green;">`stdout`</mark>. This can be useful in cases where you need to merge or copy input and output streams for interactive input, for example in reverse shells_.
 
 ## <mark style="color:yellow;">File signatures</mark>
 
@@ -188,5 +172,5 @@ mount /dev/sda1 /mnt
 #### Authenticated Mount
 
 ```bash
-sudo mount -t cifs -o username=carni17,password=superkek123,domain=. //13.13.13.13/Share /mnt/Share
+sudo mount -t cifs -o username=ven17,password=superkek123,domain=. //13.13.13.13/Share /mnt/Share
 ```

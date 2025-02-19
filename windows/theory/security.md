@@ -6,11 +6,26 @@ icon: lock-keyhole
 
 ## <mark style="color:yellow;">ABOUT</mark>
 
-Here I would write about <mark style="color:purple;">**security mechanisms**</mark> in Windows. Since Windows theory is very broad, and to avoid making the theory page bloated, I would write here about the security side of Windows
+Here I would write about <mark style="color:purple;">**security mechanisms**</mark> in Windows. Since Windows theory is very broad, and to avoid making the theory page bloated, I would write here about the security side of Windows.&#x20;
 
-## <mark style="color:yellow;">AUTHENTICATION PROCESS</mark>
+## <mark style="color:yellow;">AUTHENTICATION</mark>
+
+<mark style="color:red;">**Authentication**</mark> is process of verifying <mark style="color:purple;">**who someone is.**</mark>
 
 <figure><img src="../../.gitbook/assets/win_authproc_image.png" alt=""><figcaption></figcaption></figure>
+
+## <mark style="color:yellow;">AUTHORIZATION</mark>
+
+<mark style="color:red;">**Authorization**</mark> is process of determining <mark style="color:purple;">**what someone is allowed to do**</mark><mark style="color:purple;">.</mark>
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p><a href="https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-principals"><strong>[SOURCE]</strong></a></p></figcaption></figure>
+
+<mark style="color:red;">**Security principals**</mark> are <mark style="color:purple;">**anything that can be authenticated**</mark> by the Windows operating system, including user and computer accounts, processes that run in the security context or another user/computer account, or the security groups that these accounts belong to. Every single security principal is identified by a unique <mark style="color:red;">**Security Identifier (SID)**</mark>. When a security principal is created, it is assigned a SID which remains assigned to that principal for its lifetime.
+
+1. <mark style="color:blue;">**User Authentication and Access Token Generation.**</mark> A user logs into the system or attempts to access a resource. The system authenticates the user and generates an **access token**.
+2. <mark style="color:blue;">**Request to Access a Securable Object.**</mark> The user attempts to access a **securable object**. The object has a **security descriptor** that includes its **Access Control List (ACL)**. The ACL contains **Access Control Entries (ACEs)**, which define which SIDs (users or groups) have specific permissions to access the object.
+3. <mark style="color:blue;">**Comparison of Access Token and Security Descriptor.**</mark> The system compares the user's **access token** (SIDs and privileges) with the object's **ACEs** in the security descriptor. Permissions such as **Read**, **Write**, **Execute**, etc., are checked against the ACEs to determine whether the user has the required access rights.
+4. <mark style="color:blue;">**Access Decision.**</mark>
 
 ## <mark style="color:yellow;">SAM</mark>
 
@@ -24,9 +39,9 @@ A SID consists of the <mark style="color:red;">**Identifier Authority**</mark> a
 
 #### SID Structure:
 
-<mark style="color:green;">`(SID)-(revision level)-(identifier-authority)-(subauthority1)-(subauthority2)-(etc)`</mark>
+<mark style="color:blue;">`(SID)-(revision level)-(identifier-authority)-(subauthority1)-(subauthority2)-(etc)`</mark>
 
-<mark style="color:green;">`S-1-5-21-674899381-4069889467-2080702030-1002`</mark>
+<mark style="color:blue;">`S-1-5-21-674899381-4069889467-2080702030-1002`</mark>
 
 | **Number**                                         | **Meaning**              | **Description**                                                               |
 | -------------------------------------------------- | ------------------------ | ----------------------------------------------------------------------------- |
@@ -76,8 +91,18 @@ This data is stored in the Windows Registry at <mark style="color:green;">**`HKE
 
 <mark style="color:red;">**User Account Control (UAC)**</mark> is a <mark style="color:purple;">**security feature**</mark> in Windows to **prevent malware from running or manipulating processes** that could damage the computer or its contents.&#x20;
 
-There is the Admin Approval Mode in UAC, which is designed to prevent unwanted software from being installed without the administrator's knowledge or to prevent system-wide changes from being made.
+When UAC is enabled, applications and tasks always run under the security context of a non-administrator account unless an administrator explicitly authorizes these applications/tasks to have administrator-level access to the system to run. It is a convenience feature that protects administrators from unintended changes but is not considered a security boundary.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p><strong>UAC Strucure</strong> <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works"><strong>[SOURCE]</strong></a></p></figcaption></figure>
+With UAC enabled, a user can sign into their system using a standard account. When processes run under a standard user token, they operate with the permissions assigned to a regular user. However, certain applications need elevated privileges to function properly, and UAC allows them to receive additional access rights as needed.
+
+When UAC is in place, an <mark style="color:orange;">**administrator user is given 2 tokens: a standard user key, to perform regular actions as regular level, and one with the admin privileges.**</mark>
+
+The default RID 500 administrator account always operates at the high mandatory level. With <mark style="color:red;">**Admin Approval Mode (AAM)**</mark> enabled, any new admin accounts we create will operate at the medium mandatory level by default and be assigned two separate access tokens upon logging in. In the example below, the user account <mark style="color:green;">`ven17`</mark> is in the administrators group, but cmd.exe is currently running in the context of their unprivileged access token.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p><strong>UAC Strucure</strong> <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works"><strong>[SOURCE]</strong></a></p></figcaption></figure>
 
 ## <mark style="color:yellow;">NTLM</mark>
+
+## <mark style="color:yellow;">Access Token</mark>
+
+<mark style="color:red;">**Access tokens**</mark> in Windows <mark style="color:purple;">**define the security context of a process or thread**</mark>, including a user’s identity and privileges. When a user logs in, they are assigned an access token after successful authentication. This token is used to determine the user’s permissions whenever they interact with processes or resources.
