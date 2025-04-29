@@ -64,57 +64,31 @@ The <mark style="color:red;">**user-specific registry hive (HKCU)**</mark> is st
 
 ### <mark style="color:blue;">Important Registry Hives</mark>
 
-| Registry Hive                                                     | What is                                                                                                           |
-| ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| <mark style="color:blue;">**`HKEY_CLASSES_ROOT (HKCR)`**</mark>   | Information about registered applications, file associations, and **OLE (Object Linking and Embedding)** objects. |
-| <mark style="color:blue;">**`HKEY_CURRENT_USER (HKCU)`**</mark>   | Settings specific to the current user, such as desktop settings and application settings.                         |
-| <mark style="color:blue;">**`HKEY_LOCAL_MACHINE (HKLM)`**</mark>  | System-wide settings, security policies, and hardware configurations that apply to all users.                     |
-| <mark style="color:blue;">**`HKEY_USERS (HKU)`**</mark>           | All user profiles loaded on the computer, including the current user's profile.                                   |
-| <mark style="color:blue;">**`HKEY_CURRENT_CONFIG (HKCC)`**</mark> | Information about the current hardware profile of the computer, such as display and printer settings.             |
+| Registry Hive                                                      | What is                                                                                                           |
+| ------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| <mark style="color:green;">**`HKEY_CLASSES_ROOT (HKCR)`**</mark>   | Information about registered applications, file associations, and **OLE (Object Linking and Embedding)** objects. |
+| <mark style="color:green;">**`HKEY_CURRENT_USER (HKCU)`**</mark>   | Settings specific to the current user, such as desktop settings and application settings.                         |
+| <mark style="color:green;">**`HKEY_LOCAL_MACHINE (HKLM)`**</mark>  | System-wide settings, security policies, and hardware configurations that apply to all users.                     |
+| <mark style="color:green;">**`HKEY_USERS (HKU)`**</mark>           | All user profiles loaded on the computer, including the current user's profile.                                   |
+| <mark style="color:green;">**`HKEY_CURRENT_CONFIG (HKCC)`**</mark> | Information about the current hardware profile of the computer, such as display and printer settings.             |
 
 ### <mark style="color:blue;">Important Registry Keys</mark>
 
-| Registry Key                                                                                                         | What is                                                                       |
-| -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| <mark style="color:blue;">**`HKEY_LOCAL_MACHINE\Security`**</mark>                                                   | Security settings, such as account policies and security options.             |
-| <mark style="color:blue;">**`HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run`**</mark>              | List of programs that run automatically at startup.                           |
-| <mark style="color:blue;">**`HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services`**</mark>                          | Information about system services, including startup type and dependencies.   |
-| <mark style="color:blue;">**`HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings`**</mark> | Internet Explorer settings, such as proxy settings and security zones.        |
-| <mark style="color:blue;">**`HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows`**</mark>       | Windows configuration information, such as system name and installation path. |
+| Registry Key                                                                                                          | What is                                                                       |
+| --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| <mark style="color:green;">**`HKEY_LOCAL_MACHINE\Security`**</mark>                                                   | Security settings, such as account policies and security options.             |
+| <mark style="color:green;">**`HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run`**</mark>              | List of programs that run automatically at startup.                           |
+| <mark style="color:green;">**`HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services`**</mark>                          | Information about system services, including startup type and dependencies.   |
+| <mark style="color:green;">**`HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings`**</mark> | Internet Explorer settings, such as proxy settings and security zones.        |
+| <mark style="color:green;">**`HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows`**</mark>       | Windows configuration information, such as system name and installation path. |
 
 ## <mark style="color:yellow;">ICACLS</mark>
 
 <mark style="color:red;">**ICACLS**</mark> is a <mark style="color:purple;">**command-line utility**</mark> in Windows used to **display**, **modify**, or **back up&#x20;**<mark style="color:red;">**access control lists (ACLs)**</mark> for files and directories. ACLs are used to define the permissions and access rights that users or groups have over specific files or folders.
 
-## <mark style="color:yellow;">NTFS Permissions</mark>
+## <mark style="color:yellow;">LLMNR & NBT-NS</mark>
 
-| Permission Type                                           | Description                                                                                             |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| <mark style="color:blue;">**Full Control**</mark>         | Allows reading, writing, changing, and deleting files/folders.                                          |
-| <mark style="color:blue;">**Modify**</mark>               | Allows reading, writing, and deleting files/folders.                                                    |
-| <mark style="color:blue;">**List Folder Contents**</mark> | Allows viewing and listing folders/subfolders and executing files. Folders inherit this permission.     |
-| <mark style="color:blue;">**Read and Execute**</mark>     | Allows viewing, listing files/subfolders, and executing files. Inherited by both files and folders.     |
-| <mark style="color:blue;">**Write**</mark>                | Allows adding files to folders and writing to a file.                                                   |
-| <mark style="color:blue;">**Read**</mark>                 | Allows viewing and listing folders/subfolders and reading file contents.                                |
-| <mark style="color:blue;">**Traverse Folder**</mark>      | Allows moving through folders to access files, even without permission to list or view folder contents. |
-
-## <mark style="color:yellow;">**NTFS Inheritance**</mark>
-
-<mark style="color:red;">**Inheritance**</mark> in NTFS allows <mark style="color:purple;">**permissions to propagate from a parent folder to its subfolders and files**</mark>. This ensures consistent permissions throughout a directory structure. Modifiers like <mark style="color:blue;">**`(CI)`**</mark>, <mark style="color:blue;">**`(OI)`**</mark>, and <mark style="color:blue;">**`(IO)`**</mark> define how permissions are inherited by child objects.
-
-#### **Inheritance Modifiers**
-
-| Modifier                                  | Meaning                              | Explanation                                                                 |
-| ----------------------------------------- | ------------------------------------ | --------------------------------------------------------------------------- |
-| <mark style="color:blue;">**`CI`**</mark> | **Container Inherit**                | Applies permissions to subfolders (but not files) within the parent folder. |
-| <mark style="color:blue;">**`OI`**</mark> | **Object Inherit**                   | Applies permissions to files (but not subfolders) within the parent folder. |
-| <mark style="color:blue;">**`IO`**</mark> | **Inherit Only**                     | Ensures permissions are inherited but not applied directly to the parent.   |
-| <mark style="color:blue;">**`NP`**</mark> | **Do Not Propagate Inherit**         | Prevents permissions from propagating further to child objects.             |
-| <mark style="color:blue;">**`I`**</mark>  | **Permission Inherited from Parent** | Indicates that the permission was inherited from a parent container.        |
-
-#### **Basic Access Permissions**
-
-<table><thead><tr><th>Symbol</th><th width="286">Permission</th><th>Description</th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong><code>F</code></strong></mark></td><td><strong>Full Access</strong></td><td>Grants all permissions, including modifying and deleting.</td></tr><tr><td><mark style="color:blue;"><strong><code>D</code></strong></mark></td><td><strong>Delete Access</strong></td><td>Allows deletion of the file or folder.</td></tr><tr><td><mark style="color:blue;"><strong><code>N</code></strong></mark></td><td><strong>No Access</strong></td><td>Denies all access to the file or folder.</td></tr><tr><td><mark style="color:blue;"><strong><code>M</code></strong></mark></td><td><strong>Modify Access</strong></td><td>Allows reading, writing, and deleting content.</td></tr><tr><td><mark style="color:blue;"><strong><code>RX</code></strong></mark></td><td><strong>Read &#x26; Execute</strong></td><td>Allows reading and executing files.</td></tr><tr><td><mark style="color:blue;"><strong><code>R</code></strong></mark></td><td><strong>Read-Only Access</strong></td><td>Permits viewing and listing of contents.</td></tr><tr><td><mark style="color:blue;"><strong><code>W</code></strong></mark></td><td><strong>Write-Only Access</strong></td><td>Allows adding new files and data but not reading.</td></tr></tbody></table>
+<mark style="color:red;">**Link-Local Multicast Name Resolution (LLMNR)**</mark> and <mark style="color:red;">**NetBIOS Name Service (NBT-NS)**</mark> are features in Microsoft Windows that provide <mark style="color:purple;">**alternative methods for host identification**</mark> when DNS is unavailable. If a device fails to resolve a host through DNS, it will typically attempt to ask other devices on the local network for the correct host address using LLMNR. LLMNR is based on the DNS format and allows devices on the same local network to resolve names for each other. It uses UDP port 5355. If LLMNR doesn't work, NBT-NS takes over. NBT-NS identifies devices on a local network using their NetBIOS names and operates on UDP port 137. The important point is that when LLMNR or NBT-NS is used for name resolution, any device on the network can respond.
 
 ## <mark style="color:yellow;">DPAPI</mark>
 

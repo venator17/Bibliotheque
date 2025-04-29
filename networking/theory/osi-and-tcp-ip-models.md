@@ -29,7 +29,7 @@
 
 _But besides all explanations I think in this topic pictures are better explainers:_&#x20;
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Made in Figma</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Made in Figma</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/OSI1.png" alt=""><figcaption><p>Encapsulation process</p></figcaption></figure>
 

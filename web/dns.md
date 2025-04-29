@@ -1,12 +1,10 @@
 # DNS
 
-## About
+## <mark style="color:yellow;">ABOUT</mark>
 
 <mark style="color:red;">**Domain Name System (DNS)**</mark> is an integral <mark style="color:purple;">**part of the Internet**</mark>**.** For example, through domain names, such as <mark style="color:green;">**venator17.gitbook.io**</mark> or <mark style="color:green;">**www.google.com**</mark>, we can reach the web servers that the hosting provider has assigned one or more specific IP addresses. **DNS** is a system for resolving computer names into IP addresses, and it does not have a central database. The configuration files are usually : <mark style="color:green;">`named.conf.local`</mark>, <mark style="color:green;">`named.conf.options`</mark>, <mark style="color:green;">`named.conf.log`</mark>. DNS commonly is used by <mark style="color:yellow;">**UDP port 53**</mark>, or TCP if UDP isn't accessible.
 
-## Server Types
-
-***
+## <mark style="color:yellow;">Server Types</mark>
 
 <figure><img src="../.gitbook/assets/recursive-resolver.png" alt=""><figcaption><p>Image from here <a href="https://www.cloudflare.com/learning/dns/dns-server-types/"><strong>[LINK]</strong></a></p></figcaption></figure>
 
@@ -36,7 +34,7 @@
 
 ***
 
-## DNS Records Types
+## <mark style="color:yellow;">DNS Records Types</mark>
 
 #### There are many useful and not DNS records:
 
@@ -49,19 +47,19 @@
 * <mark style="color:green;">**`PTR`**</mark>: The **PTR** record works the other way around (reverse lookup). It converts IP addresses into valid domain names.
 * <mark style="color:green;">**`SOA`**</mark>: Provides information about the corresponding **DNS** zone and email address of the administrative contact.
 
-## Zone Files
+## <mark style="color:yellow;">Zone Files</mark>
 
 <mark style="color:red;">**DNS zone**</mark> is a <mark style="color:purple;">**section**</mark> of the **DNS** namespace managed by an **organization** or **administrator**. **DNS** servers use zone transfers to share parts of their database with other servers. If not properly configured to limit which IPs can perform transfers, anyone can request zone data, as zone transfers usually lack authentication. To resolve an IP address from an <mark style="color:yellow;">**Fully Qualified Domain Name (FQDN)**</mark>, the **DNS** server relies on a reverse lookup file, which uses **PTR records** to link the hostname of computer **(FQDN)** to the last octet of the corresponding IP address.
 
-## Zone Transfer
+## <mark style="color:yellow;">Zone Transfer</mark>
 
 <mark style="color:red;">**Zone transfer**</mark> refers to the transfer of zones to another server in DNS, which generally happens over TCP port <mark style="color:yellow;">**53**</mark>. This procedure is abbreviated <mark style="color:yellow;">**Asynchronous Full Transfer Zone (AXFR).**</mark> Since a **DNS** failure usually has severe consequences for a company, the zone file is almost invariably kept identical on several name servers. When changes are made, it must be ensured that <mark style="color:purple;">**all servers have the same data**</mark>. Synchronization between the servers involved is realized by **zone transfer**. Direct source for synchronizing a zone file is called a <mark style="color:yellow;">**master**</mark>. A **DNS** server that obtains zone data from a master is called a <mark style="color:yellow;">**slave**</mark>.&#x20;
 
-## DNS Spoofing
+## <mark style="color:yellow;">DNS Spoofing</mark>
 
 <mark style="color:red;">**DNS Spoofing**</mark> or also <mark style="color:red;">**DNS Cache Poisoning**</mark> is attack, which involves poisoning target's DNS Records and using it for our purpose like MiTM, Overtaking control of the server, redirecting to false website for phishing.
 
-### Ettercap
+### <mark style="color:purple;">Ettercap</mark>
 
 We could use <mark style="color:red;">**Ettercap**</mark> [**\[LINK\]**](https://www.ettercap-project.org/) tool for DNS Spoofing.&#x20;
 
@@ -74,7 +72,7 @@ amogus.com      A   13.13.13.13
 
 Then we are turning on **Ettercap** and scanning for hosts by <mark style="color:green;">**`Hosts > Scan for Hosts`**</mark>. Then adding target IP to <mark style="color:yellow;">**Target1**</mark> and **default getaway** to <mark style="color:yellow;">**Target2**</mark>. Then we should activate <mark style="color:green;">**dns\_spoof**</mark> module in <mark style="color:green;">**`Plugins > Manage Plugins`**</mark>. If everything done right, target from <mark style="color:yellow;">**Target1**</mark> machine should be redirected to <mark style="color:yellow;">**13.13.13.13**</mark> host.
 
-### Bettercap
+### <mark style="color:blue;">Bettercap</mark>
 
 We could use <mark style="color:red;">**Bettercap**</mark> [**\[LINK\]**](https://www.bettercap.org/) **for same purpose.**
 
@@ -96,7 +94,7 @@ For multiple mappings you could make a **file**:
 13.13.13.6 google.com
 ```
 
-## DIG
+## <mark style="color:yellow;">DIG</mark>
 
 <mark style="color:red;">**DIG (Domain Information Groper)**</mark> command is a powerful and flexible **DNS** lookup tool used for querying **DNS** servers.
 
@@ -132,7 +130,7 @@ dig axfr website.com @13.13.13.13
 dig axfr internal.website.com @13.13.13.13
 ```
 
-## Tips2Hack
+## <mark style="color:yellow;">Tips2Hack</mark>
 
 1. **Local** **CNAME Enum**
 

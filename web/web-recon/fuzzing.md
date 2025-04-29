@@ -1,10 +1,10 @@
 # Fuzzing
 
-## About
+## <mark style="color:yellow;">ABOUT</mark>
 
 <mark style="color:red;">**Fuzzing**</mark> is a <mark style="color:purple;">**technique**</mark> involves inputting massive amounts of random data, called <mark style="color:yellow;">**fuzz**</mark>, to the test subject in an attempt to make it <mark style="color:blue;">**crash**</mark>, <mark style="color:blue;">**hack**</mark> or <mark style="color:blue;">**behave useful for us**</mark>.
 
-## Ffuf
+## <mark style="color:yellow;">Ffuf</mark>
 
 | **Command**                                                                                                                                                                                          | **Description**          |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
@@ -19,7 +19,7 @@
 | <mark style="color:green;">**`ffuf -w wordlist.txt:FUZZ -u http://admin.amogus.com:PORT/admin/admin.php -X POST -d 'FUZZ=key' -H 'Content-Type: application/x-www-form-urlencoded' -fs xxx`**</mark> | Parameter Fuzzing - POST |
 | <mark style="color:green;">**`ffuf -w ids.txt:FUZZ -u http://admin.amogus.com:PORT/admin/admin.php -X POST -d 'id=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -fs xxx`**</mark>       | Value Fuzzing            |
 
-## Wordlists
+## <mark style="color:yellow;">Wordlists</mark>
 
 | **Command**                                                                                                     | **Description**         |
 | --------------------------------------------------------------------------------------------------------------- | ----------------------- |

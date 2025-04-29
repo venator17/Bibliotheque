@@ -2,10 +2,9 @@
 
 ## Welcome wanderer
 
-* [Intro](README.md)
-* [The Hacker Manifesto](welcome-wanderer/the-hacker-manifesto.md)
+* [Bibliotheque](README.md)
+* [Hacking Philosophy](welcome-wanderer/hacking-philosophy.md)
 * [Useful Links](welcome-wanderer/useful-links.md)
-* [Certificates](welcome-wanderer/certificates.md)
 
 ## PENTESTING
 
@@ -45,33 +44,26 @@
 ## TOOLS
 
 * [Nmap](tools/nmap.md)
-* [Responder](tools/responder.md)
 * [Metasploit](tools/metasploit.md)
+* [BloodHound](tools/bloodhound.md)
 * [Other](tools/other.md)
 * [Hydra](tools/hydra.md)
+* [Mythic](tools/mythic.md)
 * [Sliver](tools/sliver.md)
-* [BloodHound](tools/bloodhound.md)
 * [Mimikatz](tools/mimikatz.md)
 * [NetExec](tools/netexec.md)
-
-## WEB
-
-* [Web Recon](web/web-recon/README.md)
-  * [Fuzzing](web/web-recon/fuzzing.md)
-* [Attacks](web/attacks.md)
-* [DNS](web/dns.md)
 
 ## Linux
 
 * [Theory](linux/theory.md)
-* [Commands and Utilities](linux/commands-and-utilities.md)
+* [Commands and Utilities](linux/commands-and-utilities/README.md)
+  * [Useful Commands](linux/commands-and-utilities/useful-commands.md)
 * [Bash Scripting](linux/bash-scripting.md)
 * [Post-Exploitation](linux/post-exploitation/README.md)
   * [Tools](linux/post-exploitation/tools.md)
   * [Cred Hunting](linux/post-exploitation/cred-hunting.md)
   * [Pivoting](linux/post-exploitation/pivoting.md)
 * [Privilege Escalation](linux/privilege-escalation.md)
-* [Useful Commands](linux/useful-commands.md)
 
 ## WINDOWS
 
@@ -81,7 +73,17 @@
 * [PowerShell](windows/powershell.md)
 * [Post-Exploitation](windows/post-exploitation/README.md)
   * [Tools](windows/post-exploitation/tools.md)
-  * [Enumeration](windows/post-exploitation/enumeration.md)
+  * [Enumeration](windows/post-exploitation/enumeration/README.md)
+    * [System](windows/post-exploitation/enumeration/system.md)
+    * [Network](windows/post-exploitation/enumeration/network.md)
+    * [Users](windows/post-exploitation/enumeration/users.md)
+    * [Groups](windows/post-exploitation/enumeration/groups.md)
+    * [Processes / Services](windows/post-exploitation/enumeration/processes-services.md)
+    * [Permissions](windows/post-exploitation/enumeration/permissions.md)
+    * [Defence](windows/post-exploitation/enumeration/defence.md)
+    * [Programs](windows/post-exploitation/enumeration/programs.md)
+    * [Files](windows/post-exploitation/enumeration/files.md)
+  * [Access](windows/post-exploitation/access.md)
   * [Pivoting](windows/post-exploitation/pivoting.md)
   * [Cred Hunting](windows/post-exploitation/cred-hunting.md)
 * [Privilege Escalation](windows/privilege-escalation/README.md)
@@ -104,14 +106,52 @@
 
 ## ACTIVE DIRECTORY
 
-* [Theory](active-directory/theory.md)
-* [Recon](active-directory/recon.md)
+* [Theory](active-directory/theory/README.md)
+  * [Terminology](active-directory/theory/terminology.md)
+* [Reconnaissance](active-directory/reconnaissance/README.md)
+  * [Responder](active-directory/reconnaissance/responder.md)
+  * [Password Policies](active-directory/reconnaissance/password-policies.md)
+  * [DNS](active-directory/reconnaissance/dns.md)
+  * [Enumeration](active-directory/reconnaissance/enumeration/README.md)
+    * [Users](active-directory/reconnaissance/enumeration/users.md)
+    * [Groups](active-directory/reconnaissance/enumeration/groups/README.md)
+      * [GPO's](active-directory/reconnaissance/enumeration/groups/gpos.md)
+    * [Shares](active-directory/reconnaissance/enumeration/shares.md)
+    * [Domain](active-directory/reconnaissance/enumeration/domain.md)
+    * [Trusts](active-directory/reconnaissance/enumeration/trusts.md)
+    * [ACL](active-directory/reconnaissance/enumeration/acl.md)
 * [Movement](active-directory/movement/README.md)
-  * [ADCS](active-directory/movement/adcs.md)
   * [Credentials](active-directory/movement/credentials/README.md)
+    * [Dumping](active-directory/movement/credentials/dumping/README.md)
+      * [DCSync](active-directory/movement/credentials/dumping/dcsync.md)
+    * [Making a Target List](active-directory/movement/credentials/making-a-target-list.md)
+    * [Spraying](active-directory/movement/credentials/spraying.md)
     * [Ticket/Hash Attacks](active-directory/movement/credentials/ticket-hash-attacks.md)
-  * [Powershell Remoting](active-directory/movement/powershell-remoting.md)
+    * [Powershell Remoting](active-directory/movement/credentials/powershell-remoting.md)
+  * [Kerberos](active-directory/movement/kerberos/README.md)
+    * [Kerbrute](active-directory/movement/kerberos/kerbrute.md)
+    * [Kerberoasting](active-directory/movement/kerberos/kerberoasting/README.md)
+      * [Semi-Manual Way](active-directory/movement/kerberos/kerberoasting/semi-manual-way.md)
+      * [Targeted Kerberoasting](active-directory/movement/kerberos/kerberoasting/targeted-kerberoasting.md)
+    * [ASREProasting](active-directory/movement/kerberos/asreproasting.md)
+    * [Forging](active-directory/movement/kerberos/forging/README.md)
+      * [Golden Ticket](active-directory/movement/kerberos/forging/golden-ticket.md)
+    * [Overpass The Hash](active-directory/movement/kerberos/overpass-the-hash.md)
+    * [Pass The Ticket](active-directory/movement/kerberos/pass-the-ticket.md)
+    * [noPAC](active-directory/movement/kerberos/nopac.md)
+  * [MITM / Coerced Auths](active-directory/movement/mitm-coerced-auths/README.md)
+    * [LLMNR, NBT-NS Poisoning](active-directory/movement/mitm-coerced-auths/llmnr-nbt-ns-poisoning.md)
+    * [PetitPotam](active-directory/movement/mitm-coerced-auths/petitpotam.md)
+  * [DACL Abuse](active-directory/movement/dacl-abuse/README.md)
+    * [AddMember](active-directory/movement/dacl-abuse/addmember.md)
+    * [ForceChangePassword](active-directory/movement/dacl-abuse/forcechangepassword.md)
+  * [Trust Abuse](active-directory/movement/trust-abuse/README.md)
+    * [ExtraSIDs](active-directory/movement/trust-abuse/extrasids.md)
+  * [ADCS](active-directory/movement/adcs.md)
+  * [Printers](active-directory/movement/printers/README.md)
+    * [PrintNightmare](active-directory/movement/printers/printnightmare.md)
 * [Persistence](active-directory/persistence.md)
+* [Tools](active-directory/tools.md)
 * [Linux](active-directory/linux/README.md)
   * [Linux Post-Exploitation](active-directory/linux/linux-post-exploitation.md)
 
@@ -129,6 +169,13 @@
   * [Port-Forwarding](networking/pivoting/port-forwarding.md)
 * [Commands and Utilities](networking/commands-and-utilities.md)
 * [Techniques](networking/techniques.md)
+
+## WEB
+
+* [Web Recon](web/web-recon/README.md)
+  * [Fuzzing](web/web-recon/fuzzing.md)
+* [Attacks](web/attacks.md)
+* [DNS](web/dns.md)
 
 ## CLOUD
 

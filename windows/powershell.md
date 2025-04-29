@@ -8,7 +8,9 @@ icon: square-terminal
 
 <mark style="color:red;">**PowerShell**</mark> is a powerful task automation and configuration management <mark style="color:purple;">**framework**</mark> developed by Microsoft, built on the .NET framework. It includes a command-line shell and a <mark style="color:purple;">**scripting language**</mark> designed to automate tasks across Windows systems, such as managing processes, services, files, and configurations. **PowerShell** is more powerful and flexible than the traditional **Command Prompt (cmd)** and integrates deeply with system administration tools.
 
-<mark style="color:orange;">**ALSO WE COULD USE CMD COMMANDS WITH**</mark> <mark style="color:orange;"></mark><mark style="color:orange;">`CMD /C {COMMAND}`</mark>
+<mark style="color:orange;">**ALSO WE COULD USE CMD COMMANDS WITH**</mark> <mark style="color:green;">`CMD /C {COMMAND}`</mark>
+
+<mark style="color:orange;">**TO CHECK AVAILABLE MODULES JUST USE**</mark> <mark style="color:green;">`Get-Module`</mark>
 
 ## <mark style="color:yellow;">ALIASES</mark>
 
@@ -88,64 +90,29 @@ PS C:\> Set-ExecutionPolicy Bypass -Scope Process
 
 <mark style="color:red;">**Cmdlets**</mark> are <mark style="color:purple;">**specialized commands**</mark> in **PowerShell**. They follow a consistent verb-noun naming (<mark style="color:green;">**`Get-Process`**</mark>) to indicate their action and the object they operate on.
 
-#### Get more info about file
+## <mark style="color:yellow;">DOWNGRADE POWERSHELL</mark>
+
+PowerShell event logging became a thing after 3.0 and later version. BUT if we want to be sneaky we'll better try to downgrade to older versions of Powershell so we can use commands without detection.
 
 ```powershell
-PS C:\> Get-ChildItem -Path 'C:\Share\file.txt' | Select Fullname,LastWriteTime,Attributes,@{Name="Owner";Expression={ (Get-Acl $_.FullName).Owner }}
+PS C:\> Get-host # Shows current powershell host
+PS C:\> powershell.exe -version 2
 ```
 
-#### List all running Services
+## <mark style="color:yellow;">AM I ALONE</mark>
+
+Check if there are another user in your sessions because otherwise they could notice your actions and call administrator.
 
 ```powershell
-PS C:\> Get-Service | ? {$_.Status -eq "Running"} | select -First 2 | fl
+PS C:\> qwinsta
 ```
 
-#### Examine Service permissions
+## <mark style="color:yellow;">USEFUL COMMANDS</mark>
+
+Usually in all sections there are hacking-specific or enumeration commands, but here is just commands that is helped me and I think is quite useful
+
+#### Delete File
 
 ```powershell
-PS C:\> Get-ACL -Path HKLM:\System\CurrentControlSet\Services\wuauserv | Format-List
-```
-
-#### List all loaded Modules
-
-```powershell
-PS C:\> Get-Module | select Name,ExportedCommands | fl
-```
-
-#### Check Defender
-
-```powershell
-PS C:\> Get-MpComputerStatus | findstr "True"
-```
-
-#### **Listing Named Pipes**
-
-```powershell
-PS C:\> gci \\.\pipe\
-```
-
-## <mark style="color:yellow;">WMI</mark>
-
-#### Getting Windows Version
-
-```powershell
-PS C:\> Get-WmiObject -Class win32_OperatingSystem | select Version,BuildNumber
-```
-
-#### List system information
-
-```powershell
-PS C:\> Get-WmiObject -Class Win32_OperatingSystem | select SystemDirectory,BuildNumber,SerialNumber,Version | ft
-```
-
-#### Get SID of users
-
-```powershell
-PS C:\> get-localuser | Select name,sid
-```
-
-#### Get all service paths
-
-```powershell
-PS C:\> wmic service get name, pathname
+Remove-Item C:\Users\solomon.reed\Documents\SharpHound.ps1
 ```
