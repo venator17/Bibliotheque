@@ -15,11 +15,11 @@ layout:
 
 # Bibliotheque
 
-<figure><img src=".gitbook/assets/v17-cyan.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/v17-black-cyan.png" alt="" width="375"><figcaption></figcaption></figure>
 
-## ABOUT ME
+## <mark style="color:yellow;">ABOUT ME</mark>
 
-I am <mark style="color:green;">`{venator17}`</mark>, pizza fan, cybersecurity student, ethical hacker, and just a savvy who's motivated to become great hacker and loves to consume knowledge.&#x20;
+I am <mark style="color:green;">`{venator17}`</mark>, cybersecurity student, ethical hacker, and just a savvy who loves hacking, consuming knowledge and as you see likes to teach others.
 
 Active on platforms like:
 
@@ -32,9 +32,9 @@ Also you can check out my [<mark style="color:red;">**Youtube Music Playlist**</
 
 ***
 
-## THIS WEBSITE
+## <mark style="color:yellow;">THIS PROJECT</mark>
 
-This website / project is inspired by **HackTricks**, and basically is my library ( this is where the name <mark style="color:blue;">`Bibiliotheque`</mark> came out ) of knowledge, where you can learn basics, or remember things you forgot (which was the initial reason of making site) or just to have a **nice portable cheatsheet**.&#x20;
+This project is inspired by **Hacker Recipes**, and basically is my library ( this is where the name <mark style="color:blue;">`Bibiliotheque`</mark> came out ) of knowledge, where you can learn basics, or remember things you forgot (which was the initial reason of making site) or just to have a **nice portable cheatsheet**.&#x20;
 
 ***
 
@@ -53,6 +53,6 @@ By reading this website you can notice (especially on the newer sections) that I
 
 ***
 
-## CONTACT
+## <mark style="color:yellow;">CONTACT</mark>
 
 [**DISCORD**](https://discordapp.com/users/761570103158243368)

@@ -3,7 +3,7 @@
 ## Welcome wanderer
 
 * [Bibliotheque](README.md)
-* [Hacking Philosophy](welcome-wanderer/hacking-philosophy.md)
+* [Hacking Philosophy](welcome-wanderer/the-hacker-manifesto.md)
 * [Useful Links](welcome-wanderer/useful-links.md)
 
 ## PENTESTING
@@ -56,8 +56,8 @@
 ## Linux
 
 * [Theory](linux/theory.md)
-* [Commands and Utilities](linux/commands-and-utilities/README.md)
-  * [Useful Commands](linux/commands-and-utilities/useful-commands.md)
+* [Commands and Utilities](linux/commands-and-utilities.md)
+  * [Useful Commands](linux/useful-commands.md)
 * [Bash Scripting](linux/bash-scripting.md)
 * [Post-Exploitation](linux/post-exploitation/README.md)
   * [Tools](linux/post-exploitation/tools.md)
@@ -73,7 +73,7 @@
 * [PowerShell](windows/powershell.md)
 * [Post-Exploitation](windows/post-exploitation/README.md)
   * [Tools](windows/post-exploitation/tools.md)
-  * [Enumeration](windows/post-exploitation/enumeration/README.md)
+  * [Enumeration](windows/post-exploitation/enumeration.md)
     * [System](windows/post-exploitation/enumeration/system.md)
     * [Network](windows/post-exploitation/enumeration/network.md)
     * [Users](windows/post-exploitation/enumeration/users.md)
@@ -106,10 +106,10 @@
 
 ## ACTIVE DIRECTORY
 
-* [Theory](active-directory/theory/README.md)
+* [Theory](active-directory/theory.md)
   * [Terminology](active-directory/theory/terminology.md)
-* [Reconnaissance](active-directory/reconnaissance/README.md)
-  * [Responder](active-directory/reconnaissance/responder.md)
+* [Reconnaissance](active-directory/recon.md)
+  * [Responder](tools/responder.md)
   * [Password Policies](active-directory/reconnaissance/password-policies.md)
   * [DNS](active-directory/reconnaissance/dns.md)
   * [Enumeration](active-directory/reconnaissance/enumeration/README.md)
@@ -127,7 +127,7 @@
     * [Making a Target List](active-directory/movement/credentials/making-a-target-list.md)
     * [Spraying](active-directory/movement/credentials/spraying.md)
     * [Ticket/Hash Attacks](active-directory/movement/credentials/ticket-hash-attacks.md)
-    * [Powershell Remoting](active-directory/movement/credentials/powershell-remoting.md)
+    * [Powershell Remoting](active-directory/movement/powershell-remoting.md)
   * [Kerberos](active-directory/movement/kerberos/README.md)
     * [Kerbrute](active-directory/movement/kerberos/kerbrute.md)
     * [Kerberoasting](active-directory/movement/kerberos/kerberoasting/README.md)

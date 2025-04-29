@@ -37,7 +37,7 @@ After Windows system became part of the domain, it's interaction with SAM is ove
 └── EXEC.INLANEFREIGHT.LOCAL
 </code></pre>
 
-<figure><img src="../../.gitbook/assets/image_2025-02-23_18-27-20.png" alt=""><figcaption><p>Made in Figma</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image_2025-02-23_18-27-20.png" alt=""><figcaption><p>Made in Figma</p></figcaption></figure>
 
 Here we could see domain structure of <mark style="color:red;">**`ARASAKA.LOCAL`**</mark> and <mark style="color:yellow;">**`MILITECH.LOCAL`**</mark>. Let's imagine that **ARASAKA** and **MILITECH** have bidirectional trust between these forests, meaning that users from <mark style="color:red;">**`ARASAKA.LOCAL`**</mark> can access <mark style="color:yellow;">**`MILITECH.LOCAL`**</mark>.&#x20;
 
@@ -55,11 +55,11 @@ We can also see multiple child domains under each root domain. In this example, 
 
 <mark style="color:red;">**Kerberos**</mark> is default domain accounts <mark style="color:purple;">**authentication protocol**</mark> since **Windows 2000**. Main difference between other authentication protocols is that **Kerberos** use tickets, instead of just transmitting passwords all over the network. This image will show you simplified version of **Kerberos** authentication process, and then I'll explain everything in parts. Also for more detailed explanations I could recommend to watch [**\[THIS\]**](https://youtu.be/5N242XcKAsM?t=870) video.
 
-<figure><img src="../../.gitbook/assets/kerb_auth_image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/kerb_auth_image.png" alt=""><figcaption></figcaption></figure>
 
 The whole **ping-pong** of tickets and requests is shows here:
 
-<figure><img src="../../.gitbook/assets/Screenshot_2024-06-28_20_59_14.png" alt=""><figcaption><p>Image is from video above</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot_2024-06-28_20_59_14.png" alt=""><figcaption><p>Image is from video above</p></figcaption></figure>
 
 ### <mark style="color:blue;">Main Kerberos Terms</mark>
 
@@ -115,7 +115,7 @@ NTLM uses a challenge-response mechanism to authenticate users without transmitt
 | <mark style="color:red;">**Tree-root**</mark>    | <mark style="color:purple;">**A two-way transitive trust between the root domain of a forest and a newly created tree root domain**</mark>. It is automatically established when a new tree root domain is added to a forest. |
 | <mark style="color:red;">**Forest**</mark>       | <mark style="color:purple;">**A transitive trust between the root domains of two separate forests.**</mark>                                                                                                                   |
 
-<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption><p>Image from <a href="https://academy.hackthebox.com/"><strong>HackTheBox</strong></a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>Image from <a href="https://academy.hackthebox.com/"><strong>HackTheBox</strong></a></p></figcaption></figure>
 
 Trusts can be <mark style="color:red;">**transitive**</mark> or <mark style="color:red;">**non-transitive**</mark>.
 
