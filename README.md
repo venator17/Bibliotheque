@@ -15,7 +15,7 @@ layout:
 
 # Bibliotheque
 
-<figure><img src=".gitbook/assets/v17-black-cyan.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/v17-black-cyan.png" alt="" width="375"><figcaption><p>V</p></figcaption></figure>
 
 ## <mark style="color:yellow;">ABOUT ME</mark>
 

@@ -103,34 +103,36 @@ Which in easier words is just _"What limits can truly contain me?". Which symbol
 
 ## <mark style="color:yellow;">How to Become Hacker</mark>
 
-To clarify from beginning, I am also working on to becoming a hacker _(no job = no title I think)_, but are learning it for more than 3 years slowly and not, so I was boiling in this culture for quite some time. So basically if you think about hacking as a career, you rethink your life history and think do you have these 4 traits:
+To clarify from beginning, I am also working on to becoming a hacker _(no job = no title I think)_, but I am learning for more than 3 years slowly and not, so I was boiling in this culture for quite some time. So basically if you think about hacking as a career, you need to view your past life and think about whether you have these 4 traits
 
 * <mark style="color:orange;">**Passion for Problem-Solving**</mark>
 * <mark style="color:orange;">**Unquenchable Curiosity**</mark>
-* <mark style="color:orange;">**Dogged Persistence**</mark>
+* <mark style="color:orange;">**Dogged Persistence**</mark>Forge your own path
 * <mark style="color:orange;">**Out-Of-The-Box Thinking**</mark>
 
 <figure><img src="../.gitbook/assets/IMG_20250429_235915_045.jpg" alt="" width="563"><figcaption><p>Image from HTB Blog</p></figcaption></figure>
 
 If you don't have more than one, then think more about if you really want to spend a LOT time, and insane amount of effort to get into field, and actually get a job in cyber, ESPECIALLY in offensive side of it.&#x20;
 
-But if you are, and think you could be the one who will go to the end, then I recommend to <mark style="color:orange;">**start in TryHackMe**</mark>, that's a insanely good platform from absolute zero knowledge, there you can spend basically good year or more of learning, it's pretty cheap and has a lot of free rooms.
+But if you are, and think you could be the one who will go to the end, then I recommend to <mark style="color:orange;">**start in TryHackMe**</mark>, that's an insanely good platform from absolute zero knowledge, where you can spend basically good year or more of learning. Also it's pretty cheap and has a lot of free rooms.
 
-Then I would recommend to <mark style="color:orange;">**begin to learn in HackTheBox Academy**</mark>, because comparing to other platforms, it has modules _(principle of learning which is basically books + practice)_ with insane quality of materials. Also CBBH and CPTS are relatively cheap, same thing with certificates, which would help you test your skills and will increase chance of getting a job.&#x20;
+Then I would recommend to <mark style="color:orange;">**begin to learn in HackTheBox Academy**</mark>, because comparing to other platforms, it has modules _(principle of learning which is basically books + practice)_ with insane quality of materials. Also **CBBH** and **CPTS** are relatively cheap, same thing with certificates, which would help you test your skills and will increase chance of getting a job.&#x20;
 
-Important part is <mark style="color:orange;">**combining theory with practice**</mark>, because hacking is all about learning + doing, some easy challenges in **TryHackMe** once or twice in a week at least, that It you retain interest in the topic, because no matter what the theory is, it is easy to overlap it. When you're knowledge will become broader, you can try crack some active machines on **HTB**
+Important part is <mark style="color:orange;">**combining theory with practice**</mark>, because hacking is all about <mark style="color:orange;">**learning + doing**</mark>, so by doing some easy challenges in **TryHackMe** once or twice in a week you will retain interest in the topic, because no matter what the theory is, it is easy to overlap it. When you're knowledge will become broader, you can try crack some active machines on **HTB**
 
-Also which helping for me right now is my team, first in my part I started in some russian CTF team which I found at , where dudes recommended me TryHackMe and HackTheBox, which kickstarted my learning
+Also what kickstarted my learning 3 years ago is team. I was looking for fellas in CTFTime,  some russian CTF team allowed me to join them, where members recommended me TryHackMe and HackTheBox.
 
-> Before that I was doing lame courses and cringe YouTube videos on how to become hacker, so you can guess that I didn't learnt a lot then ;)
+> Before that I was doing lame courses and cringe YouTube videos on "How to become Hacker in 1 hour", so you can guess that I didn't learnt a lot then ;)
 
-But after Full-Scaled Invasion on Ukraine, I burned the bridges with them, and then after some time after sending requests to all HTB Teams with cool logos and names, [**purplestorm**](https://discord.gg/7cvGy7ED) ended up to taking me, and I am infinitely grateful to it, and especially our capitan - `syr0` _(you may have seen his awesome handbooks repository)_, because he helped me quite a lot on making me forge my own path, so basically thanks to mentor. So the point is - <mark style="color:orange;">**find a team**</mark>, some servers (as example of purplestorm server, or THM's with HTB's) or guys to hang out with, because hacking is super niche topic, not a lot of programmers or regular IT guys would truly understand what you do, and that's why hacking is a lonely road — be ready that nobody could be interested in your craft as much as you do, and not so much people would understand what do you actually **DO.** And that's why <mark style="color:orange;">**it's important to find team, community, and someone who you can learn from**</mark>. That's more funny and more effective:&#x20;
+But after Full-Scaled Invasion on Ukraine, I burned the bridges with them, and then after some time after sending requests to all HTB Teams with cool logos and names, [**purplestorm**](https://discord.gg/7cvGy7ED) ended up taking me in, and I am infinitely grateful to it, and especially our captain - [<mark style="color:purple;">**`syr0`**</mark>](https://github.com/0xsyr0) _(you may have seen his awesome handbooks repository)_, because he helped me quite a lot on making me forge my own path, so basically thanks to my Mentor.&#x20;
+
+So the point is - <mark style="color:orange;">**find a team**</mark>, some Discord servers (as example of purplestorm server, or THM's with HTB's) or guys to hang out with, because hacking is super niche topic, not a lot of programmers or regular IT guys would truly understand what you do, and that's why hacking is a lonely road — be ready that nobody would be interested in your craft as much as you do, and not so much people would understand what do you actually **DO.** And that's why <mark style="color:orange;">**it's important to find team, community, and someone who you can learn from**</mark>. That's more funny and more effective:&#x20;
 
 > If you want to learn piano, go to pianist. If you want to learn art, go to artist. If you want to learn hacking, ask hackers. Want to learn some craft, go to Craftmaster.
 
-And the last one important thing, which is almost denying all my yap here, but:
+And the last one important thing, which almost denies all my yap here, but:
 
-Forge your own path, this is how I learnt what I know and what you can see here, in this project, but you are different, so just <mark style="color:orange;">**Learn, Adapt, Advance**</mark>. Don't listen to anybody fully, and do what you want. Only with persistence of Sisyphus you can become master.&#x20;
+**Forge your own path**, this is how I learnt what I know and what you can see here, in this project, but you are different, so just <mark style="color:orange;">**Learn, Adapt, Advance**</mark>. Don't listen to anybody fully, and do what you want. Only with persistence of Sisyphus you can become master.&#x20;
 
 ## <mark style="color:yellow;">Media</mark>
 
@@ -176,7 +178,7 @@ Second game is more fun, have more creative deep gameplay, and the vibe reminds 
 
 [**Weird West**](https://store.steampowered.com/app/480490/Prey/)
 
-For all these games I can say almost same things in terms of how they are good for you as potential hacking, and these reasons is genre — [**Immersive Sim**](https://en.wikipedia.org/wiki/Immersive_sim). Genre that could train challenge your out-of-the-box thinking _(Prey is especially good at that point)_. If you don't know where to start, it's simple
+For all these games I can say almost same things in terms of how they are good for you as potential hacker, and these reasons is genre — [**Immersive Sim**](https://en.wikipedia.org/wiki/Immersive_sim). Genre that could train challenge your out-of-the-box thinking _(Prey is especially good at that point)_. If you don't know where to start, it's simple
 
 **Love Westerns and Mysticism - Weird West**
 
@@ -190,7 +192,7 @@ For all these games I can say almost same things in terms of how they are good f
 
 [**Hitman**](https://store.steampowered.com/franchise/hitman) **and** [**Splinter Cell**](https://store.steampowered.com/bundle/23545/Splinter_Cell_Franchise/) **Series**
 
-Both are very good stealth games, which is practicing creating thinking and stealth planning, which is required for our job. Splinter Cell is good in grounded stealth missions as secret agent _(I know that MGS is good, but I've never played it by now, so can't recommend)_, and Hitman is good for social engineering skills with creativity, which is also required for job.
+Both are very good stealth games, which are practicing creative thinking and stealth planning, which is required for our job. Splinter Cell is good for grounded stealth missions as secret agent _(I know that MGS is good, but I've never played it by now, so can't recommend)_, and Hitman is good for social engineering skills with creativity, which is also required for job.
 
 ***
 
