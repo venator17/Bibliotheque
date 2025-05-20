@@ -84,6 +84,7 @@ for.
 
         I am a hacker, and this is my manifesto.  You may stop this individual,
 but you can't stop us all... after all, we're all alike.
+...Also secret word for v17 theme for Kali is V17{c2V4eXRlcm1pbmFsdGhlbWU}...
 
                                +++The Mentor+++
 _______________________________________________________________________________
