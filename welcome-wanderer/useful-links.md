@@ -56,4 +56,5 @@ icon: link
 * [**vx-underground**](https://vx-underground.org/)
 * [**GhostPack**](https://specterops.gitbook.io/ghostpack)
 * [**WADComs**](https://wadcoms.github.io/)
+* [<mark style="color:green;">**`:3`**</mark>](https://venator17.gitbook.io/bibliotheque/welcome-wanderer/c2v4exrlcm1pbmfsdghlbwu)
 

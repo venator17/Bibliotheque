@@ -4,7 +4,7 @@
 
 * [Bibliotheque](README.md)
 * [Hacking Philosophy](welcome-wanderer/the-hacker-manifesto.md)
-* [Sexy Terminal Theme](welcome-wanderer/sexy-terminal-theme.md)
+* [c2V4eXRlcm1pbmFsdGhlbWU](welcome-wanderer/c2v4exrlcm1pbmfsdghlbwu.md)
 * [Useful Links](welcome-wanderer/useful-links.md)
 
 ## PENTESTING
