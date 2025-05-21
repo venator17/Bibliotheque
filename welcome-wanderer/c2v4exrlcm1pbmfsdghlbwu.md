@@ -15,16 +15,18 @@ This is _oneliner_ to install archive, use setup.sh script to install everything
 > <mark style="color:orange;">**DISCLAIMER:**</mark>\ <mark style="color:orange;">If you afraid that this is virus or script will delete everything, you can just install it raw and check it yourself. But with oneliner it's easier.</mark>
 
 ```bash
-wget -O sexy-terminal.zip 'https://1512601210-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FxX3XegaS6tqwW9d8bpam%2Fuploads%2FAPfSr4OwcmJVkva2kI26%2Fsexy-terminal.zip?alt=media&token=5d2a5d31-13a4-4cc8-bcf6-38c5dab70402' && unzip sexy-terminal.zip && cd sexy-terminal && chmod +x setup.sh && ./setup.sh
+wget -O kali.v17-setup.zip 'https://1512601210-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FxX3XegaS6tqwW9d8bpam%2Fuploads%2F1HOQVxQGKEhgFjXiq1qI%2Fkali.v17-setup.zip?alt=media&token=bb2f86f1-be98-4413-90ed-83f45785aa10' && unzip kali.v17-setup.zip && cd kali.v17-setup && chmod +x setup.sh && ./setup.sh
 ```
 
-## <mark style="color:yellow;">ARCHIVE</mark>
+## <mark style="color:yellow;">SCRIPT</mark>
 
-{% file src="../.gitbook/assets/sexy-terminal.zip" %}
+{% file src="../.gitbook/assets/kali.v17-setup (1).zip" %}
 
 ## <mark style="color:yellow;">IMAGES</mark>
 
-I'll add them tomorrow
+<figure><img src="../.gitbook/assets/Screenshot_2025-05-20_23_44_11.png" alt=""><figcaption><p>Desktop</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/Screenshot_2025-05-20_23_45_55.png" alt=""><figcaption><p>Customized Terminal</p></figcaption></figure>
 
 ## <mark style="color:yellow;">USAGE</mark>
 
@@ -49,4 +51,6 @@ So what this script installed is 4 things:
 8. Change Panes : `Ctrl + Space {Arrow Keys}`
 9. Enter Command Mode: `Ctrl + Space :`
 
-> And besides that in archive folder you can find WALLPAPERS folder with some wallpapers obviously
+> Wallpapers are in /home/Pictures
+>
+> Tools are in /home/TOOLS
