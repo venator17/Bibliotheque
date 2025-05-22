@@ -205,7 +205,3 @@ Here everything is simple, these are the best puzzles in industry, which is good
 [**Hacknet**](https://store.steampowered.com/app/365450/Hacknet/)
 
 This is the best hacking sim, it will teach you basic terms, even a little linux commands
-
-***
-
-> **`V17{c2VjcmV0bWVzc2FnZQ}`**
