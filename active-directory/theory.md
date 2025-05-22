@@ -43,14 +43,6 @@ Here we could see domain structure of <mark style="color:red;">**`ARASAKA.LOCAL`
 
 We can also see multiple child domains under each root domain. In this example, we can see that the root domain trusts each of the child domains, but the child domains in <mark style="color:red;">**`ARASAKA.LOCAL`**</mark> do not necessarily have trusts established with the child domains in <mark style="color:yellow;">**`MILITECH.LOCAL`**</mark>. This means that a user that is part of <mark style="color:red;">**`OSAKA.JAPAN.ARASAKA.LOCAL`**</mark> would NOT be able to authenticate to machines in the <mark style="color:yellow;">**`NC.NUSA.MILITECH.LOCAL`**</mark> domain by default even though a bidirectional trust exists between the top-level <mark style="color:yellow;">**`MILITECH.LOCAL`**</mark> and <mark style="color:red;">**`ARASAKA.LOCAL`**</mark> domains.
 
-## <mark style="color:yellow;">ADCS</mark>
-
-<mark style="color:red;">**Active Directory Certificate Services (AD CS)**</mark> is a **Windows Server&#x20;**<mark style="color:purple;">**role**</mark> for issuing and managing <mark style="color:red;">**public key infrastructure (PKI)**</mark> certificates used in secure communication and authentication protocols. So basically it is **PKI** framework functionality implementation in **AD** and **Windows Server**.
-
-## <mark style="color:yellow;">CA</mark>
-
-<mark style="color:red;">**Certificate Authority (CA)**</mark> in **Active Directory Certificate Services (AD CS)** is a <mark style="color:purple;">**trusted entity**</mark> responsible for issuing, managing, and validating digital certificates in an Active Directory environment. These digital certificates are used to verify identities, secure communications, and enable authentication across the network.
-
 ## <mark style="color:yellow;">KERBEROS</mark>
 
 <mark style="color:red;">**Kerberos**</mark> is default domain accounts <mark style="color:purple;">**authentication protocol**</mark> since **Windows 2000**. Main difference between other authentication protocols is that **Kerberos** use tickets, instead of just transmitting passwords all over the network. This image will show you simplified version of **Kerberos** authentication process, and then I'll explain everything in parts. Also for more detailed explanations I could recommend to watch [**\[THIS\]**](https://youtu.be/5N242XcKAsM?t=870) video.
@@ -173,6 +165,24 @@ Scopes define <mark style="color:purple;">**where the group is used**</mark> and
 * Disallowing LM hash usage in the domain
 * Running scripts when computers start/shutdown or when a user logs in/out of their machine
 
-## <mark style="color:yellow;">PKI</mark>
+## <mark style="color:yellow;">ADCS</mark>
+
+<mark style="color:red;">**Active Directory Certificate Services (AD CS)**</mark> is a **Windows Server&#x20;**<mark style="color:purple;">**role**</mark> for issuing and managing <mark style="color:red;">**public key infrastructure (PKI)**</mark> certificates used in secure communication and authentication protocols. So basically it is **PKI** framework functionality implementation in **AD** and **Windows Server**. As for hacker perspective, ADCS Certificates are giving us wider attack surface and it's usually not as monitored as Kerberos Tickets or Access Tokens. Also Kerberos Tickets usually exist not that long, when Certificates could be valid for months.
+
+### <mark style="color:blue;">Flow</mark>
+
+<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>Image from <strong>HackingArticles</strong> <a href="https://www.hackingarticles.in/ad-certificate-exploitation-esc1/"><strong>[LINK]</strong></a></p></figcaption></figure>
+
+### <mark style="color:blue;">CA</mark>
+
+<mark style="color:red;">**Certificate Authority (CA)**</mark> in **Active Directory Certificate Services (AD CS)** is a <mark style="color:purple;">**trusted entity**</mark> responsible for issuing, managing, and validating digital certificates in an Active Directory environment. These digital certificates are used to verify identities, secure communications, and enable authentication across the network.
+
+### <mark style="color:blue;">Cert Template</mark>
+
+<mark style="color:red;">**Certificate Template**</mark> is a <mark style="color:purple;">**predefined configuration**</mark> in Microsoft AD CS that defines the type of certificate a user, computer, or service can request. It specifies parameters such as the intended purpose of the certificate, encryption algorithms, validity period, and whether it can be auto-enrolled.
+
+These templates allow administrators to control the issuance and management of certificates within an organization’s Active Directory environment. AD CS uses these templates to standardize certificate issuance, thus making it easier to deploy secure certificates for users, computers, and services.
+
+### <mark style="color:blue;">PKI</mark>
 
 <mark style="color:red;">**PKI (Public Key Infrastructure)**</mark> is a <mark style="color:purple;">**framework**</mark> that provides the creation, distribution, management of digital certificates. It ensures secure communication over networks by authenticating users, devices, and services through the use of public and private key pairs.

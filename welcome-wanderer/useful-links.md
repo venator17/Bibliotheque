@@ -41,7 +41,7 @@ icon: link
 
 * [<mark style="color:orange;">**The Hacker Recipes**</mark>](https://www.thehacker.recipes/)
 * [**The Hacker Tools**](https://tools.thehacker.recipes/)
-* [**ired.team**](https://www.ired.team/)
+* [<mark style="color:orange;">**ired.team**</mark>](https://www.ired.team/)
 * [<mark style="color:orange;">**CyberChef**</mark>](https://gchq.github.io/CyberChef/)
 * [<mark style="color:orange;">**GTFOBins**</mark>](https://gtfobins.github.io/)
 * [<mark style="color:orange;">**Exploit-DB**</mark>](https://www.exploit-db.com/)

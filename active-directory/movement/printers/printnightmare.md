@@ -12,7 +12,7 @@
 * **MS-PAR** – Adds support for asynchronous operations to improve performance. It allows non-blocking calls, like getting print job updates without waiting.
 * **MS-PAN** – An extension to MS-RPRN that supports newer features. It enables enhanced printer capabilities used in modern Windows systems.
 
-### <mark style="color:blue;">Prerequisites</mark>
+### <mark style="color:blue;">Requirements</mark>
 
 * Print Spooler enabled on target (e.g., DC or file server)
 * RPC/SMB access (ports 135, 445)

@@ -22,7 +22,7 @@ This is also possible across forest trusts if authentication is permitted across
 
 If the password for a domain SQL Server service account is cracked, you are likely to find yourself as a local admin on multiple servers, if not Domain Admin. Even if cracking a ticket obtained via a Kerberoasting attack gives a low-privilege user account, we can use it to craft service tickets for the service specified in the SPN. For example, if the SPN is set to MSSQL/SRV01, we can access the MSSQL service as sysadmin, enable the xp\_cmdshell extended procedure and gain code execution on the target SQL server.
 
-### <mark style="color:blue;">Prerequisites</mark>
+### <mark style="color:blue;">Requirements</mark>
 
 We could execute Kerberoasting from various setups like (<mark style="color:orange;">**shell / creds are must-have**</mark>):
 

@@ -1,14 +1,18 @@
 ---
-hidden: true
+icon: yin-yang
 ---
 
-# c2V4eXRlcm1pbmFsdGhlbWU
+# V17 Update
 
-## <mark style="color:yellow;">You have found me :3</mark>
+**`V17{c2VjcmV0bWVzc2FnZQ}`**
+
+## Congrats, you found it
 
 <mark style="color:green;">⠀⠀⠀⠀⠀⠀⠀⢀⠀⠔⡀⠀⢀⠞⢰⠂⠀⠀⠀⠀⠀⠀⠀</mark>\ <mark style="color:green;">⠀⠀⠀⠀⠀⠀⠀⢸⠘⢰⡃⠔⠩⠤⠦⠤⢀⡀⠀⠀⠀⠀⠀</mark>\ <mark style="color:green;">⠀⠀⠀⢀⠄⢒⠒⠺⠆⠈⠀⠀⢐⣂⠤⠄⡀⠯⠕⣒⣒⡀⠀</mark>\ <mark style="color:green;">⠀⠀⢐⡡⠔⠁⠆⠀⠀⠀⠀⠀⢀⠠⠙⢆⠀⠈⢁⠋⠥⣀⣀</mark>\ <mark style="color:green;">⠈⠉⠀⣰⠀⠀⠀⠀⡀⠀⢰⣆⢠⠠⢡⡀⢂⣗⣖⢝⡎⠉⠀</mark>\ <mark style="color:green;">⢠⡴⠛⡇⠀⠐⠀⡄⣡⢇⠸⢸⢸⡇⠂⡝⠌⢷⢫⢮⡜⡀⠀</mark>\ <mark style="color:green;">⠀⠀⢰⣜⠘⡀⢡⠰⠳⣎⢂⣟⡎⠘⣬⡕⣈⣼⠢⠹⡟⠇⠀</mark>\ <mark style="color:green;">⠀⠠⢋⢿⢳⢼⣄⣆⣦⣱⣿⣿⣿⣷⠬⣿⣿⣿⣿⠑⠵⠀⠀</mark>\ <mark style="color:green;">⠀⠀⠀⡜⢩⣯⢝⡀⠁⠀⠙⠛⠛⠃⠀⠈⠛⠛⡿⠀⠀⠀⠀</mark>\ <mark style="color:green;">⠀⠀⠀⠀⠀⣿⠢⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀</mark>\ <mark style="color:green;">⠀⠀⠀⠀⢀⣀⡇⠀⠑⠀⠀⠀⠀⠐⢄⠄⢀⡼⠃⠀⠀⠀⠀</mark>\ <mark style="color:green;">⠀⠀⠀⠀⢸⣿⣷⣤⣀⠈⠲⡤⣀⣀⠀⡰⠋⠀⠀⠀⠀⠀⠀</mark>\ <mark style="color:green;">⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣶⣤⣙⣷⣅⡀⠀⠀⠀⠀⠀⠀⠀</mark>\ <mark style="color:green;">⠀⠀⢀⣾⣿⣿⣿⣿⣻⢿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀</mark>\ <mark style="color:green;">⠀⡠⠟⠁⠙⠟⠛⠛⢿⣿⣾⣿⣿⣿⣿⣧⡀⠀</mark>⠀⠀
 
-This is archive for my **Kali Theme + Setup**, as prize for mini-CTF.
+Here you can find script for setting up my Kali Theme, and guide for newbies how to install Kali.
+
+Isn't super relevant to other BIbliotheque, so that's why it's hidden
 
 This is _oneliner_ to install archive, use setup.sh script to install everything.&#x20;
 

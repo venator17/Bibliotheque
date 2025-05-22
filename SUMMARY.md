@@ -4,8 +4,12 @@
 
 * [Bibliotheque](README.md)
 * [Hacking Philosophy](welcome-wanderer/the-hacker-manifesto.md)
-* [c2V4eXRlcm1pbmFsdGhlbWU](welcome-wanderer/c2v4exrlcm1pbmfsdghlbwu.md)
 * [Useful Links](welcome-wanderer/useful-links.md)
+
+***
+
+* [Hidden Section](hidden-section/README.md)
+  * [V17 Update](hidden-section/v17-update.md)
 
 ## PENTESTING
 
@@ -52,6 +56,7 @@
 * [Mythic](tools/mythic.md)
 * [Sliver](tools/sliver.md)
 * [Mimikatz](tools/mimikatz.md)
+* [Rubeus](tools/rubeus.md)
 * [NetExec](tools/netexec.md)
 
 ## Linux
@@ -125,6 +130,7 @@
   * [Credentials](active-directory/movement/credentials/README.md)
     * [Dumping](active-directory/movement/credentials/dumping/README.md)
       * [DCSync](active-directory/movement/credentials/dumping/dcsync.md)
+      * [DPAPI Secrets](active-directory/movement/credentials/dumping/dpapi-secrets.md)
     * [Making a Target List](active-directory/movement/credentials/making-a-target-list.md)
     * [Spraying](active-directory/movement/credentials/spraying.md)
     * [Ticket/Hash Attacks](active-directory/movement/credentials/ticket-hash-attacks.md)
@@ -137,8 +143,10 @@
     * [ASREProasting](active-directory/movement/kerberos/asreproasting.md)
     * [Forging](active-directory/movement/kerberos/forging/README.md)
       * [Golden Ticket](active-directory/movement/kerberos/forging/golden-ticket.md)
+      * [Silver Ticket](active-directory/movement/kerberos/forging/silver-ticket.md)
     * [Overpass The Hash](active-directory/movement/kerberos/overpass-the-hash.md)
     * [Pass The Ticket](active-directory/movement/kerberos/pass-the-ticket.md)
+    * [RBCD](active-directory/movement/kerberos/rbcd.md)
     * [noPAC](active-directory/movement/kerberos/nopac.md)
   * [MITM / Coerced Auths](active-directory/movement/mitm-coerced-auths/README.md)
     * [LLMNR, NBT-NS Poisoning](active-directory/movement/mitm-coerced-auths/llmnr-nbt-ns-poisoning.md)
@@ -148,7 +156,8 @@
     * [ForceChangePassword](active-directory/movement/dacl-abuse/forcechangepassword.md)
   * [Trust Abuse](active-directory/movement/trust-abuse/README.md)
     * [ExtraSIDs](active-directory/movement/trust-abuse/extrasids.md)
-  * [ADCS](active-directory/movement/adcs.md)
+  * [ADCS](active-directory/movement/adcs/README.md)
+    * [ESC1](active-directory/movement/adcs/esc1.md)
   * [Printers](active-directory/movement/printers/README.md)
     * [PrintNightmare](active-directory/movement/printers/printnightmare.md)
 * [Persistence](active-directory/persistence.md)
@@ -168,6 +177,7 @@
   * [ARP](networking/theory/arp.md)
 * [Pivoting](networking/pivoting/README.md)
   * [Port-Forwarding](networking/pivoting/port-forwarding.md)
+* [Traffic Analysis](networking/traffic-analysis.md)
 * [Commands and Utilities](networking/commands-and-utilities.md)
 * [Techniques](networking/techniques.md)
 
@@ -185,4 +195,9 @@
 
 ## programming
 
-* [Page 1](programming/page-1.md)
+* [PYTHON](programming/python.md)
+
+## CRYPTOGRAPHY
+
+* [XOR](cryptography/xor.md)
+* [Diffie-Hellman](cryptography/diffie-hellman.md)

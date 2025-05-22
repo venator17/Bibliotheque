@@ -10,7 +10,7 @@ icon: ticket-simple
 
 <mark style="color:red;">**ExtraSIDs**</mark> [**\[LINK\]**](https://venator17.gitbook.io/bibliotheque/active-directory/movement/trust-abuse/extrasids) can be included in the PAC to simulate inherited privileges, such as previous group memberships, enabling privilege escalation even for accounts that no longer have those roles.
 
-### <mark style="color:blue;">Prerequisites</mark>
+### <mark style="color:blue;">Requirements</mark>
 
 1. <mark style="color:orange;">**KRBTGT hash**</mark> for the child domain _(In example we are doing DCSync because for forging we need to have child domain fully compromised)_
 2. <mark style="color:orange;">**SID**</mark> for the child domain

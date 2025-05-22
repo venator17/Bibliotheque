@@ -12,7 +12,7 @@ Name Impersonation vulnerability. Was caused because of absence of checking `$` 
 
 When requesting a ST, you should present a TGT. When ST is not found by KDC, it searches again with `$`. So imagine if we found TGT for user `bob`, then `bob` gets deleted, so it searches for `bob$`. If it exists, we could obtain ST for `bob$`.
 
-### <mark style="color:blue;">Prerequisites</mark>
+### <mark style="color:blue;">Requirements</mark>
 
 * Authenticated low-privileged AD user
 * Unpatched DC vulnerable to both CVEs

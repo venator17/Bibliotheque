@@ -6,7 +6,7 @@
 
 It allows an unauthenticated attacker to coerce a Domain Controller (DC) into authenticating to a malicious host via NTLM over LSARPC (port 445) by abusing the MS-EFSRPC interface. When combined with misconfigured **Active Directory Certificate Services (AD CS)**, the attacker can relay this authentication to the CA’s Web Enrollment interface, submit a malicious **Certificate Signing Request (CSR)**, and obtain a certificate usable for domain compromise.
 
-### <mark style="color:blue;">Prerequisites</mark>
+### <mark style="color:blue;">Requirements</mark>
 
 * EFSRPC or Print Spooler enabled on DC
 * AD CS with **Web Enrollment + vulnerable template**

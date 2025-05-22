@@ -64,22 +64,10 @@ icon: books
 
 * Complete name for a host (e.g., <mark style="color:green;">`dc01.example.com`</mark>).
 
-## <mark style="color:yellow;">Tombstone</mark>
-
-* Holds deleted AD objects for a set period before permanent deletion.
-
-## <mark style="color:yellow;">AD Recycle Bin</mark>
-
-* Enables easy recovery of deleted objects while preserving attributes.
-
 ## <mark style="color:yellow;">SYSVOL</mark>
 
 * Stores Group Policy settings and logon scripts.
 * Replicated across all DCs.
-
-## <mark style="color:yellow;">Active Directory Users and Computers (ADUC)</mark>
-
-* GUI for managing users, groups, computers, and contacts.
 
 ## <mark style="color:yellow;">ADSI Edit</mark>
 

@@ -84,7 +84,6 @@ for.
 
         I am a hacker, and this is my manifesto.  You may stop this individual,
 but you can't stop us all... after all, we're all alike.
-...Also secret word for v17 theme for Kali is V17{c2V4eXRlcm1pbmFsdGhlbWU}...
 
                                +++The Mentor+++
 _______________________________________________________________________________
@@ -108,7 +107,7 @@ To clarify from beginning, I am also working on to becoming a hacker _(no job = 
 
 * <mark style="color:orange;">**Passion for Problem-Solving**</mark>
 * <mark style="color:orange;">**Unquenchable Curiosity**</mark>
-* <mark style="color:orange;">**Dogged Persistence**</mark>Forge your own path
+* <mark style="color:orange;">**Dogged Persistence**</mark>
 * <mark style="color:orange;">**Out-Of-The-Box Thinking**</mark>
 
 <figure><img src="../.gitbook/assets/IMG_20250429_235915_045.jpg" alt="" width="563"><figcaption><p>Image from HTB Blog</p></figcaption></figure>
@@ -206,3 +205,7 @@ Here everything is simple, these are the best puzzles in industry, which is good
 [**Hacknet**](https://store.steampowered.com/app/365450/Hacknet/)
 
 This is the best hacking sim, it will teach you basic terms, even a little linux commands
+
+***
+
+> **`V17{c2VjcmV0bWVzc2FnZQ}`**

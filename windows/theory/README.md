@@ -90,16 +90,6 @@ The <mark style="color:red;">**user-specific registry hive (HKCU)**</mark> is st
 
 <mark style="color:red;">**Link-Local Multicast Name Resolution (LLMNR)**</mark> and <mark style="color:red;">**NetBIOS Name Service (NBT-NS)**</mark> are features in Microsoft Windows that provide <mark style="color:purple;">**alternative methods for host identification**</mark> when DNS is unavailable. If a device fails to resolve a host through DNS, it will typically attempt to ask other devices on the local network for the correct host address using LLMNR. LLMNR is based on the DNS format and allows devices on the same local network to resolve names for each other. It uses UDP port 5355. If LLMNR doesn't work, NBT-NS takes over. NBT-NS identifies devices on a local network using their NetBIOS names and operates on UDP port 137. The important point is that when LLMNR or NBT-NS is used for name resolution, any device on the network can respond.
 
-## <mark style="color:yellow;">DPAPI</mark>
-
-<mark style="color:red;">**Data Protection Application Programming Interface**</mark> is set of API which Windows uses for the symmetric encryption of asymmetric private keys and used by various third-party applications like:
-
-* **Internet Explorer**
-* **Google Chrome**
-* **Outlook**
-* **Remote Desktop Connection**
-* **Credential Manager**
-
 ## <mark style="color:yellow;">WMI</mark>
 
 <mark style="color:red;">**Windows Management Instrumentation (WMI)**</mark> is a <mark style="color:purple;">**subsystem of PowerShell**</mark> that provides system administrators with powerful tools for <mark style="color:purple;">**system monitoring**</mark>. The purpose of WMI is to unify the management of devices and applications across corporate networks.. WMI allows <mark style="color:yellow;">**read and write access to almost all settings**</mark> on Windows systems. Mostly uses <mark style="color:yellow;">**TCP port 135**</mark>

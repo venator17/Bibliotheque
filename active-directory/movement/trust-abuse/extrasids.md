@@ -4,8 +4,6 @@
 
 <mark style="color:red;">**ExtraSIDs**</mark> is a technique where a forged Kerberos ticket <mark style="color:yellow;">**(Golden Ticket) includes additional SIDs**</mark>, typically from a more privileged domain like the parent domain in a forest, allowing an attacker who compromised a child domain to impersonate membership in high-privilege groups such as Enterprise Admins and gain unauthorized access across domain boundaries, bypassing normal group membership checks if SID filtering is not enforced.
 
-### <mark style="color:blue;">Prerequisites</mark>
-
 ## <mark style="color:yellow;">LINUX</mark>
 
 #### Bruteforce SID
