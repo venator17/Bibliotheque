@@ -159,6 +159,7 @@
     * [ExtraSIDs](active-directory/movement/trust-abuse/extrasids.md)
   * [ADCS](active-directory/movement/adcs/README.md)
     * [ESC1](active-directory/movement/adcs/esc1.md)
+    * [ESC16](active-directory/movement/adcs/esc16.md)
   * [Printers](active-directory/movement/printers/README.md)
     * [PrintNightmare](active-directory/movement/printers/printnightmare.md)
 * [Persistence](active-directory/persistence.md)
