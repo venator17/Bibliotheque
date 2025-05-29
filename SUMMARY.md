@@ -144,6 +144,7 @@
     * [Forging](active-directory/movement/kerberos/forging/README.md)
       * [Golden Ticket](active-directory/movement/kerberos/forging/golden-ticket.md)
       * [Silver Ticket](active-directory/movement/kerberos/forging/silver-ticket.md)
+    * [Shadow Credentials](active-directory/movement/kerberos/shadow-credentials.md)
     * [Overpass The Hash](active-directory/movement/kerberos/overpass-the-hash.md)
     * [Pass The Ticket](active-directory/movement/kerberos/pass-the-ticket.md)
     * [RBCD](active-directory/movement/kerberos/rbcd.md)

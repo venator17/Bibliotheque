@@ -70,6 +70,8 @@ The whole **ping-pong** of tickets and requests is shows here:
 * <mark style="color:red;">**Service Ticket:**</mark> \
   This **Ticket** allows a client to authenticate to a specific service. It contains encrypted information that verifies the client's identity and includes a session key that the client can use to communicate securely with the service.
 
+## <mark style="color:yellow;">PKINIT</mark>
+
 ## <mark style="color:yellow;">NTLM</mark>
 
 <mark style="color:red;">**NTLM (NT LAN Manager)**</mark> is a challenge-response <mark style="color:purple;">**authentication protocol**</mark> developed by Microsoft for authenticating users and securing communication in Windows environments. It has been largely replaced by **Kerberos** in modern Active Directory (AD) environments but is still present for backward compatibility.
