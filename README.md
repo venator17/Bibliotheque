@@ -1,6 +1,11 @@
 ---
 icon: user-hoodie
+cover: .gitbook/assets/cyberpunk-cafe.gif
+coverY: 13.29795918367347
 layout:
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
@@ -13,7 +18,7 @@ layout:
     visible: true
 ---
 
-# Bibliotheque
+# Bibliothèque
 
 <figure><img src=".gitbook/assets/v17-black-cyan.png" alt="" width="375"><figcaption><p>V</p></figcaption></figure>
 
