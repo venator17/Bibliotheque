@@ -58,6 +58,22 @@ Then wait, and take your zip file back, and put it load it into BloodHound Sessi
 
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>File Ingest Field</p></figcaption></figure>
 
+> Besides default collector, you can use two different tools to dump bloodhound externally
+
+#### BloodHound-Python
+
+> Useful script [**\[LINK\]**](https://github.com/dirkjanm/BloodHound.py/)
+
+```bash
+bloodhound-python -d arasaka.local -c All -u yorinobu.arasaka -p 'ihatesaburo' -ns 13.13.13.13 -k
+```
+
+#### <mark style="color:blue;">NetExec</mark>
+
+```bash
+nxc ldap 13.13.13.13 -u yorinobu.arasaka -p 'ihatesaburo' --bloodhound --collection All
+```
+
 ### <mark style="color:blue;">Explore</mark>
 
 So basically we have 3 fields: <mark style="color:red;">**Search**</mark>, <mark style="color:red;">**Pathfinding**</mark>, <mark style="color:red;">**Cypher:**</mark>

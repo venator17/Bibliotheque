@@ -1,22 +1,26 @@
+---
+icon: user-ninja
+---
+
 # Shadow Credentials
 
 ## <mark style="color:yellow;">**ABOUT**</mark>
 
-<mark style="color:red;">**Shadow Credentials**</mark> is a <mark style="color:purple;">**stealthy post-exploitation persistence technique**</mark> (disclosed by _Elad Shamir_) that leverages the `msDS-KeyCredentialLink` attribute on AD objects. This attribute is used by **Windows Hello for Business** and **Azure AD Join**. When you add a **custom public key** to it, you can authenticate via **Kerberos PKINIT** using your matching private key — effectively becoming the user.
+<mark style="color:red;">**Shadow Credentials**</mark> is a <mark style="color:purple;">**stealthy post-exploitation persistence technique**</mark> (disclosed by _Elad Shamir_) that leverages the <mark style="color:green;">`msDS-KeyCredentialLink`</mark> attribute on AD objects. This attribute is used by **Windows Hello for Business** and **Azure AD Join**. When you add a **custom public key** to it, you can authenticate via **Kerberos PKINIT** using your matching private key — effectively becoming the user.
 
 > This gives you a TGT without touching the user's password or traditional login flow.
 
 ### <mark style="color:blue;">**Requirements**</mark>
 
-* Write access (`GenericWrite`/`GenericAll`) to target user/computer object
+* Write access (<mark style="color:green;">`GenericWrite`</mark>/<mark style="color:green;">`GenericAll`</mark>) to target user/computer object
 * **PKINIT** enabled (default in modern AD environments)
 * Domain reachable over **Kerberos** (TCP/UDP 88)
 
 ### <mark style="color:blue;">**Flow**</mark>
 
 1. Generate RSA key pair
-2. Create `KeyCredential` object with public key
-3. Inject the object into `msDS-KeyCredentialLink` of the target account
+2. Create <mark style="color:green;">`KeyCredential`</mark> object with public key
+3. Inject the object into <mark style="color:green;">`msDS-KeyCredentialLink`</mark> of the target account
 4. Authenticate using private key via **Kerberos PKINIT**
 5. Get TGT for the target account
 

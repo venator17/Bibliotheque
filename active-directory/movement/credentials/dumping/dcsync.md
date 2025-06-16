@@ -1,6 +1,6 @@
 # DCSync
 
-## <mark style="color:yellow;">About</mark>
+## <mark style="color:yellow;">ABOUT</mark>
 
 <mark style="color:red;">**DCSync**</mark> is a <mark style="color:purple;">**post-exploitation technique**</mark> that abuses the <mark style="color:red;">**Microsoft Directory Replication Service Remote Protocol (MS-DRSR)**</mark>, which is normally used to synchronize data between Domain Controllers.
 

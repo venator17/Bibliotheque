@@ -1,6 +1,6 @@
 # SeDebugPrivilege
 
-## <mark style="color:yellow;">About</mark>
+## <mark style="color:yellow;">ABOUT</mark>
 
 <mark style="color:green;">`SeDebugPrivilege`</mark> allows a user to <mark style="color:purple;">**debug system processes**</mark> without being a local administrator. By default, only administrators are granted this privilege as it can be used to capture sensitive information from <mark style="color:yellow;">**system memory**</mark>, or <mark style="color:yellow;">**access/modify kernel**</mark> and application structures.
 
