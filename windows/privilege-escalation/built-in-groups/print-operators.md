@@ -50,7 +50,7 @@ PS C:\> .\ExploitCapcom.exe
 
 #### Same stuff but automated
 
-We can use <mark style="color:green;">**EoPLoadDriver**</mark> [**\[LINK\]**](https://github.com/TarlogicSecurity/EoPLoadDriver/) script to automate process of enabling the privilege, creating the registry key, and executing <mark style="color:green;">`NTLoadDriver`</mark> to load the driver by using this command.
+We can use <mark style="color:green;">**EoPLoadDriver**</mark> [**\[LINK\]**](https://github.com/umiterkol/EoPLoadDriver_Release/releases) script to automate process of enabling the privilege, creating the registry key, and executing <mark style="color:green;">`NTLoadDriver`</mark> to load the driver by using this command.
 
 ```powershell
 C:\> EoPLoadDriver.exe System\CurrentControlSet\Capcom c:\temp\Capcom.sys
