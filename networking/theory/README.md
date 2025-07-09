@@ -8,6 +8,8 @@ icon: book-open
 
 <mark style="color:red;">**Socket**</mark> - is one <mark style="color:purple;">**endpoint**</mark> of a two way communication link between two programs running on the network. Sockets have two main states: They are either <mark style="color:yellow;">**connected**</mark> and facilitating an ongoing network communication, or they are <mark style="color:yellow;">**waiting**</mark> for an incoming connection to connect to them. The listening socket is called the server, and the socket that requests a connection with the listening socket is called a client. You could use **netstat** command to manage and discover your own sockets, for what and where are they used. The "Active Internet" section lists the network connections that are (or will be) established to external devices. The "UNIX domain" section lists the connections that have been established within your computer between different applications, processes, and elements of the operating system.
 
+> So basically this is just network term for determining (protocol, local IP, local port, \[remote IP, remote port], state).
+
 <mark style="color:blue;">**TCP Socket States**</mark>
 
 | Socket State                                         | Explanation                                                                                                                |
