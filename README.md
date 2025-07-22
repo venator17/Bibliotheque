@@ -6,6 +6,8 @@ coverY: 13.29795918367347
 
 # Bibliothèque
 
+<div align="left"><figure><img src=".gitbook/assets/spider_avatar.png" alt="" width="222"><figcaption></figcaption></figure></div>
+
 ## <mark style="color:yellow;">ABOUT ME</mark>&#x20;
 
 I am <mark style="color:green;">`{venator17}`</mark>, cybersecurity student, ethical hacker, and just a savvy who loves hacking, consuming knowledge and as you see likes to teach others.
