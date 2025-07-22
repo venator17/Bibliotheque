@@ -1,28 +1,12 @@
 ---
-icon: user-hoodie
+icon: spider
 cover: .gitbook/assets/cyberpunk-cafe.gif
 coverY: 13.29795918367347
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Bibliothèque
 
-<figure><img src=".gitbook/assets/v17-black-cyan.png" alt="" width="375"><figcaption><p>V</p></figcaption></figure>
-
-## <mark style="color:yellow;">ABOUT ME</mark>
+## <mark style="color:yellow;">ABOUT ME</mark>&#x20;
 
 I am <mark style="color:green;">`{venator17}`</mark>, cybersecurity student, ethical hacker, and just a savvy who loves hacking, consuming knowledge and as you see likes to teach others.
 
