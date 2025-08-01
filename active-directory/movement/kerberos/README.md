@@ -8,7 +8,7 @@ icon: paw-simple
 
 {% embed url="https://venator17.gitbook.io/bibliotheque/active-directory/theory#kerberos" %}
 
-## CLOCK ERROR
+## <mark style="color:yellow;">CLOCK ERROR</mark>
 
 > `[-] Got error while trying to request TGT: Kerberos SessionError: KRB_AP_ERR_SKEW(Clock skew too great)`
 

