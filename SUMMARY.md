@@ -191,8 +191,8 @@
 
 ## WEB
 
-* [Web Recon](web/web-recon/README.md)
-  * [Fuzzing](web/web-recon/fuzzing.md)
+* [Reconnaissance](web/reconnaissance/README.md)
+  * [Fuzzing](web/reconnaissance/fuzzing.md)
 * [Attacks](web/attacks.md)
 * [DNS](web/dns.md)
 
