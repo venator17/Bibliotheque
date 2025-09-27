@@ -183,23 +183,23 @@
   * [IP / Subnetting](networking/theory/ip-subnetting.md)
   * [Proxies](networking/theory/proxies.md)
   * [ARP](networking/theory/arp.md)
+  * [HTTPS](networking/theory/https.md)
 * [Pivoting](networking/pivoting/README.md)
   * [Port-Forwarding](networking/pivoting/port-forwarding.md)
-* [Traffic Analysis](networking/traffic-analysis.md)
 * [Commands and Utilities](networking/commands-and-utilities.md)
 * [Techniques](networking/techniques.md)
 
 ## WEB
 
-* [Reconnaissance](web/reconnaissance/README.md)
-  * [Fuzzing](web/reconnaissance/fuzzing.md)
-* [Attacks](web/attacks.md)
+* [Reconnaissance](web/web-recon/README.md)
+  * [Fuzzing](web/web-recon/fuzzing.md)
 * [DNS](web/dns.md)
 
-## CLOUD
+## FORENSICS
 
-* [Google GKE/GCP](cloud/google-gke-gcp/README.md)
-  * [Theory](cloud/google-gke-gcp/theory.md)
+* [Traffic Analysis](forensics/traffic-analysis/README.md)
+  * [Wireshark](forensics/traffic-analysis/wireshark.md)
+  * [TCPdump](forensics/traffic-analysis/tcpdump.md)
 
 ## programming
 
@@ -208,4 +208,10 @@
 ## CRYPTOGRAPHY
 
 * [XOR](cryptography/xor.md)
+* [SSL](cryptography/ssl.md)
 * [Diffie-Hellman](cryptography/diffie-hellman.md)
+
+## CLOUD
+
+* [Google GKE/GCP](cloud/google-gke-gcp/README.md)
+  * [Theory](cloud/google-gke-gcp/theory.md)

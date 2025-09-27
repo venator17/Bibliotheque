@@ -78,7 +78,7 @@ nxc ldap 13.13.13.13 -u yorinobu.arasaka -p 'ihatesaburo' --bloodhound --collect
 
 So basically we have 3 fields: <mark style="color:red;">**Search**</mark>, <mark style="color:red;">**Pathfinding**</mark>, <mark style="color:red;">**Cypher:**</mark>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 In **Search**, we can <mark style="color:purple;">**SEARCH for different objects in AD**</mark>, like users, ou, gpo, etc. We can specify type with tags like
 

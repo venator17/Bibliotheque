@@ -35,3 +35,44 @@ _But besides all explanations I think in this topic pictures are better explaine
 
 <figure><img src="../../.gitbook/assets/OSI2.png" alt=""><figcaption><p>OSI vs TCP/IP</p></figcaption></figure>
 
+## <mark style="color:yellow;">PDU</mark>
+
+<mark style="color:red;">**PDU (Protocol Data Units)**</mark> is a <mark style="color:purple;">**data packet made up of control information**</mark> and data encapsulated from each layer of the OSI model. The breakout below will show how the layers in the two models match up to a PDU.
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+And here you'll see comparison of PDU's with real example of packet:
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+## <mark style="color:yellow;">ENCAPSULATION</mark>
+
+Notice how **order** of PDU's have changed. That's because of <mark style="color:red;">**encapsulation**</mark> process. Imagine a post office, when before sending a package, we are packing it inside a few boxes, each of which has it's own unique required data. And as recipient gets the package, it unpacks it, layer by layer(<mark style="color:red;">**decapsulation**</mark>):
+
+### <mark style="color:blue;">Sender Side:</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**Encapsulation**</mark>
+
+```css
+[Application Data]
+↓
+[Transport Layer] → adds TCP/UDP header
+↓
+[Network Layer] → adds IP header
+↓
+[Link Layer] → adds Ethernet header
+↓
+[Bits on the wire]
+```
+
+### <mark style="color:blue;">Receiver Side:</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**Decapsulation**</mark>
+
+```css
+[Bits from wire]
+↓
+[Link Layer] → strips Ethernet header
+↓
+[Network Layer] → strips IP header
+↓
+[Transport Layer] → strips TCP/UDP header
+↓
+[Application Layer] → gets raw data
+```

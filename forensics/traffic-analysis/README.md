@@ -1,6 +1,6 @@
 ---
 hidden: true
-icon: magnifying-glass-chart
+icon: traffic-light
 ---
 
 # Traffic Analysis
