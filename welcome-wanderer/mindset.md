@@ -8,7 +8,7 @@ icon: brain-circuit
 
 #### <mark style="color:red;">Rule #1 — Think for yourself.</mark>
 
-**Fuck the herd. Don’t let anyone else write your script. Cut through the noise, trust your own mind, and draw your own lines.**
+**Fuck the herd. Don’t let anyone else rule you. Trust your own mind, and draw your own lines.**
 
 #### <mark style="color:red;">Rule #2 — Burn for it.</mark>
 
@@ -16,23 +16,23 @@ icon: brain-circuit
 
 #### <mark style="color:red;">Rule #3 — Hacking is a worldview.</mark>&#x20;
 
-**Everything’s a system — social, moral, political. Every system has cracks. Find them, pry them open, see what bleeds.**
+**Everything’s a system — social, moral, political. Every system has cracks. Find them, pry them open, see where it bleeds.**
 
 #### <mark style="color:red;">Rule #4 — Find the exploit, document, move on.</mark>
 
-**Don’t worship one break. Break, learn, log it, leave. The next hit’s already waiting.**
+**Don’t worship one achievement. Break, learn, log it, leave. The next feat is already waiting.**
 
 #### <mark style="color:red;">Rule #5 — Practice where it counts.</mark>
 
-**HackTheBox, CTFs, labs, home rigs — that’s the weight room. You don’t get sharp without grinding steel on steel.**
+**CTFs, labs, home rigs — that’s the weight room. You don’t get sharp without grinding steel on steel.**
 
 #### <mark style="color:red;">Rule #6 — Filter the noise, keep the signal.</mark>
 
-**Your head’s chaos. Structure it. Kill distractions, chase the patterns.**
+**Your head’s chaos. Structure it. Kill distractions, chase the patterns when needed.**
 
 #### <mark style="color:red;">Rule #7 — Music is the engine.</mark>
 
-**Industrial, synthwave, ambient, rock. Noise that cuts, beats that fuel, sounds that make the world burn brighter or quieter when you need it.**
+**Industrial, ambient, rock, etc. Noise that makes your heart pumping, or quiets excessive thoughts**
 
 #### <mark style="color:red;">Rule #8 — Loyalty > crowd.</mark>
 
@@ -44,11 +44,11 @@ icon: brain-circuit
 
 #### <mark style="color:red;">Rule #10 — Be visible but unreadable.</mark>
 
-**Black tee, bomber, scuffed kicks. Look simple, stay dangerous. Let ‘em think they know you — then prove they don’t.**
+**Black tee, bomber, scuffed kicks. Look simple, stay unreadable. Let them think they’ve got you figured out — then show they never did if needed.**
 
 #### <mark style="color:red;">Rule #11 — Reputation is made in silence.</mark>
 
-**Talk less. Ship more. Noise fades, results don't.**
+**Talk less. Deliver more. Noise fades, results don't.**
 
 ## <mark style="color:yellow;">The Hacker Manifesto</mark>
 
