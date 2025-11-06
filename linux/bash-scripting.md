@@ -4,13 +4,11 @@ icon: square-terminal
 
 # Bash Scripting
 
-## What it is?
+## <mark style="color:yellow;">ABOUT</mark>
 
 **Bash is the scripting language we use to communicate with Unix-based OS and give commands to the system.**
 
-***
-
-### Script Execution - Examples
+### <mark style="color:blue;">Script Execution - Examples</mark>
 
 ```bash
 venator17@kali[/kali]$ bash script.sh <optional arguments>
@@ -18,15 +16,13 @@ venator17@kali[/kali]$ sh script.sh <optional arguments>
 venator17@kali[/kali]$ ./script.sh <optional arguments>
 ```
 
-***
-
-### Shebang
+### <mark style="color:blue;">Shebang</mark>
 
 The `#!/bin/bash` at the beginning of a Bash script is known as a shebang or hashbang. It serves as a directive to the operating system, indicating which interpreter should be used to execute the script.
 
-## Conditional Execution
+## <mark style="color:yellow;">CONDITIONAL EXECUTION</mark>
 
-### If-Else
+### <mark style="color:blue;">If-Else</mark>
 
 ```bash
 if [condition]
@@ -35,7 +31,7 @@ else [what would be executed if condition would fail]
 fi [closing]
 ```
 
-### If-Only
+### <mark style="color:blue;">If-Only</mark>
 
 ```bash
 if [condition]
@@ -43,7 +39,7 @@ then [execution]
 fi [closing]
 ```
 
-### If-Elif-Else
+### <mark style="color:blue;">If-Elif-Else</mark>
 
 ```bash
 if [first condition]
@@ -54,7 +50,7 @@ else [what would be executed if conditions would fail]
 fi [closing]
 ```
 
-### Case
+### <mark style="color:blue;">Case</mark>
 
 ```bash
 case <expression> in
@@ -64,7 +60,7 @@ case <expression> in
 esac
 ```
 
-**Example::**
+**Example:**
 
 ```bash
 case $opt in 
@@ -75,9 +71,7 @@ case $opt in
 esac
 ```
 
-***
-
-### Comparison Operators
+### <mark style="color:blue;">Comparison Operators</mark>
 
 | Operator | Explanation              |
 | -------- | ------------------------ |
@@ -88,7 +82,7 @@ esac
 | `-gt`    | greater than             |
 | `-ge`    | greater than or equal to |
 
-### String Operators
+### <mark style="color:blue;">String Operators</mark>
 
 | Operator | Description                                 |
 | -------- | ------------------------------------------- |
@@ -99,7 +93,7 @@ esac
 | `-z`     | if the string is empty (null)               |
 | `-n`     | if the string is not null                   |
 
-### File Operators
+### <mark style="color:blue;">File Operators</mark>
 
 | Operator | Description                                            |
 | -------- | ------------------------------------------------------ |
@@ -115,7 +109,7 @@ esac
 | `-w`     | tests if the file has write permission                 |
 | `-x`     | tests if the file has execute permission               |
 
-### Special Variables
+### <mark style="color:blue;">Special Variables</mark>
 
 |      |                                                      |
 | ---- | ---------------------------------------------------- |
@@ -125,7 +119,7 @@ esac
 | `$$` | Id of executing process                              |
 | `$?` | Success of command. `0` is success, `1` is a failure |
 
-### Regular Variables
+### <mark style="color:blue;">Regular Variables</mark>
 
 ```bash
 > variable="Declared without an error."
@@ -133,7 +127,7 @@ esac
 > Declared without an error.
 ```
 
-## Arrays
+## <mark style="color:yellow;">ARRAYS</mark>
 
 ```bash
 > domains=(shadow wizard money gang)
@@ -149,9 +143,9 @@ esac
 > money gang
 ```
 
-## Loops
+## <mark style="color:yellow;">LOOPS</mark>
 
-### For
+### <mark style="color:blue;">For</mark>
 
 ```bash
 for variable in list
@@ -170,9 +164,7 @@ do
 done
 ```
 
-***
-
-### While
+### <mark style="color:blue;">While</mark>
 
 ```bash
 while [ condition ]
@@ -192,9 +184,7 @@ do
 done
 ```
 
-***
-
-### Until
+### <mark style="color:blue;">Until</mark>
 
 ```bash
 until [ condition ]
@@ -214,7 +204,7 @@ do
 done
 ```
 
-### Script Termination
+### <mark style="color:blue;">Script Termination</mark>
 
 | Exit Status | Explanation              |
 | ----------- | ------------------------ |
@@ -222,9 +212,9 @@ done
 | `exit 1`    | General error condition  |
 | `exit 2`    | Specific error condition |
 
-### Wildcards
+### <mark style="color:blue;">Wildcards</mark>
 
-**In Bash, a wildcard refers to a character or a set of characters that can be used to represent a group of filenames or strings. Wildcards are often used in commands to perform operations on multiple files or strings that match a specified pattern.**
+In Bash, a **wildcard** refers to a **character or a set of characters** that can be used to represent a group of filenames or strings. Wildcards are often used in commands to perform operations on multiple files or strings that match a specified pattern.
 
 | Wildcard                                 | Example Usage              | Explanation                                                                         |
 | ---------------------------------------- | -------------------------- | ----------------------------------------------------------------------------------- |
@@ -237,7 +227,7 @@ done
 | `+(pattern)` (One or More Occurrences)   | `ls file+(1).txt`          | Matches "file1.txt", "file11.txt", etc.                                             |
 | `*(pattern)` (Zero or More Occurrences)  | `ls file*(1).txt`          | Matches "file.txt", "file1.txt", "file11.txt", etc.                                 |
 
-### Tips & Tricks
+## <mark style="color:yellow;">TIPS & TRICKS</mark>
 
-1. You Could use `tee` command for writing output to both standard output and file. If you would use `tee -a`, it would
-2. Use `bash -x -v` to verbose debugging
+1. You Could use <mark style="color:green;">`tee`</mark> command for writing output to both standard output and file. If you would use <mark style="color:green;">`tee -a`</mark>, it would
+2. Use <mark style="color:green;">`bash -x -v`</mark> to verbose debugging

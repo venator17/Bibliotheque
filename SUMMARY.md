@@ -3,7 +3,7 @@
 ## Welcome wanderer
 
 * [Bibliothèque](README.md)
-* [Hacking Philosophy](welcome-wanderer/the-hacker-manifesto.md)
+* [Mindset](welcome-wanderer/mindset.md)
 * [Useful Links](welcome-wanderer/useful-links.md)
 
 ***

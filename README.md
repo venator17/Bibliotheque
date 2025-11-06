@@ -1,12 +1,10 @@
 ---
 icon: spider
-cover: .gitbook/assets/cyberpunk-cafe.gif
-coverY: 13.29795918367347
 ---
 
 # Bibliothèque
 
-<div align="left"><figure><img src=".gitbook/assets/spider_avatar.png" alt="" width="222"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src=".gitbook/assets/Glider.png" alt="" width="404"><figcaption></figcaption></figure></div>
 
 ## <mark style="color:yellow;">ABOUT ME</mark>&#x20;
 
