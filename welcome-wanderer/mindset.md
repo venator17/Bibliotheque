@@ -4,7 +4,7 @@ icon: brain-circuit
 
 # Mindset
 
-## <mark style="color:yellow;">Mindset</mark>
+## <mark style="color:orange;">Mindset</mark>
 
 #### <mark style="color:red;">Rule #1 — Think for yourself.</mark>
 
