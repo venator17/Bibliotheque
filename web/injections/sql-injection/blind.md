@@ -1,0 +1,19 @@
+---
+icon: eye-slash
+---
+
+# BLIND
+
+## ABOUT
+
+## WHERE TO LOOK
+
+## APPROACH
+
+## EXAMPLES
+
+## PREVENTION
+
+## EXTERNAL SOURCES
+
+## ADDITIONAL NOTES

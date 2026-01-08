@@ -4,9 +4,9 @@
 
 <mark style="color:red;">**Media Access Control (MAC)**</mark> address is the physical address for our network interfaces. Each host in a network has its own 48-bit (6 octets), represented in hexadecimal format. There are several different standards for the MAC address:
 
-* **Ethernet (IEEE 802.3)**
-* **Bluetooth (IEEE 802.15)**
-* **WLAN (IEEE 802.11)**
+* <mark style="color:$primary;">**Ethernet (IEEE 802.3)**</mark>
+* <mark style="color:$primary;">**Bluetooth (IEEE 802.15)**</mark>
+* <mark style="color:$primary;">**WLAN (IEEE 802.11)**</mark>
 
 This is because the MAC address addresses the physical connection (network card, Bluetooth, or WLAN adapter) of a host. Each network card has its individual MAC address, which is configured once on the manufacturer's hardware side but can always be changed, at least temporarily.
 

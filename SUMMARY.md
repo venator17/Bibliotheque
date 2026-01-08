@@ -192,8 +192,23 @@
 
 ## WEB
 
-* [Reconnaissance](web/web-recon/README.md)
-  * [Fuzzing](web/web-recon/fuzzing.md)
+* [Server-Side](web/server-side/README.md)
+  * [Path Traversal](web/server-side/path-traversal.md)
+  * [IDOR](web/server-side/idor.md)
+  * [SSRF](web/server-side/ssrf.md)
+  * [File Upload](web/server-side/file-upload.md)
+  * [Access Control](web/server-side/access-control.md)
+* [Client-Side](web/client-side/README.md)
+  * [CSRF](web/client-side/csrf.md)
+* [Injections](web/injections/README.md)
+  * [SQL Injection](web/injections/sql-injection/README.md)
+    * [UNION-BASED](web/injections/sql-injection/union-based.md)
+    * [BLIND](web/injections/sql-injection/blind.md)
+    * [TIME-BASED](web/injections/sql-injection/time-based.md)
+    * [ERROR-BASED](web/injections/sql-injection/error-based.md)
+  * [XSS](web/injections/xss.md)
+  * [Command Injection](web/injections/command-injection.md)
+* [Fuzzing](web/fuzzing.md)
 * [DNS](web/dns.md)
 
 ## FORENSICS
