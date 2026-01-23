@@ -1,9 +1,3 @@
----
-description: >-
-  IN SOME EXAMPLES I WOULD USE SCREENSHOTS FROM OBSIDIAN, BECAUSE IT CORRECTLY
-  INTERPRETS SQL REQUESTS
----
-
 # SQL Injection
 
 ## <mark style="color:$primary;">ABOUT</mark>
@@ -83,6 +77,10 @@ UNION SELECT username || '~' || password FROM users
 ## <mark style="color:$primary;">EXAMPLES</mark>
 
 The following payloads demonstrate basic retrieval techniques used in standard testing scenarios. The first payload utilizes a comment indicator (`--`) to remove the trailing SQL constraints, effectively displaying unreleased products. The second payload injects a boolean tautology (`OR 1=1`) to force the database to return every record in the table, bypassing specific category filters.
+
+{% hint style="info" %}
+IN SOME EXAMPLES I WOULD USE SCREENSHOTS FROM OBSIDIAN, BECAUSE IT CORRECTLY INTERPRETS SQL REQUESTS
+{% endhint %}
 
 On the back-end SQL query probably looks like this:
 
