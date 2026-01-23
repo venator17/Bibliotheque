@@ -1,4 +1,4 @@
 # Command Injection
 
-## ABOUT
+## <mark style="color:$primary;">ABOUT</mark>
 

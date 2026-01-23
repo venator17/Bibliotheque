@@ -1,6 +1,6 @@
 # File Upload
 
-## <mark style="color:yellow;">ABOUT</mark>
+## <mark style="color:$primary;">ABOUT</mark>
 
 <mark style="color:red;">**File Upload**</mark> vulnerabilities are when a web server allows users to upload files to its filesystem without sufficiently validating things like their name, type, contents, or size. Failing to properly enforce restrictions on these could mean that even a basic image upload function can be used to upload arbitrary and potentially dangerous files instead. This could even include server-side script files that enable remote code execution.
 
@@ -11,7 +11,7 @@ The impact of file upload vulnerabilities generally depends on two key factors:
 * Which aspect of the file the website fails to validate properly, whether that be its size, type, contents, and so on.
 * What restrictions are imposed on the file once it has been successfully uploaded.
 
-## <mark style="color:yellow;">1. Bypassing Extension Filters</mark>
+## <mark style="color:$primary;">1. Bypassing Extension Filters</mark>
 
 ### <mark style="color:blue;">Method: Case Sensitivity</mark>
 
@@ -88,7 +88,7 @@ Try using multibyte unicode characters, which may be converted to null bytes and
 
 1. Sequences like `xC0 x2E`, `xC4 xAE` or `xC0 xAE` may be translated to `x2E` if the filename parsed as a UTF-8 string, but then converted to ASCII characters before being used in a path.
 
-## <mark style="color:yellow;">2. Bypassing Content & Config Filters</mark>
+## <mark style="color:$primary;">2. Bypassing Content & Config Filters</mark>
 
 ### <mark style="color:blue;">Method: Content-Type Spoofing</mark>
 
@@ -98,7 +98,9 @@ Try using multibyte unicode characters, which may be converted to null bytes and
 
 The second and more common type of file content validation is testing the uploaded file's MIME-Type. Multipurpose Internet Mail Extensions (MIME) is an internet standard that determines the type of a file through its general format and bytes structure. This is usually done by inspecting the first few bytes of the file's content, which contain the File Signature or Magic Bytes.&#x20;
 
-> <mark style="color:yellow;">**Also you can add magic bytes by using hexeditor files for checking and file tool to check if it worked**</mark>
+{% hint style="info" %}
+Also you can add magic bytes by using hexeditor files for checking and file tool to check if it worked
+{% endhint %}
 
 1. For example, if a file starts with (`GIF87a` or `GIF89a`), this indicates that it is a GIF image, while a file starting with plaintext is usually considered a Text file.
 2. If we change the first bytes of any file to the GIF magic bytes, its MIME type would be changed to a GIF image, regardless of its remaining content or extension.
@@ -143,7 +145,7 @@ Similarly, developers can make directory-specific configuration on IIS servers u
 2. Web servers use these kinds of configuration files when present, but you're not normally allowed to access them using HTTP requests. However, you may occasionally find servers that fail to stop you from uploading your own malicious configuration file.
 3. In this case, even if the file extension you need is blacklisted, you may be able to trick the server into mapping an arbitrary, custom file extension to an executable MIME type.
 
-## <mark style="color:yellow;">3. Exploiting Server-Side Logic</mark>
+## <mark style="color:$primary;">3. Exploiting Server-Side Logic</mark>
 
 ### <mark style="color:blue;">Server File Handling Basics</mark>
 
@@ -167,7 +169,7 @@ Similar race conditions can occur in functions that allow you to upload a file b
 3. To make attacks like this easier, you can try to extend the amount of time taken to process the file, thereby lengthening the window for brute-forcing the directory name. One way of doing this is by uploading a larger file.
 4. If it is processed in chunks, you can potentially take advantage of this by creating a malicious file with the payload at the start, followed by a large number of arbitrary padding bytes.
 
-## <mark style="color:yellow;">4. Alternative Payloads & General Notes</mark>
+## <mark style="color:$primary;">4. Alternative Payloads & General Notes</mark>
 
 ### <mark style="color:blue;">Attack: Client-Side (Stored XSS)</mark>
 

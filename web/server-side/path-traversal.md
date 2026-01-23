@@ -1,6 +1,6 @@
 # Path Traversal
 
-## ABOUT&#x20;
+## <mark style="color:$primary;">ABOUT</mark>&#x20;
 
 **Path traversal** is also known as **directory traversal**. These vulnerabilities enable an attacker to read arbitrary files on the server that is running an application. This might include:
 

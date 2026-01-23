@@ -4,48 +4,46 @@ icon: brain-circuit
 
 # Mindset
 
-## <mark style="color:orange;">Mindset</mark>
+## <mark style="color:$primary;">RULE #1: Verification</mark>
 
-#### <mark style="color:red;">Rule #1 — Think for yourself.</mark>
+Ignore the industry echo chamber and trust only the results you can verify with your own hands.
 
-**Fuck the herd. Don’t let anyone else rule you. Trust your own mind, and draw your own lines.**
+## <mark style="color:$primary;">RULE #2: Obsession</mark>
 
-#### <mark style="color:red;">Rule #2 — Burn for it.</mark>
+You must possess a genuine obsession for the mechanics of failure or you will never survive the grind.
 
-**Knowledge without fire = dead facts. If it doesn’t spark, ditch it. Same as sex — without heat, it’s just hollow motions.**
+## <mark style="color:$primary;">RULE #3: Worldview</mark>
 
-#### <mark style="color:red;">Rule #3 — Hacking is a worldview.</mark>&#x20;
+Look at every political, social, or technical structure as a broken system waiting for you to find the exploit.
 
-**Everything’s a system — social, moral, political. Every system has cracks. Find them, pry them open, see where it bleeds.**
+## <mark style="color:$primary;">RULE #4: Process</mark>
 
-#### <mark style="color:red;">Rule #4 — Find the exploit, document, move on.</mark>
+Don't waste time celebrating the breach when your job is to document the impact and move to the next target.
 
-**Don’t worship one achievement. Break, learn, log it, leave. The next feat is already waiting.**
+## <mark style="color:$primary;">RULE #5: Training</mark>
 
-#### <mark style="color:red;">Rule #5 — Practice where it counts.</mark>
+Get out of the pristine lab environments and grind your skills against the chaos of real-world infrastructure.
 
-**CTFs, labs, home rigs — that’s the weight room. You don’t get sharp without grinding steel on steel.**
+## <mark style="color:$primary;">RULE #6: Focus</mark>
 
-#### <mark style="color:red;">Rule #6 — Filter the noise, keep the signal.</mark>
+Aggressively filter out the distractions so you can isolate the faint signals that actually matter.
 
-**Your head’s chaos. Structure it. Kill distractions, chase the patterns when needed.**
+## <mark style="color:$primary;">RULE #7: Environment</mark>
 
-#### <mark style="color:red;">Rule #7 — Music is the engine.</mark>
+Use aggressive audio to modulate your headspace and keep your focus locked during long engagements.
 
-**Industrial, ambient, rock, etc. Noise that makes your heart pumping, or quiets excessive thoughts**
+## <mark style="color:$primary;">RULE #8: Loyalty</mark>
 
-#### <mark style="color:red;">Rule #8 — Loyalty > crowd.</mark>
+Reserve your loyalty for the very few who have earned it and treat everyone else as potential noise.
 
-**Fuck the masses. Save your fire for the few who matter. Guard your circle, the rest is static.**
+## <mark style="color:$primary;">RULE #9: Recovery</mark>
 
-#### <mark style="color:red;">Rule #9 — Burnout is real — schedule silence.</mark>
+Respect your biological limits by disconnecting completely before burnout compromises your ability to execute.
 
-**You can’t be “on” forever. Shut it down. Meditate, walk, sleep, disappear. Come back harder.**
+## <mark style="color:$primary;">RULE #10: Economics</mark>
 
-#### <mark style="color:red;">Rule #10 — Be visible but unreadable.</mark>
+Focus entirely on building dangerous skillset that you can sell to the highest bidder without hesitation.
 
-**Black tee, bomber, scuffed kicks. Look simple, stay unreadable. Let them think they’ve got you figured out — then show they never did if needed.**
+## <mark style="color:$primary;">RULE #11: Reputation</mark>
 
-#### <mark style="color:red;">Rule #11 — Reputation is made in silence.</mark>
-
-**Talk less. Deliver more. Noise fades, results don't.**
+Build a reputation based on the silence of your operations and the undeniable impact of your results.

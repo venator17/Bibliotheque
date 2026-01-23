@@ -1,0 +1,6 @@
+---
+icon: eye-slash
+---
+
+# BLIND
+

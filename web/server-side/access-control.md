@@ -1,6 +1,6 @@
 # Access Control
 
-## ABOUT
+## <mark style="color:$primary;">ABOUT</mark>
 
 Access control is the application of constraints on who or what is authorized to perform actions or access resources. In the context of web applications, access control is dependent on authentication and session management:
 

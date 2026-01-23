@@ -4,7 +4,7 @@ icon: merge
 
 # UNION-BASED
 
-## <mark style="color:yellow;">ABOUT</mark>
+## <mark style="color:$primary;">ABOUT</mark>
 
 When an application is vulnerable to SQL injection, and the results of the query are returned within the application's responses, you can use the UNION keyword to retrieve data from other tables within the database. This is commonly known as a SQL injection UNION attack.
 
@@ -14,9 +14,7 @@ The UNION keyword enables you to execute one or more additional SELECT queries a
 SELECT a, b FROM table1 UNION SELECT c, d FROM table2
 ```
 
-## <mark style="color:yellow;">WHERE TO LOOK</mark>
-
-## <mark style="color:yellow;">APPROACH</mark>
+## <mark style="color:$primary;">APPROACH</mark>
 
 This SQL query returns a single result set with two columns, containing values from columns **a** and **b** in **table1** and columns **c** and **d** in **table2**.
 
@@ -155,13 +153,13 @@ SQL is not uniform across implementations. Function availability, concatenation 
 
 Input does not travel directly from client to SQL parser. It passes through encoding, decoding, normalization, filtering, and sometimes security middleware. Each layer can transform characters, whitespace, delimiters, and escape sequences. Payload intent must survive these transformations intact. Misunderstanding this chain leads to malformed logic, inconsistent behavior, and false diagnostics. This step maintains alignment between conceptual payload design and actual executed query structure.
 
-## <mark style="color:yellow;">EXAMPLES</mark>
+## <mark style="color:$primary;">EXAMPLES</mark>
 
 <details>
 
 <summary>UNION SELECT Usage</summary>
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 ```sql
 Clothing%2c+shoes+and+accessories'+UNION+SELECT+NULL,NULL,NULL--
@@ -175,7 +173,7 @@ Here we are using quote symbol (') to close WHERE (where we suppose editable var
 
 <summary>UNION CONCAT Usage</summary>
 
-<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ```sql
 Corporate%2bgifts'+UNION+SELECT+NULL,CONCAT(password,+'---',+username)+FROM+users--
@@ -189,7 +187,7 @@ Here we use the `CONCAT()` function to combine multiple columns from the same ro
 
 <summary>Listing the database contents on non-Oracle databases</summary>
 
-<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 ```sql
 Gifts'+UNION+ALL+SELECT+username_suvbzh,+password_wlssnr+FROM+users_gsoobj--
@@ -223,13 +221,13 @@ Gifts'+UNION+ALL+SELECT+NULL,CONCAT(username_suvbzh,+'---',+password_wlssnr,'---
 
 </details>
 
-## <mark style="color:yellow;">PREVENTION</mark>
+## <mark style="color:$primary;">PREVENTION</mark>
 
 {% hint style="danger" %}
 **WIP**
 {% endhint %}
 
-## <mark style="color:yellow;">ADDITIONAL NOTES</mark>
+## <mark style="color:$primary;">ADDITIONAL NOTES</mark>
 
 {% hint style="warning" %}
 Use trailing space (`--` ) with a space after it because it's usually required in SQL engines
