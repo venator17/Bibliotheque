@@ -4,17 +4,17 @@ icon: lock-keyhole
 
 # Security
 
-## <mark style="color:yellow;">ABOUT</mark>
+## <mark style="color:$primary;">ABOUT</mark>
 
 Here I would write about <mark style="color:purple;">**security mechanisms**</mark> in Windows. Since Windows theory is very broad, and to avoid making the theory page bloated, I would write here about the security side of Windows.&#x20;
 
-## <mark style="color:yellow;">AUTHENTICATION</mark>
+## <mark style="color:$primary;">AUTHENTICATION</mark>
 
 <mark style="color:red;">**Authentication**</mark> is process of verifying <mark style="color:purple;">**who someone is.**</mark>
 
 <figure><img src="../../.gitbook/assets/win_authproc_image.png" alt=""><figcaption></figcaption></figure>
 
-## <mark style="color:yellow;">AUTHORIZATION</mark>
+## <mark style="color:$primary;">AUTHORIZATION</mark>
 
 <mark style="color:red;">**Authorization**</mark> is process of determining <mark style="color:purple;">**what someone is allowed to do**</mark><mark style="color:purple;">.</mark>
 
@@ -27,11 +27,11 @@ Here I would write about <mark style="color:purple;">**security mechanisms**</ma
 3. <mark style="color:blue;">**Comparison of Access Token and Security Descriptor.**</mark> The system compares the user's **access token** (SIDs and privileges) with the object's **ACEs** in the security descriptor. Permissions such as **Read**, **Write**, **Execute**, etc., are checked against the ACEs to determine whether the user has the required access rights.
 4. <mark style="color:blue;">**Access Decision.**</mark>
 
-## <mark style="color:yellow;">SAM</mark>
+## <mark style="color:$primary;">SAM</mark>
 
 <mark style="color:red;">**The Security Accounts Manager**</mark>**&#x20;is a&#x20;**<mark style="color:purple;">**database file**</mark>**&#x20;in the Microsoft Windows operating system that contains usernames and passwords.** The SAM is available in different versions of Windows, including XP, Vista, 7, 8.1, 10 and 11. Each user account can be assigned a local area network (LAN) and a password would be hashed and stored in the SAM. The passwords hashes are stored in <mark style="color:green;">**HKEY\_LOCAL\_MACHINE\SAM**</mark><mark style="color:blue;">**,**</mark> but the access to it is restricted. **HKLM/SAM** and **SYSTEM** privileges are required for accessing it.
 
-## <mark style="color:yellow;">SID</mark>
+## <mark style="color:$primary;">SID</mark>
 
 <mark style="color:red;">**Security Identifier (SID)**</mark> is <mark style="color:purple;">**unique, system-generated identifier**</mark> for each security principal on a system. Even identical users are distinguished by their SIDs, which determine their permissions. SIDs are stored in the security database and included in access tokens to manage user actions.&#x20;
 
@@ -52,7 +52,7 @@ A SID consists of the <mark style="color:red;">**Identifier Authority**</mark> a
 | <mark style="color:blue;">**674899381-...**</mark> | **Subauthority 2**       | Identifies the specific computer or domain that created the SID.                                                                                                                                                                            |
 | <mark style="color:blue;">**1002**</mark>          | **Subauthority 3 (RID)** | <p>Differentiates accounts, indicating roles like user, guest, or administrator. <br><mark style="color:orange;"><strong>(If you enumerated previous value via enum, you can bruteforce RID to get a lot objects SID's)</strong></mark></p> |
 
-## <mark style="color:yellow;">LSASS</mark>
+## <mark style="color:$primary;">LSASS</mark>
 
 <mark style="color:red;">**Local Security Authority Subsystem Service (LSASS)**</mark> is a <mark style="color:purple;">**collection of many modules**</mark> and has access to all authentication processes that can be found in <mark style="color:green;">`%SystemRoot%\System32\Lsass.exe`</mark>. <mark style="color:green;">**`lsass.exe`**</mark> is the <mark style="color:purple;">**process**</mark> that is responsible for **enforcing the security policy on Windows systems**.&#x20;
 
@@ -82,7 +82,7 @@ All events associated with this process (logon/logoff attempts, etc.) are logged
 
 This data is stored in the Windows Registry at <mark style="color:green;">**`HKEY_LOCAL_MACHINE\Security\Policy\Secrets`**</mark>
 
-## <mark style="color:yellow;">NTFS</mark>
+## <mark style="color:$primary;">NTFS</mark>
 
 ### <mark style="color:blue;">Permission</mark>
 
@@ -114,7 +114,7 @@ This data is stored in the Windows Registry at <mark style="color:green;">**`HKE
 
 <table><thead><tr><th>Symbol</th><th width="286">Permission</th><th>Description</th></tr></thead><tbody><tr><td><mark style="color:blue;"><strong><code>F</code></strong></mark></td><td><strong>Full Access</strong></td><td>Grants all permissions, including modifying and deleting.</td></tr><tr><td><mark style="color:blue;"><strong><code>D</code></strong></mark></td><td><strong>Delete Access</strong></td><td>Allows deletion of the file or folder.</td></tr><tr><td><mark style="color:blue;"><strong><code>N</code></strong></mark></td><td><strong>No Access</strong></td><td>Denies all access to the file or folder.</td></tr><tr><td><mark style="color:blue;"><strong><code>M</code></strong></mark></td><td><strong>Modify Access</strong></td><td>Allows reading, writing, and deleting content.</td></tr><tr><td><mark style="color:blue;"><strong><code>RX</code></strong></mark></td><td><strong>Read &#x26; Execute</strong></td><td>Allows reading and executing files.</td></tr><tr><td><mark style="color:blue;"><strong><code>R</code></strong></mark></td><td><strong>Read-Only Access</strong></td><td>Permits viewing and listing of contents.</td></tr><tr><td><mark style="color:blue;"><strong><code>W</code></strong></mark></td><td><strong>Write-Only Access</strong></td><td>Allows adding new files and data but not reading.</td></tr></tbody></table>
 
-## <mark style="color:yellow;">NTLM</mark>
+## <mark style="color:$primary;">NTLM</mark>
 
 <mark style="color:red;">**NTLM (NT LAN Manager)**</mark> is a <mark style="color:purple;">**challenge-response authentication protocol**</mark> used by Microsoft for securing user credentials during authentication—primarily in older Windows environments or for backwards compatibility.
 
@@ -141,21 +141,21 @@ Sends an <mark style="color:green;">`AUTHENTICATE_MESSAGE`</mark> containing:
 * **LM/NTLM response**
 * And optionally a session key
 
-## <mark style="color:yellow;">ACL</mark>
+## <mark style="color:$primary;">ACL</mark>
 
 <figure><img src="../../.gitbook/assets/ACL SCHEME.png" alt="" width="563"><figcaption><p><strong>ACL Structure</strong></p></figcaption></figure>
 
 <mark style="color:red;">**Access Control List (ACL)**</mark> is a <mark style="color:purple;">**list of rules**</mark> that specifies which users or groups are allowed to access an object, such as a file or folder, and what actions they can perform (e.g., read, write, or execute).
 
-#### <mark style="color:orange;">**DACL**</mark>
+#### <mark style="color:$primary;">**DACL**</mark>
 
 <mark style="color:red;">**Discretionary Access Control List (DACL)**</mark> is a type of ACL that <mark style="color:purple;">**defines the permissions for users and groups to access an object**</mark>. It controls what actions can be performed on the object by each user or group, and the owner of the object can modify the DACL.
 
-#### <mark style="color:orange;">**SACL**</mark>
+#### <mark style="color:$primary;">**SACL**</mark>
 
 <mark style="color:red;">**System Access Control List (SACL)**</mark>, on the other hand, <mark style="color:purple;">**specifies what events related to an object should be logged for auditing purposes**</mark>. It helps track access attempts, whether successful or not.
 
-#### <mark style="color:orange;">**ACE**</mark>
+#### <mark style="color:$primary;">**ACE**</mark>
 
 <mark style="color:red;">**Access Control Entry (ACE)**</mark> is an <mark style="color:purple;">**individual entry in an ACL**</mark> that defines which users, groups, or processes have access to a file or to execute a process, for example. Each ACE lists the access rights granted or denied to a principal (user or group).
 
@@ -168,7 +168,7 @@ Each <mark style="color:red;">**ACE**</mark> is made up of the following <mark s
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Image from <a href="https://academy.hackthebox.com/"><strong>HTBA</strong></a></p></figcaption></figure>
 
-## <mark style="color:yellow;">DPAPI</mark>
+## <mark style="color:$primary;">DPAPI</mark>
 
 <mark style="color:red;">**Data Protection Application Programming Interface**</mark> is set of API which Windows uses for the symmetric encryption of asymmetric private keys and used by various third-party applications like:
 
@@ -178,7 +178,7 @@ Each <mark style="color:red;">**ACE**</mark> is made up of the following <mark s
 * **Remote Desktop Connection**
 * **Credential Manager**
 
-## <mark style="color:yellow;">UAC</mark>
+## <mark style="color:$primary;">UAC</mark>
 
 <mark style="color:red;">**User Account Control (UAC)**</mark> is a <mark style="color:purple;">**security feature**</mark> in Windows to **prevent malware from running or manipulating processes** that could damage the computer or its contents.&#x20;
 
@@ -192,7 +192,7 @@ The default <mark style="color:yellow;">**RID**</mark> <mark style="color:yellow
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p><strong>UAC Strucure</strong> <a href="https://learn.microsoft.com/en-us/windows/security/application-security/application-control/user-account-control/how-it-works"><strong>[SOURCE]</strong></a></p></figcaption></figure>
 
-## <mark style="color:yellow;">PERMISSION, RIGHT, PRIVILEGE</mark>
+## <mark style="color:$primary;">PERMISSION, RIGHT, PRIVILEGE</mark>
 
 #### <mark style="color:orange;">**Permission**</mark>
 
@@ -206,7 +206,7 @@ The default <mark style="color:yellow;">**RID**</mark> <mark style="color:yellow
 
 <mark style="color:red;">**Right**</mark> is a system-wide rule that determines <mark style="color:purple;">**whether a user or group is allowed to perform a general action on the system**</mark>, like logging on locally, logging on over RDP, or shutting down the computer. Rights are managed through security policy (Local Security Policy or Group Policy) and are checked only during the logon phase, when the system validates if a user is permitted to log in in a specific way. Rights are not evaluated when accessing objects like files or registry keys later.
 
-## <mark style="color:yellow;">ACCESS FLOW</mark>
+## <mark style="color:$primary;">ACCESS FLOW</mark>
 
 #### <mark style="color:orange;">**Authentication Phase**</mark>
 

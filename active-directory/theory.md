@@ -4,7 +4,7 @@ icon: book-open
 
 # Theory
 
-## <mark style="color:yellow;">What is Active Directory</mark>
+## <mark style="color:$primary;">What is Active Directory</mark>
 
 <mark style="color:red;">**Active Directory (AD)**</mark> is a <mark style="color:purple;">**directory service**</mark> developed by **Microsoft** for Windows domain networks. It is included in most Windows Server operating systems as a set of processes and services. Active Directory plays a crucial role in managing the identities and relationships that make up network environments.&#x20;
 
@@ -18,7 +18,7 @@ icon: book-open
 
 After Windows system became part of the domain, it's interaction with SAM is over, they've broke up and it's new boyfriend is Domain Controller. And all questions about checking password would now be sent to Domain Controller, not SAM.  But in some ways system could come over to SAM if specify the <mark style="color:green;">`hostname`</mark> of the device proceeded by the <mark style="color:green;">`username`</mark> like <mark style="color:blue;">**WS01/nameofuser**</mark>**.**&#x20;
 
-## <mark style="color:yellow;">STRUCTURE EXAMPLE</mark>
+## <mark style="color:$primary;">STRUCTURE EXAMPLE</mark>
 
 <pre class="language-scheme"><code class="lang-scheme"><strong>FIA.LOCAL/
 </strong>├── FIELD-AGENTS.INLANEFREIGHT.LOCAL
@@ -43,7 +43,7 @@ Here we could see domain structure of <mark style="color:red;">**`ARASAKA.LOCAL`
 
 We can also see multiple child domains under each root domain. In this example, we can see that the root domain trusts each of the child domains, but the child domains in <mark style="color:red;">**`ARASAKA.LOCAL`**</mark> do not necessarily have trusts established with the child domains in <mark style="color:yellow;">**`MILITECH.LOCAL`**</mark>. This means that a user that is part of <mark style="color:red;">**`OSAKA.JAPAN.ARASAKA.LOCAL`**</mark> would NOT be able to authenticate to machines in the <mark style="color:yellow;">**`NC.NUSA.MILITECH.LOCAL`**</mark> domain by default even though a bidirectional trust exists between the top-level <mark style="color:yellow;">**`MILITECH.LOCAL`**</mark> and <mark style="color:red;">**`ARASAKA.LOCAL`**</mark> domains.
 
-## <mark style="color:yellow;">KERBEROS</mark>
+## <mark style="color:$primary;">KERBEROS</mark>
 
 <mark style="color:red;">**Kerberos**</mark> is default domain accounts <mark style="color:purple;">**authentication protocol**</mark> since **Windows 2000**. Main difference between other authentication protocols is that **Kerberos** use tickets, instead of just transmitting passwords all over the network. This image will show you simplified version of **Kerberos** authentication process, and then I'll explain everything in parts. Also for more detailed explanations I could recommend to watch [**\[THIS\]**](https://youtu.be/5N242XcKAsM?t=870) video.
 
@@ -70,9 +70,9 @@ The whole **ping-pong** of tickets and requests is shows here:
 * <mark style="color:red;">**Service Ticket:**</mark> \
   This **Ticket** allows a client to authenticate to a specific service. It contains encrypted information that verifies the client's identity and includes a session key that the client can use to communicate securely with the service.
 
-## <mark style="color:yellow;">PKINIT</mark>
+## <mark style="color:$primary;">PKINIT</mark>
 
-## <mark style="color:yellow;">NTLM</mark>
+## <mark style="color:$primary;">NTLM</mark>
 
 <mark style="color:red;">**NTLM (NT LAN Manager)**</mark> is a challenge-response <mark style="color:purple;">**authentication protocol**</mark> developed by Microsoft for authenticating users and securing communication in Windows environments. It has been largely replaced by **Kerberos** in modern Active Directory (AD) environments but is still present for backward compatibility.
 
@@ -89,15 +89,15 @@ NTLM uses a challenge-response mechanism to authenticate users without transmitt
 4. <mark style="color:blue;">**Server Verifies**</mark>
    * The server compares the response with its expected hash (computed from the stored user credentials).
 
-## <mark style="color:yellow;">NTDS.DIT</mark>
+## <mark style="color:$primary;">NTDS.DIT</mark>
 
 <mark style="color:red;">**NTDS.DIT**</mark> stands for <mark style="color:red;">**New Technology Directory Services Directory Information Tree**</mark>. It is main <mark style="color:purple;">**database file**</mark> within Microsoft’s **Active Directory Domain Services** **(AD DS)**. **NTDS.DIT** stores and organizes all the information related to objects in the domain, including **users**, **groups**, **computers**, and more. It acts as the backbone of Active Directory, housing critical data such as **user account details**, **passwords**, **group memberships**, and other **object attributes**.
 
-## <mark style="color:yellow;">LDAP</mark>
+## <mark style="color:$primary;">LDAP</mark>
 
 <mark style="color:red;">**LDAP (Lightweight Directory Access Protocol)**</mark> is a protocol used to access and manage directory services over a network. It stores information in a hierarchical structure and is often used for user authentication, authorization, and managing resources like contacts or network devices. LDAP allows operations like searching, adding, modifying, and deleting directory entries. It's commonly used in systems like Microsoft Active Directory for managing user data and permissions.
 
-## <mark style="color:yellow;">TRUST</mark>
+## <mark style="color:$primary;">TRUST</mark>
 
 <mark style="color:red;">**Trust**</mark> enables authentication between forests or domains, allowing users to access resources or manage another domain outside their own. <mark style="color:purple;">**It establishes a connection between the authentication systems of the two domains.**</mark>
 
@@ -118,7 +118,7 @@ Trusts can be <mark style="color:red;">**transitive**</mark> or <mark style="col
 
 Also they can be one-way, and bidirectional. Here everything is quite obvious, one-way is one way and bidirectional can work in both-ways, back and forward.
 
-## <mark style="color:yellow;">GROUPS</mark>
+## <mark style="color:$primary;">GROUPS</mark>
 
 In **Active Directory (AD)**, groups are used to <mark style="color:purple;">**manage permissions**</mark> and <mark style="color:purple;">**assign access**</mark> to users, computers, and other resources efficiently.
 
@@ -149,11 +149,11 @@ Scopes define <mark style="color:purple;">**where the group is used**</mark> and
 | **Universal** | Users, groups from **any domain** | **Forest-wide** |
 | ------------- | --------------------------------- | --------------- |
 
-## <mark style="color:yellow;">GPO</mark>
+## <mark style="color:$primary;">GPO</mark>
 
 <mark style="color:red;">**Group Policy Object (GPO)**</mark> is a virtual collection of policy settings that can be applied to **user(s)** or **computer(s)**. Every GPO has a unique name and is assigned a unique identifier (a GUID). They can be linked to a specific OU, domain, or site. A single GPO can be linked to multiple containers, and any container can have multiple GPOs applied to it. They can be applied to individual users, hosts, or groups by being applied directly to an OU. Every GPO contains one or more Group Policy settings that may apply at the local machine level or within the Active Directory context.
 
-#### Example
+#### **Example**
 
 * Establishing different password policies for service accounts, admin accounts, and standard user accounts using separate GPOs
 * Preventing the use of removable media devices (such as USB devices)
@@ -167,7 +167,7 @@ Scopes define <mark style="color:purple;">**where the group is used**</mark> and
 * Disallowing LM hash usage in the domain
 * Running scripts when computers start/shutdown or when a user logs in/out of their machine
 
-## <mark style="color:yellow;">ADCS</mark>
+## <mark style="color:$primary;">ADCS</mark>
 
 <mark style="color:red;">**Active Directory Certificate Services (AD CS)**</mark> is a **Windows Server&#x20;**<mark style="color:purple;">**role**</mark> for issuing and managing <mark style="color:red;">**public key infrastructure (PKI)**</mark> certificates used in secure communication and authentication protocols. So basically it is **PKI** framework functionality implementation in **AD** and **Windows Server**. As for hacker perspective, ADCS Certificates are giving us wider attack surface and it's usually not as monitored as Kerberos Tickets or Access Tokens. Also Kerberos Tickets usually exist not that long, when Certificates could be valid for months.
 
