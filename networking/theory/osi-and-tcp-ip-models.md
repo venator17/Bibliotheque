@@ -43,7 +43,7 @@ _But besides all explanations I think in this topic pictures are better explaine
 
 And here you'll see comparison of PDU's with real example of packet:
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## <mark style="color:yellow;">ENCAPSULATION</mark>
 
